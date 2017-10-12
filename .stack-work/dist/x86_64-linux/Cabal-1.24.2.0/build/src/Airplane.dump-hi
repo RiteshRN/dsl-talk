@@ -1,0 +1,138 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-12 03:23:46.768385 UTC
+
+interface dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h:Airplane 8002
+  interface hash: 9ae411c8aaca43e4fd4c0e92f62f66a6
+  ABI hash: 19db76196c230805414726e2db6bb954
+  export-list hash: a33d7a016ce239e3e3d93d0efff108c1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Airplane.conv
+  Airplane.initFuel
+  Airplane.loadFuel
+  Airplane.Fuel{Airplane.Fuel}
+  Airplane.Kilograms
+  Airplane.Pounds
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+d29897e3eb5769f9a40ddf38d1c0894a
+  $tc'Fuel :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1693296365833130519##
+                   11772005328425333988##
+                   Airplane.$trModule
+                   Airplane.$tc'Fuel1) -}
+d4e351bb1d9b1adff135e1d0c12ac4f9
+  $tc'Fuel1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Fuel"#) -}
+ad2441e4161f43329994d617a28ed8e3
+  $tcFuel :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12955060299395276146##
+                   17171020268372429256##
+                   Airplane.$trModule
+                   Airplane.$tcFuel1) -}
+13843271e44becd3a1fd43c1650b23e7
+  $tcFuel1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Fuel"#) -}
+3b878734aabcf21ec0c06bc14a0d634e
+  $tcKilograms :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13124048987451258350##
+                   16616850634874200764##
+                   Airplane.$trModule
+                   Airplane.$tcKilograms1) -}
+fec70a1df05fa0b27be2ee11d987af35
+  $tcKilograms1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Kilograms"#) -}
+256d453695fea0156c952df549f7ab89
+  $tcPounds :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   961590851281057686##
+                   17523745610258414547##
+                   Airplane.$trModule
+                   Airplane.$tcPounds1) -}
+a9871204fd8ce048f9a11a204187c60b
+  $tcPounds1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Pounds"#) -}
+22b1068ccc3d230581c3800ecd397fc7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Airplane.$trModule2
+                   Airplane.$trModule1) -}
+fe2f6f72d49006cc9c5bc79c2858ca17
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Airplane"#) -}
+ac8540ca006f17976570cc9612adf5a4
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#) -}
+12dab386b9686d5eac61bfe3bcf91d6a
+  type role Fuel phantom
+  data Fuel a = Fuel GHC.Types.Double
+83bfacf81519d27caa179c018b2bd212
+  data Kilograms
+58719ebf907b828d07e78ada02b6fcc5
+  data Pounds
+802a63cda3537869d0e45a54aab0a715
+  conv ::
+    Airplane.Fuel Airplane.Pounds -> Airplane.Fuel Airplane.Kilograms
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Airplane.Fuel Airplane.Pounds) ->
+                 case ds of wild { Airplane.Fuel p ->
+                 Airplane.Fuel
+                   @ Airplane.Kilograms
+                   (case p of wild1 { GHC.Types.D# x ->
+                    GHC.Types.D# (GHC.Prim./## x 2.2##) }) }) -}
+fe3384dc7a0207884a40ee30cc0d3330
+  initFuel :: Airplane.Fuel Airplane.Pounds
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Airplane.Fuel @ Airplane.Pounds Airplane.initFuel1) -}
+1700c6102e1a2160f0ce638cc01a205b
+  initFuel1 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 55.0##) -}
+ddb259209b1789c5d83c31f8e82c9b97
+  loadFuel :: Airplane.Fuel Airplane.Kilograms -> GHC.Types.IO ()
+  {- Arity: 1, Strictness: <B,1*H>x,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Airplane.Fuel Airplane.Kilograms) ->
+                 case ds of wild { Airplane.Fuel kilos -> Airplane.loadFuel1 }) -}
+618aba8449e1b23581e2426c7353de07
+  loadFuel1 :: GHC.Types.IO ()
+  {- Strictness: x -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

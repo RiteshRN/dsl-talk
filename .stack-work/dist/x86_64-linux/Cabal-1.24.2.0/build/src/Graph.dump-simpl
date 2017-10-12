@@ -1,0 +1,1447 @@
+
+==================== Tidy Core ====================
+2017-10-12 03:26:10.253648 UTC
+
+Result size of Tidy Core
+  = {terms: 1,016, types: 1,388, coercions: 0}
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$tcColored1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+Graph.$tcColored1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "Colored"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$tc'Colored1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+Graph.$tc'Colored1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Colored"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$trModule1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+Graph.$trModule1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "Graph"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$tc'Graph1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+Graph.$tc'Graph1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Graph"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$trModule2 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 110 20}]
+Graph.$trModule2 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS
+    "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#
+
+-- RHS size: {terms: 3, types: 0, coercions: 0}
+Graph.$trModule :: ghc-prim-0.5.0.0:GHC.Types.Module
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Graph.$trModule =
+  ghc-prim-0.5.0.0:GHC.Types.Module Graph.$trModule2 Graph.$trModule1
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Graph.$tc'Graph :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Graph.$tc'Graph =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    7461491956085080549##
+    13643500815640677120##
+    Graph.$trModule
+    Graph.$tc'Graph1
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Graph.$tcGraph :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Graph.$tcGraph =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    15846951039307898134##
+    8137183843654328859##
+    Graph.$trModule
+    Graph.$trModule1
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Graph.$tc'Colored :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Graph.$tc'Colored =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    15908977436019845719##
+    6761324985735836307##
+    Graph.$trModule
+    Graph.$tc'Colored1
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Graph.$tcColored :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Graph.$tcColored =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    2588318031830001947##
+    12862567380914799906##
+    Graph.$trModule
+    Graph.$tcColored1
+
+-- RHS size: {terms: 13, types: 9, coercions: 0}
+trace' :: forall a_a17k. Show a_a17k => String -> a_a17k -> a_a17k
+[GblId,
+ Arity=3,
+ Str=DmdType <L,1*U(A,1*C1(U),A)><L,1*U><L,U>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [30 0 0] 140 0}]
+trace' =
+  \ (@ a_a2nG)
+    ($dShow_a2oA :: Show a_a2nG)
+    (s_a24l :: String)
+    (x_a24m :: a_a2nG) ->
+    trace
+      @ a_a2nG
+      (++
+         @ Char
+         s_a24l
+         (ghc-prim-0.5.0.0:GHC.CString.unpackAppendCString#
+            "; "# (show @ a_a2nG $dShow_a2oA x_a24m)))
+      x_a24m
+
+-- RHS size: {terms: 15, types: 21, coercions: 0}
+mark
+  :: forall a_a17l.
+     Ord a_a17l =>
+     a_a17l -> Graph a_a17l -> Graph a_a17l
+[GblId,
+ Arity=3,
+ Str=DmdType <L,U(A,C(C1(U)),A,A,A,A,A,A)><L,1*U><S,1*U(U,U,1*U)>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a2od)
+                 ($dOrd_a2oK [Occ=Once] :: Ord a_a2od)
+                 (x_a24j [Occ=Once] :: a_a2od)
+                 (gr_a24k [Occ=Once!] :: Graph a_a2od) ->
+                 case gr_a24k
+                 of _ [Occ=Dead]
+                 { Graph ds_d2AD [Occ=Once] ds1_d2AE [Occ=Once]
+                         ds2_d2AF [Occ=Once] ->
+                 Graph.Graph
+                   @ a_a2od
+                   ds_d2AD
+                   ds1_d2AE
+                   (M.insert
+                      @ a_a2od
+                      @ Bool
+                      $dOrd_a2oK
+                      x_a24j
+                      ghc-prim-0.5.0.0:GHC.Types.True
+                      ds2_d2AF)
+                 }}]
+mark =
+  \ (@ a_a2od)
+    ($dOrd_a2oK :: Ord a_a2od)
+    (x_a24j :: a_a2od)
+    (gr_a24k :: Graph a_a2od) ->
+    case gr_a24k of _ [Occ=Dead] { Graph ds_d2AD ds1_d2AE ds2_d2AF ->
+    Graph.Graph
+      @ a_a2od
+      ds_d2AD
+      ds1_d2AE
+      (M.insert
+         @ a_a2od
+         @ Bool
+         $dOrd_a2oK
+         x_a24j
+         ghc-prim-0.5.0.0:GHC.Types.True
+         ds2_d2AF)
+    }
+
+-- RHS size: {terms: 28, types: 29, coercions: 0}
+Graph.$wdescendent [InlPrag=[0]]
+  :: forall a_s35L.
+     Ord a_s35L =>
+     a_s35L
+     -> Map a_s35L a_s35L -> Map a_s35L Bool -> Maybe (Colored a_s35L)
+[GblId,
+ Arity=4,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U><S,1*U><L,1*U>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [0 0 0 0] 160 50}]
+Graph.$wdescendent =
+  \ (@ a_s35L)
+    (w_s35M :: Ord a_s35L)
+    (w1_s35N :: a_s35L)
+    (ww_s35S :: Map a_s35L a_s35L)
+    (ww1_s35T :: Map a_s35L Bool) ->
+    case M.lookup @ a_s35L @ a_s35L w_s35M w1_s35N ww_s35S
+    of _ [Occ=Dead] {
+      Nothing -> GHC.Base.Nothing @ (Colored a_s35L);
+      Just y_a24h ->
+        case M.lookup @ a_s35L @ Bool w_s35M y_a24h ww1_s35T
+        of _ [Occ=Dead] {
+          Nothing ->
+            GHC.Base.Just
+              @ (Colored a_s35L)
+              (Graph.Colored @ a_s35L y_a24h ghc-prim-0.5.0.0:GHC.Types.False);
+          Just b_a24i ->
+            GHC.Base.Just
+              @ (Colored a_s35L) (Graph.Colored @ a_s35L y_a24h b_a24i)
+        }
+    }
+
+-- RHS size: {terms: 12, types: 19, coercions: 0}
+descendent [InlPrag=INLINE[0]]
+  :: forall a_a22Y.
+     Ord a_a22Y =>
+     a_a22Y -> Graph a_a22Y -> Maybe (Colored a_a22Y)
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U><S(LSL),1*U(A,1*U,1*U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_s35L)
+                 (w_s35M [Occ=Once] :: Ord a_s35L)
+                 (w1_s35N [Occ=Once] :: a_s35L)
+                 (w2_s35O [Occ=Once!] :: Graph a_s35L) ->
+                 case w2_s35O
+                 of _ [Occ=Dead]
+                 { Graph _ [Occ=Dead] ww2_s35S [Occ=Once] ww3_s35T [Occ=Once] ->
+                 Graph.$wdescendent @ a_s35L w_s35M w1_s35N ww2_s35S ww3_s35T
+                 }}]
+descendent =
+  \ (@ a_s35L)
+    (w_s35M :: Ord a_s35L)
+    (w1_s35N :: a_s35L)
+    (w2_s35O :: Graph a_s35L) ->
+    case w2_s35O of _ [Occ=Dead] { Graph ww1_s35R ww2_s35S ww3_s35T ->
+    Graph.$wdescendent @ a_s35L w_s35M w1_s35N ww2_s35S ww3_s35T
+    }
+
+-- RHS size: {terms: 6, types: 8, coercions: 0}
+marked :: forall a_aNs. Colored a_aNs -> Bool
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LS),1*U(A,1*U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a256) (ds_d2Bs [Occ=Once!] :: Colored a_a256) ->
+                 case ds_d2Bs
+                 of _ [Occ=Dead] { Colored _ [Occ=Dead] ds2_d2Bu [Occ=Once] ->
+                 ds2_d2Bu
+                 }}]
+marked =
+  \ (@ a_a256) (ds_d2Bs :: Colored a_a256) ->
+    case ds_d2Bs of _ [Occ=Dead] { Colored ds1_d2Bt ds2_d2Bu ->
+    ds2_d2Bu
+    }
+
+-- RHS size: {terms: 6, types: 8, coercions: 0}
+node :: forall a_aNs. Colored a_aNs -> a_aNs
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(SL),1*U(1*U,A)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a257) (ds_d2Bv [Occ=Once!] :: Colored a_a257) ->
+                 case ds_d2Bv
+                 of _ [Occ=Dead] { Colored ds1_d2Bw [Occ=Once] _ [Occ=Dead] ->
+                 ds1_d2Bw
+                 }}]
+node =
+  \ (@ a_a257) (ds_d2Bv :: Colored a_a257) ->
+    case ds_d2Bv of _ [Occ=Dead] { Colored ds1_d2Bw ds2_d2Bx ->
+    ds1_d2Bw
+    }
+
+-- RHS size: {terms: 6, types: 15, coercions: 0}
+ancestors :: forall a_aXw. Graph a_aXw -> Map a_aXw a_aXw
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(SLL),1*U(1*U,A,A)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a24L) (ds_d2By [Occ=Once!] :: Graph a_a24L) ->
+                 case ds_d2By
+                 of _ [Occ=Dead]
+                 { Graph ds1_d2Bz [Occ=Once] _ [Occ=Dead] _ [Occ=Dead] ->
+                 ds1_d2Bz
+                 }}]
+ancestors =
+  \ (@ a_a24L) (ds_d2By :: Graph a_a24L) ->
+    case ds_d2By of _ [Occ=Dead] { Graph ds1_d2Bz ds2_d2BA ds3_d2BB ->
+    ds1_d2Bz
+    }
+
+-- RHS size: {terms: 6, types: 15, coercions: 0}
+descendents :: forall a_aXw. Graph a_aXw -> Map a_aXw a_aXw
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LSL),1*U(A,1*U,A)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a24M) (ds_d2BC [Occ=Once!] :: Graph a_a24M) ->
+                 case ds_d2BC
+                 of _ [Occ=Dead]
+                 { Graph _ [Occ=Dead] ds2_d2BE [Occ=Once] _ [Occ=Dead] ->
+                 ds2_d2BE
+                 }}]
+descendents =
+  \ (@ a_a24M) (ds_d2BC :: Graph a_a24M) ->
+    case ds_d2BC of _ [Occ=Dead] { Graph ds1_d2BD ds2_d2BE ds3_d2BF ->
+    ds2_d2BE
+    }
+
+-- RHS size: {terms: 6, types: 15, coercions: 0}
+visited :: forall a_aXw. Graph a_aXw -> Map a_aXw Bool
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LLS),1*U(A,A,1*U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a24N) (ds_d2BG [Occ=Once!] :: Graph a_a24N) ->
+                 case ds_d2BG
+                 of _ [Occ=Dead]
+                 { Graph _ [Occ=Dead] _ [Occ=Dead] ds3_d2BJ [Occ=Once] ->
+                 ds3_d2BJ
+                 }}]
+visited =
+  \ (@ a_a24N) (ds_d2BG :: Graph a_a24N) ->
+    case ds_d2BG of _ [Occ=Dead] { Graph ds1_d2BH ds2_d2BI ds3_d2BJ ->
+    ds3_d2BJ
+    }
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$fShowColored1 :: Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Graph.$fShowColored1 = ghc-prim-0.5.0.0:GHC.Types.I# 0#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$fShowColored2 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+Graph.$fShowColored2 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "}"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$fShowGraph1 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 60 0}]
+Graph.$fShowGraph1 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "visited = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$fShowColored4 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+Graph.$fShowColored4 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# ", "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$fShowGraph2 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 70 0}]
+Graph.$fShowGraph2 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "descendents = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$fShowGraph3 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 60 0}]
+Graph.$fShowGraph3 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "ancestors = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$fShowGraph4 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 50 0}]
+Graph.$fShowGraph4 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "Graph {"#
+
+-- RHS size: {terms: 59, types: 40, coercions: 0}
+Graph.$w$cshowsPrec1 [InlPrag=[0]]
+  :: forall a_s35X.
+     Show a_s35X =>
+     ghc-prim-0.5.0.0:GHC.Prim.Int#
+     -> Map a_s35X a_s35X
+     -> Map a_s35X a_s35X
+     -> Map a_s35X Bool
+     -> ShowS
+[GblId,
+ Arity=5,
+ Str=DmdType <L,U(C(C1(U)),A,A)><S,U><L,1*U><L,1*U><L,1*U>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=IF_ARGS [0 0 0 0 0] 542 120}]
+Graph.$w$cshowsPrec1 =
+  \ (@ a_s35X)
+    (w_s35Y :: Show a_s35X)
+    (ww_s363 :: ghc-prim-0.5.0.0:GHC.Prim.Int#)
+    (ww1_s367 :: Map a_s35X a_s35X)
+    (ww2_s368 :: Map a_s35X a_s35X)
+    (ww3_s369 :: Map a_s35X Bool) ->
+    let {
+      f_X2QU [Dmd=<L,C(U)>] :: String -> String
+      [LclId, Str=DmdType]
+      f_X2QU =
+        containers-0.5.7.1:Data.Map.Base.$w$cshowsPrec
+          @ a_s35X @ a_s35X w_s35Y w_s35Y 0# ww1_s367 } in
+    let {
+      f1_X2R8 [Dmd=<L,C(U)>] :: String -> String
+      [LclId, Str=DmdType]
+      f1_X2R8 =
+        containers-0.5.7.1:Data.Map.Base.$w$cshowsPrec
+          @ a_s35X @ a_s35X w_s35Y w_s35Y 0# ww2_s368 } in
+    let {
+      f2_X2Rm [Dmd=<L,C(U)>] :: String -> String
+      [LclId, Str=DmdType]
+      f2_X2Rm =
+        containers-0.5.7.1:Data.Map.Base.$w$cshowsPrec
+          @ a_s35X @ Bool w_s35Y GHC.Show.$fShowBool 0# ww3_s369 } in
+    let {
+      p_a2Lq :: ShowS
+      [LclId, Arity=1, Str=DmdType <L,1*U>]
+      p_a2Lq =
+        \ (x_X2ON :: String) ->
+          ++
+            @ Char
+            Graph.$fShowGraph4
+            (++
+               @ Char
+               Graph.$fShowGraph3
+               (f_X2QU
+                  (++
+                     @ Char
+                     Graph.$fShowColored4
+                     (++
+                        @ Char
+                        Graph.$fShowGraph2
+                        (f1_X2R8
+                           (++
+                              @ Char
+                              Graph.$fShowColored4
+                              (++
+                                 @ Char
+                                 Graph.$fShowGraph1
+                                 (f2_X2Rm (++ @ Char Graph.$fShowColored2 x_X2ON))))))))) } in
+    case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+           @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# ww_s363 11#)
+    of _ [Occ=Dead] {
+      False -> p_a2Lq;
+      True ->
+        \ (x_a2Lv :: String) ->
+          ghc-prim-0.5.0.0:GHC.Types.:
+            @ Char
+            GHC.Show.shows7
+            (p_a2Lq
+               (ghc-prim-0.5.0.0:GHC.Types.: @ Char GHC.Show.shows4 x_a2Lv))
+    }
+
+-- RHS size: {terms: 16, types: 21, coercions: 0}
+Graph.$fShowGraph_$cshowsPrec [InlPrag=INLINE[0]]
+  :: forall a_a2yv. Show a_a2yv => Int -> Graph a_a2yv -> ShowS
+[GblId,
+ Arity=3,
+ Str=DmdType <L,U(C(C1(U)),A,A)><S(S),1*U(U)><S,1*U(1*U,1*U,1*U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_s35X)
+                 (w_s35Y [Occ=Once] :: Show a_s35X)
+                 (w1_s35Z [Occ=Once!] :: Int)
+                 (w2_s360 [Occ=Once!] :: Graph a_s35X) ->
+                 case w1_s35Z
+                 of _ [Occ=Dead]
+                 { ghc-prim-0.5.0.0:GHC.Types.I# ww1_s363 [Occ=Once] ->
+                 case w2_s360
+                 of _ [Occ=Dead]
+                 { Graph ww3_s367 [Occ=Once] ww4_s368 [Occ=Once]
+                         ww5_s369 [Occ=Once] ->
+                 Graph.$w$cshowsPrec1
+                   @ a_s35X w_s35Y ww1_s363 ww3_s367 ww4_s368 ww5_s369
+                 }
+                 }}]
+Graph.$fShowGraph_$cshowsPrec =
+  \ (@ a_s35X)
+    (w_s35Y :: Show a_s35X)
+    (w1_s35Z :: Int)
+    (w2_s360 :: Graph a_s35X) ->
+    case w1_s35Z
+    of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# ww1_s363 ->
+    case w2_s360 of _ [Occ=Dead] { Graph ww3_s367 ww4_s368 ww5_s369 ->
+    Graph.$w$cshowsPrec1
+      @ a_s35X w_s35Y ww1_s363 ww3_s367 ww4_s368 ww5_s369
+    }
+    }
+
+-- RHS size: {terms: 17, types: 24, coercions: 0}
+Graph.$fShowGraph_$cshowList
+  :: forall a_a2yv. Show a_a2yv => [Graph a_a2yv] -> ShowS
+[GblId,
+ Arity=3,
+ Str=DmdType <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a2yv)
+                 ($dShow_a2yw [Occ=Once] :: Show a_a2yv)
+                 (eta_B2 [Occ=Once] :: [Graph a_a2yv])
+                 (eta1_B1 [Occ=Once] :: String) ->
+                 GHC.Show.showList__
+                   @ (Graph a_a2yv)
+                   (Graph.$fShowGraph_$cshowsPrec
+                      @ a_a2yv $dShow_a2yw Graph.$fShowColored1)
+                   eta_B2
+                   eta1_B1}]
+Graph.$fShowGraph_$cshowList =
+  \ (@ a_a2yv)
+    ($dShow_a2yw :: Show a_a2yv)
+    (eta_B2 :: [Graph a_a2yv])
+    (eta1_B1 :: String) ->
+    GHC.Show.showList__
+      @ (Graph a_a2yv)
+      (\ (w_s360 :: Graph a_a2yv) ->
+         case w_s360 of _ [Occ=Dead] { Graph ww1_s367 ww2_s368 ww3_s369 ->
+         Graph.$w$cshowsPrec1
+           @ a_a2yv $dShow_a2yw 0# ww1_s367 ww2_s368 ww3_s369
+         })
+      eta_B2
+      eta1_B1
+
+-- RHS size: {terms: 13, types: 19, coercions: 0}
+Graph.$fShowGraph_$cshow
+  :: forall a_a2yv. Show a_a2yv => Graph a_a2yv -> String
+[GblId,
+ Arity=2,
+ Str=DmdType <L,U(C(C1(U)),A,A)><S,1*U(1*U,1*U,1*U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a2yv)
+                 ($dShow_a2yw [Occ=Once] :: Show a_a2yv)
+                 (x_a2M5 [Occ=Once] :: Graph a_a2yv) ->
+                 Graph.$fShowGraph_$cshowsPrec
+                   @ a_a2yv
+                   $dShow_a2yw
+                   GHC.Show.shows22
+                   x_a2M5
+                   (ghc-prim-0.5.0.0:GHC.Types.[] @ Char)}]
+Graph.$fShowGraph_$cshow =
+  \ (@ a_a2yv)
+    ($dShow_a2yw :: Show a_a2yv)
+    (x_a2M5 :: Graph a_a2yv) ->
+    case x_a2M5 of _ [Occ=Dead] { Graph ww1_s367 ww2_s368 ww3_s369 ->
+    Graph.$w$cshowsPrec1
+      @ a_a2yv
+      $dShow_a2yw
+      0#
+      ww1_s367
+      ww2_s368
+      ww3_s369
+      (ghc-prim-0.5.0.0:GHC.Types.[] @ Char)
+    }
+
+-- RHS size: {terms: 9, types: 9, coercions: 0}
+Graph.$fShowGraph [InlPrag=[ALWAYS] CONLIKE]
+  :: forall a_a2nh. Show a_a2nh => Show (Graph a_a2nh)
+[GblId[DFunId],
+ Arity=1,
+ Str=DmdType <L,U(C(C1(U)),A,A)>m,
+ Unf=DFun: \ (@ a_a2yv[ssk]) ($dShow_a2yw :: Show a_a2yv[ssk]) ->
+       GHC.Show.C:Show TYPE: Graph a_a2yv[ssk]
+                       Graph.$fShowGraph_$cshowsPrec @ a_a2yv[ssk] $dShow_a2yw
+                       Graph.$fShowGraph_$cshow @ a_a2yv[ssk] $dShow_a2yw
+                       Graph.$fShowGraph_$cshowList @ a_a2yv[ssk] $dShow_a2yw]
+Graph.$fShowGraph =
+  \ (@ a_a2yv) ($dShow_a2yw :: Show a_a2yv) ->
+    GHC.Show.C:Show
+      @ (Graph a_a2yv)
+      (Graph.$fShowGraph_$cshowsPrec @ a_a2yv $dShow_a2yw)
+      (Graph.$fShowGraph_$cshow @ a_a2yv $dShow_a2yw)
+      (Graph.$fShowGraph_$cshowList @ a_a2yv $dShow_a2yw)
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$fShowColored3 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 60 0}]
+Graph.$fShowColored3 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "marked = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$fShowColored5 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 50 0}]
+Graph.$fShowColored5 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "node = "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Graph.$fShowColored6 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 60 0}]
+Graph.$fShowColored6 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "Colored {"#
+
+-- RHS size: {terms: 50, types: 26, coercions: 0}
+Graph.$w$cshowsPrec [InlPrag=[0]]
+  :: forall a_s36d.
+     Show a_s36d =>
+     ghc-prim-0.5.0.0:GHC.Prim.Int# -> a_s36d -> Bool -> ShowS
+[GblId,
+ Arity=4,
+ Str=DmdType <L,1*U(1*C1(C1(U)),A,A)><S,U><L,U><L,U>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=IF_ARGS [30 0 0 90] 422 120}]
+Graph.$w$cshowsPrec =
+  \ (@ a_s36d)
+    (w_s36e :: Show a_s36d)
+    (ww_s36j :: ghc-prim-0.5.0.0:GHC.Prim.Int#)
+    (ww1_s36n :: a_s36d)
+    (ww2_s36o :: Bool) ->
+    let {
+      f_X2Q8 [Dmd=<L,C(U)>] :: String -> String
+      [LclId, Str=DmdType]
+      f_X2Q8 =
+        showsPrec @ a_s36d w_s36e Graph.$fShowColored1 ww1_s36n } in
+    let {
+      p_a2Lq :: ShowS
+      [LclId, Arity=1, Str=DmdType <L,1*U>]
+      p_a2Lq =
+        \ (x_X2Oe :: String) ->
+          ++
+            @ Char
+            Graph.$fShowColored6
+            (++
+               @ Char
+               Graph.$fShowColored5
+               (f_X2Q8
+                  (++
+                     @ Char
+                     Graph.$fShowColored4
+                     (++
+                        @ Char
+                        Graph.$fShowColored3
+                        (case ww2_s36o of _ [Occ=Dead] {
+                           False ->
+                             ++ @ Char GHC.Show.shows18 (++ @ Char Graph.$fShowColored2 x_X2Oe);
+                           True ->
+                             ++ @ Char GHC.Show.shows17 (++ @ Char Graph.$fShowColored2 x_X2Oe)
+                         }))))) } in
+    case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+           @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# ww_s36j 11#)
+    of _ [Occ=Dead] {
+      False -> p_a2Lq;
+      True ->
+        \ (x_a2Lv :: String) ->
+          ghc-prim-0.5.0.0:GHC.Types.:
+            @ Char
+            GHC.Show.shows7
+            (p_a2Lq
+               (ghc-prim-0.5.0.0:GHC.Types.: @ Char GHC.Show.shows4 x_a2Lv))
+    }
+
+-- RHS size: {terms: 15, types: 14, coercions: 0}
+Graph.$fShowColored_$cshowsPrec [InlPrag=INLINE[0]]
+  :: forall a_a2zB. Show a_a2zB => Int -> Colored a_a2zB -> ShowS
+[GblId,
+ Arity=3,
+ Str=DmdType <L,1*U(1*C1(C1(U)),A,A)><S(S),1*U(U)><S,1*U(U,U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_s36d)
+                 (w_s36e [Occ=Once] :: Show a_s36d)
+                 (w1_s36f [Occ=Once!] :: Int)
+                 (w2_s36g [Occ=Once!] :: Colored a_s36d) ->
+                 case w1_s36f
+                 of _ [Occ=Dead]
+                 { ghc-prim-0.5.0.0:GHC.Types.I# ww1_s36j [Occ=Once] ->
+                 case w2_s36g
+                 of _ [Occ=Dead]
+                 { Colored ww3_s36n [Occ=Once] ww4_s36o [Occ=Once] ->
+                 Graph.$w$cshowsPrec @ a_s36d w_s36e ww1_s36j ww3_s36n ww4_s36o
+                 }
+                 }}]
+Graph.$fShowColored_$cshowsPrec =
+  \ (@ a_s36d)
+    (w_s36e :: Show a_s36d)
+    (w1_s36f :: Int)
+    (w2_s36g :: Colored a_s36d) ->
+    case w1_s36f
+    of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# ww1_s36j ->
+    case w2_s36g of _ [Occ=Dead] { Colored ww3_s36n ww4_s36o ->
+    Graph.$w$cshowsPrec @ a_s36d w_s36e ww1_s36j ww3_s36n ww4_s36o
+    }
+    }
+
+-- RHS size: {terms: 16, types: 17, coercions: 0}
+Graph.$fShowColored_$cshowList
+  :: forall a_a2zB. Show a_a2zB => [Colored a_a2zB] -> ShowS
+[GblId,
+ Arity=3,
+ Str=DmdType <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a2zB)
+                 ($dShow_a2zC [Occ=Once] :: Show a_a2zB)
+                 (eta_B2 [Occ=Once] :: [Colored a_a2zB])
+                 (eta1_B1 [Occ=Once] :: String) ->
+                 GHC.Show.showList__
+                   @ (Colored a_a2zB)
+                   (Graph.$fShowColored_$cshowsPrec
+                      @ a_a2zB $dShow_a2zC Graph.$fShowColored1)
+                   eta_B2
+                   eta1_B1}]
+Graph.$fShowColored_$cshowList =
+  \ (@ a_a2zB)
+    ($dShow_a2zC :: Show a_a2zB)
+    (eta_B2 :: [Colored a_a2zB])
+    (eta1_B1 :: String) ->
+    GHC.Show.showList__
+      @ (Colored a_a2zB)
+      (\ (w_s36g :: Colored a_a2zB) ->
+         case w_s36g of _ [Occ=Dead] { Colored ww1_s36n ww2_s36o ->
+         Graph.$w$cshowsPrec @ a_a2zB $dShow_a2zC 0# ww1_s36n ww2_s36o
+         })
+      eta_B2
+      eta1_B1
+
+-- RHS size: {terms: 12, types: 12, coercions: 0}
+Graph.$fShowColored_$cshow
+  :: forall a_a2zB. Show a_a2zB => Colored a_a2zB -> String
+[GblId,
+ Arity=2,
+ Str=DmdType <L,1*U(1*C1(C1(U)),A,A)><S,1*U(U,U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a2zB)
+                 ($dShow_a2zC [Occ=Once] :: Show a_a2zB)
+                 (x_a2M5 [Occ=Once] :: Colored a_a2zB) ->
+                 Graph.$fShowColored_$cshowsPrec
+                   @ a_a2zB
+                   $dShow_a2zC
+                   GHC.Show.shows22
+                   x_a2M5
+                   (ghc-prim-0.5.0.0:GHC.Types.[] @ Char)}]
+Graph.$fShowColored_$cshow =
+  \ (@ a_a2zB)
+    ($dShow_a2zC :: Show a_a2zB)
+    (x_a2M5 :: Colored a_a2zB) ->
+    case x_a2M5 of _ [Occ=Dead] { Colored ww1_s36n ww2_s36o ->
+    Graph.$w$cshowsPrec
+      @ a_a2zB
+      $dShow_a2zC
+      0#
+      ww1_s36n
+      ww2_s36o
+      (ghc-prim-0.5.0.0:GHC.Types.[] @ Char)
+    }
+
+-- RHS size: {terms: 9, types: 9, coercions: 0}
+Graph.$fShowColored [InlPrag=[ALWAYS] CONLIKE]
+  :: forall a_a2ni. Show a_a2ni => Show (Colored a_a2ni)
+[GblId[DFunId],
+ Arity=1,
+ Str=DmdType <L,U(C(C1(U)),A,A)>m,
+ Unf=DFun: \ (@ a_a2zB[ssk]) ($dShow_a2zC :: Show a_a2zB[ssk]) ->
+       GHC.Show.C:Show TYPE: Colored a_a2zB[ssk]
+                       Graph.$fShowColored_$cshowsPrec @ a_a2zB[ssk] $dShow_a2zC
+                       Graph.$fShowColored_$cshow @ a_a2zB[ssk] $dShow_a2zC
+                       Graph.$fShowColored_$cshowList @ a_a2zB[ssk] $dShow_a2zC]
+Graph.$fShowColored =
+  \ (@ a_a2zB) ($dShow_a2zC :: Show a_a2zB) ->
+    GHC.Show.C:Show
+      @ (Colored a_a2zB)
+      (Graph.$fShowColored_$cshowsPrec @ a_a2zB $dShow_a2zC)
+      (Graph.$fShowColored_$cshow @ a_a2zB $dShow_a2zC)
+      (Graph.$fShowColored_$cshowList @ a_a2zB $dShow_a2zC)
+
+Rec {
+-- RHS size: {terms: 58, types: 40, coercions: 0}
+Graph.$w$sgo4 [InlPrag=[0], Occ=LoopBreaker]
+  :: forall a1_s36r.
+     ghc-prim-0.5.0.0:GHC.Prim.Int#
+     -> a1_s36r -> Map Int a1_s36r -> Map Int a1_s36r
+[GblId, Arity=3, Str=DmdType <L,U><S,1*U><S,1*U>]
+Graph.$w$sgo4 =
+  \ (@ a1_s36r)
+    (ww_s36x :: ghc-prim-0.5.0.0:GHC.Prim.Int#)
+    (w_s36t :: a1_s36r)
+    (w1_s36u :: Map Int a1_s36r) ->
+    case w_s36t of arg2_a2L3 { __DEFAULT ->
+    case w1_s36u of _ [Occ=Dead] {
+      containers-0.5.7.1:Data.Map.Base.Bin dt_a2L6 ky_a2L7 y_a2L8 l_a2L9
+                                           r_a2La ->
+        case ky_a2L7
+        of wild1_s3bE { ghc-prim-0.5.0.0:GHC.Types.I# y#_s3bF ->
+        case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+               @ Bool (ghc-prim-0.5.0.0:GHC.Prim.<# ww_s36x y#_s3bF)
+        of _ [Occ=Dead] {
+          False ->
+            case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+                   @ Bool (ghc-prim-0.5.0.0:GHC.Prim.==# ww_s36x y#_s3bF)
+            of _ [Occ=Dead] {
+              False ->
+                containers-0.5.7.1:Data.Map.Base.balanceR
+                  @ Int
+                  @ a1_s36r
+                  wild1_s3bE
+                  y_a2L8
+                  l_a2L9
+                  (Graph.$w$sgo4 @ a1_s36r ww_s36x arg2_a2L3 r_a2La);
+              True ->
+                containers-0.5.7.1:Data.Map.Base.Bin
+                  @ Int
+                  @ a1_s36r
+                  dt_a2L6
+                  (ghc-prim-0.5.0.0:GHC.Types.I# ww_s36x)
+                  arg2_a2L3
+                  l_a2L9
+                  r_a2La
+            };
+          True ->
+            containers-0.5.7.1:Data.Map.Base.balanceL
+              @ Int
+              @ a1_s36r
+              wild1_s3bE
+              y_a2L8
+              (Graph.$w$sgo4 @ a1_s36r ww_s36x arg2_a2L3 l_a2L9)
+              r_a2La
+        }
+        };
+      containers-0.5.7.1:Data.Map.Base.Tip ->
+        containers-0.5.7.1:Data.Map.Base.Bin
+          @ Int
+          @ a1_s36r
+          1#
+          (ghc-prim-0.5.0.0:GHC.Types.I# ww_s36x)
+          arg2_a2L3
+          (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a1_s36r)
+          (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a1_s36r)
+    }
+    }
+end Rec }
+
+Rec {
+-- RHS size: {terms: 23, types: 32, coercions: 0}
+poly_go4_r3kP
+  :: forall a1_X2CK.
+     Map Int a1_X2CK -> [(Int, a1_X2CK)] -> Map Int a1_X2CK
+[GblId, Arity=2, Str=DmdType <S,1*U><S,1*U>]
+poly_go4_r3kP =
+  \ (@ a1_X2CK)
+    (z_a2CC :: Map Int a1_X2CK)
+    (ds3_a2CD :: [(Int, a1_X2CK)]) ->
+    case ds3_a2CD of _ [Occ=Dead] {
+      [] -> z_a2CC;
+      : x1_a2CL xs1_a2CM ->
+        case x1_a2CL of _ [Occ=Dead] { (k2_a2CQ, x2_a2CR) ->
+        case k2_a2CQ
+        of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# ww1_s36x ->
+        case Graph.$w$sgo4 @ a1_X2CK ww1_s36x x2_a2CR z_a2CC
+        of z'_a2CT { __DEFAULT ->
+        poly_go4_r3kP @ a1_X2CK z'_a2CT xs1_a2CM
+        }
+        }
+        }
+    }
+
+-- RHS size: {terms: 14, types: 16, coercions: 0}
+Graph.$sfromList_$spoly_go4 [Occ=LoopBreaker]
+  :: forall a_X2C4.
+     ghc-prim-0.5.0.0:GHC.Prim.Int#
+     -> a_X2C4 -> [(Int, a_X2C4)] -> Map Int a_X2C4 -> Map Int a_X2C4
+[GblId, Arity=4, Str=DmdType <L,U><L,U><L,U><S,1*U>]
+Graph.$sfromList_$spoly_go4 =
+  \ (@ a_X2C4)
+    (sc_s3fd :: ghc-prim-0.5.0.0:GHC.Prim.Int#)
+    (sc1_s3fe :: a_X2C4)
+    (sc2_s3ff :: [(Int, a_X2C4)])
+    (sc3_s3fc :: Map Int a_X2C4) ->
+    case Graph.$w$sgo4 @ a_X2C4 sc_s3fd sc1_s3fe sc3_s3fc
+    of z'_a2CT { __DEFAULT ->
+    poly_go4_r3kP @ a_X2C4 z'_a2CT sc2_s3ff
+    }
+
+-- RHS size: {terms: 19, types: 24, coercions: 0}
+$spoly_go4_r3kQ
+  :: forall a_X2C4.
+     (Int, a_X2C4)
+     -> [(Int, a_X2C4)] -> Map Int a_X2C4 -> Map Int a_X2C4
+[GblId, Arity=3, Str=DmdType <L,U><L,U><S,1*U>]
+$spoly_go4_r3kQ =
+  \ (@ a_X2C4)
+    (sc_s3fh :: (Int, a_X2C4))
+    (sc1_s3fi :: [(Int, a_X2C4)])
+    (sc2_s3fg :: Map Int a_X2C4) ->
+    case sc_s3fh of _ [Occ=Dead] { (k2_a2CQ, x2_a2CR) ->
+    case k2_a2CQ
+    of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# ww1_s36x ->
+    case Graph.$w$sgo4 @ a_X2C4 ww1_s36x x2_a2CR sc2_s3fg
+    of z'_a2CT { __DEFAULT ->
+    poly_go4_r3kP @ a_X2C4 z'_a2CT sc1_s3fi
+    }
+    }
+    }
+end Rec }
+
+Rec {
+-- RHS size: {terms: 139, types: 268, coercions: 0}
+$s$wpoly_create_r3kR
+  :: forall a_X2C4.
+     ghc-prim-0.5.0.0:GHC.Prim.Int#
+     -> a_X2C4
+     -> [(Int, a_X2C4)]
+     -> ghc-prim-0.5.0.0:GHC.Prim.Int#
+     -> (# Map Int a_X2C4, [(Int, a_X2C4)], [(Int, a_X2C4)] #)
+[GblId, Arity=4, Str=DmdType <L,U><L,U><L,U><L,1*U>]
+$s$wpoly_create_r3kR =
+  \ (@ a_X2C4)
+    (sc_s3eW :: ghc-prim-0.5.0.0:GHC.Prim.Int#)
+    (sc1_s3eX :: a_X2C4)
+    (sc2_s3eY :: [(Int, a_X2C4)])
+    (sc3_s3eV :: ghc-prim-0.5.0.0:GHC.Prim.Int#) ->
+    case sc3_s3eV of wild_X28 {
+      __DEFAULT ->
+        case $s$wpoly_create_r3kR
+               @ a_X2C4
+               sc_s3eW
+               sc1_s3eX
+               sc2_s3eY
+               (ghc-prim-0.5.0.0:GHC.Prim.uncheckedIShiftRA# wild_X28 1#)
+        of _ [Occ=Dead] { (# ww1_s376, ww2_s377, ww3_s378 #) ->
+        case ww2_s377 of wild13_a2IT {
+          [] ->
+            (# ww1_s376, ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, a_X2C4),
+               ww3_s378 #);
+          : ds13_a2IX ds14_a2IY ->
+            case ds13_a2IX of _ [Occ=Dead] { (ky2_a2J2, y_a2J3) ->
+            case ds14_a2IY of _ [Occ=Dead] {
+              [] ->
+                case y_a2J3 of y1_a2J8 { __DEFAULT ->
+                (# containers-0.5.7.1:Data.Map.Base.insertMax
+                     @ Int @ a_X2C4 ky2_a2J2 y1_a2J8 ww1_s376,
+                   ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, a_X2C4), ww3_s378 #)
+                };
+              : ipv6_a2Ja ipv7_a2Jb ->
+                case ipv6_a2Ja of _ [Occ=Dead] { (ky3_a2Jf, ds15_a2Jg) ->
+                case ky2_a2J2
+                of wild1_a2MC { ghc-prim-0.5.0.0:GHC.Types.I# x_a2ME ->
+                case ky3_a2Jf
+                of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# y1_a2MI ->
+                case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+                       @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# x_a2ME y1_a2MI)
+                of _ [Occ=Dead] {
+                  False ->
+                    case $s$wpoly_create_r3kR
+                           @ a_X2C4
+                           y1_a2MI
+                           ds15_a2Jg
+                           ipv7_a2Jb
+                           (ghc-prim-0.5.0.0:GHC.Prim.uncheckedIShiftRA# wild_X28 1#)
+                    of _ [Occ=Dead] { (# ww5_X39K, ww6_X39M, ww7_X39O #) ->
+                    case y_a2J3 of y2_a2Jr { __DEFAULT ->
+                    (# containers-0.5.7.1:Data.Map.Base.link
+                         @ Int @ a_X2C4 wild1_a2MC y2_a2Jr ww1_s376 ww5_X39K,
+                       ww6_X39M, ww7_X39O #)
+                    }
+                    };
+                  True ->
+                    (# ww1_s376, ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, a_X2C4),
+                       wild13_a2IT #)
+                }
+                }
+                }
+                }
+            }
+            }
+        }
+        };
+      1# ->
+        case sc2_s3eY of wild13_a2JE {
+          [] ->
+            case sc1_s3eX of x3_a2JH { __DEFAULT ->
+            (# containers-0.5.7.1:Data.Map.Base.Bin
+                 @ Int
+                 @ a_X2C4
+                 1#
+                 (ghc-prim-0.5.0.0:GHC.Types.I# sc_s3eW)
+                 x3_a2JH
+                 (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4)
+                 (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4),
+               ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, a_X2C4),
+               ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, a_X2C4) #)
+            };
+          : ds10_a2JK ds11_a2JL ->
+            case ds10_a2JK of _ [Occ=Dead] { (ky2_a2JP, ds12_a2JQ) ->
+            case ky2_a2JP
+            of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# y_a2MI ->
+            case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+                   @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# sc_s3eW y_a2MI)
+            of _ [Occ=Dead] {
+              False ->
+                case sc1_s3eX of x3_a2JV { __DEFAULT ->
+                (# containers-0.5.7.1:Data.Map.Base.Bin
+                     @ Int
+                     @ a_X2C4
+                     1#
+                     (ghc-prim-0.5.0.0:GHC.Types.I# sc_s3eW)
+                     x3_a2JV
+                     (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4)
+                     (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4),
+                   wild13_a2JE, ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, a_X2C4) #)
+                };
+              True ->
+                case sc1_s3eX of x3_a2JZ { __DEFAULT ->
+                (# containers-0.5.7.1:Data.Map.Base.Bin
+                     @ Int
+                     @ a_X2C4
+                     1#
+                     (ghc-prim-0.5.0.0:GHC.Types.I# sc_s3eW)
+                     x3_a2JZ
+                     (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4)
+                     (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4),
+                   ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, a_X2C4), wild13_a2JE #)
+                }
+            }
+            }
+            }
+        }
+    }
+end Rec }
+
+Rec {
+-- RHS size: {terms: 79, types: 98, coercions: 0}
+$wpoly_go4_r3kS
+  :: forall a_s36N.
+     ghc-prim-0.5.0.0:GHC.Prim.Int#
+     -> Map Int a_s36N -> [(Int, a_s36N)] -> Map Int a_s36N
+[GblId, Arity=3, Str=DmdType <L,U><S,1*U><S,1*U>]
+$wpoly_go4_r3kS =
+  \ (@ a_s36N)
+    (ww_s36T :: ghc-prim-0.5.0.0:GHC.Prim.Int#)
+    (w_s36P :: Map Int a_s36N)
+    (w1_s36Q :: [(Int, a_s36N)]) ->
+    case w1_s36Q of _ [Occ=Dead] {
+      [] -> w_s36P;
+      : ds6_a2Df ds7_a2Dg ->
+        case ds6_a2Df of _ [Occ=Dead] { (kx1_a2Dk, x1_a2Dl) ->
+        case ds7_a2Dg of wild7_a2Dn {
+          [] ->
+            case x1_a2Dl of x2_a2Dq { __DEFAULT ->
+            containers-0.5.7.1:Data.Map.Base.insertMax
+              @ Int @ a_s36N kx1_a2Dk x2_a2Dq w_s36P
+            };
+          : ipv3_a2Du ipv4_a2Dv ->
+            case ipv3_a2Du of _ [Occ=Dead] { (ky1_a2Dz, ds8_a2DA) ->
+            case kx1_a2Dk
+            of wild_a2MC { ghc-prim-0.5.0.0:GHC.Types.I# x_a2ME ->
+            case ky1_a2Dz
+            of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# y_a2MI ->
+            case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+                   @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# x_a2ME y_a2MI)
+            of _ [Occ=Dead] {
+              False ->
+                case $s$wpoly_create_r3kR
+                       @ a_s36N y_a2MI ds8_a2DA ipv4_a2Dv ww_s36T
+                of _ [Occ=Dead] { (# ww2_s376, ww3_s377, ww4_s378 #) ->
+                case ww4_s378 of _ [Occ=Dead] {
+                  [] ->
+                    case x1_a2Dl of x2_a2Ka { __DEFAULT ->
+                    $wpoly_go4_r3kS
+                      @ a_s36N
+                      (ghc-prim-0.5.0.0:GHC.Prim.uncheckedIShiftL# ww_s36T 1#)
+                      (containers-0.5.7.1:Data.Map.Base.link
+                         @ Int @ a_s36N wild_a2MC x2_a2Ka w_s36P ww2_s376)
+                      ww3_s377
+                    };
+                  : ipv5_a2Kd ipv6_a2Ke ->
+                    case x1_a2Dl of x2_a2Kg { __DEFAULT ->
+                    $spoly_go4_r3kQ
+                      @ a_s36N
+                      ipv5_a2Kd
+                      ipv6_a2Ke
+                      (containers-0.5.7.1:Data.Map.Base.link
+                         @ Int @ a_s36N wild_a2MC x2_a2Kg w_s36P ww2_s376)
+                    }
+                }
+                };
+              True ->
+                Graph.$sfromList_$spoly_go4
+                  @ a_s36N x_a2ME x1_a2Dl wild7_a2Dn w_s36P
+            }
+            }
+            }
+            }
+        }
+        }
+    }
+
+-- RHS size: {terms: 73, types: 82, coercions: 0}
+Graph.$sfromList_$s$wpoly_go4 [Occ=LoopBreaker]
+  :: forall a_X2C4.
+     ghc-prim-0.5.0.0:GHC.Prim.Int#
+     -> a_X2C4
+     -> [(Int, a_X2C4)]
+     -> Map Int a_X2C4
+     -> ghc-prim-0.5.0.0:GHC.Prim.Int#
+     -> Map Int a_X2C4
+[GblId, Arity=5, Str=DmdType <L,U><L,U><L,U><S,1*U><L,U>]
+Graph.$sfromList_$s$wpoly_go4 =
+  \ (@ a_X2C4)
+    (sc_s3eL :: ghc-prim-0.5.0.0:GHC.Prim.Int#)
+    (sc1_s3eM :: a_X2C4)
+    (sc2_s3eN :: [(Int, a_X2C4)])
+    (sc3_s3eK :: Map Int a_X2C4)
+    (sc4_s3eJ :: ghc-prim-0.5.0.0:GHC.Prim.Int#) ->
+    case sc2_s3eN of wild7_a2Dn {
+      [] ->
+        case sc1_s3eM of x2_a2Dq { __DEFAULT ->
+        containers-0.5.7.1:Data.Map.Base.insertMax
+          @ Int
+          @ a_X2C4
+          (ghc-prim-0.5.0.0:GHC.Types.I# sc_s3eL)
+          x2_a2Dq
+          sc3_s3eK
+        };
+      : ipv3_a2Du ipv4_a2Dv ->
+        case ipv3_a2Du of _ [Occ=Dead] { (ky1_a2Dz, ds8_a2DA) ->
+        case ky1_a2Dz
+        of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# y_a2MI ->
+        case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+               @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# sc_s3eL y_a2MI)
+        of _ [Occ=Dead] {
+          False ->
+            case $s$wpoly_create_r3kR
+                   @ a_X2C4 y_a2MI ds8_a2DA ipv4_a2Dv sc4_s3eJ
+            of _ [Occ=Dead] { (# ww1_s376, ww2_s377, ww3_s378 #) ->
+            case ww3_s378 of _ [Occ=Dead] {
+              [] ->
+                case sc1_s3eM of x2_a2Ka { __DEFAULT ->
+                $wpoly_go4_r3kS
+                  @ a_X2C4
+                  (ghc-prim-0.5.0.0:GHC.Prim.uncheckedIShiftL# sc4_s3eJ 1#)
+                  (containers-0.5.7.1:Data.Map.Base.link
+                     @ Int
+                     @ a_X2C4
+                     (ghc-prim-0.5.0.0:GHC.Types.I# sc_s3eL)
+                     x2_a2Ka
+                     sc3_s3eK
+                     ww1_s376)
+                  ww2_s377
+                };
+              : ipv5_a2Kd ipv6_a2Ke ->
+                case sc1_s3eM of x2_a2Kg { __DEFAULT ->
+                $spoly_go4_r3kQ
+                  @ a_X2C4
+                  ipv5_a2Kd
+                  ipv6_a2Ke
+                  (containers-0.5.7.1:Data.Map.Base.link
+                     @ Int
+                     @ a_X2C4
+                     (ghc-prim-0.5.0.0:GHC.Types.I# sc_s3eL)
+                     x2_a2Kg
+                     sc3_s3eK
+                     ww1_s376)
+                }
+            }
+            };
+          True ->
+            Graph.$sfromList_$spoly_go4
+              @ a_X2C4 sc_s3eL sc1_s3eM wild7_a2Dn sc3_s3eK
+        }
+        }
+        }
+    }
+end Rec }
+
+-- RHS size: {terms: 69, types: 71, coercions: 0}
+Graph.$sfromList
+  :: forall a_a2C2. [(Int, a_a2C2)] -> Map Int a_a2C2
+[GblId,
+ Arity=1,
+ Str=DmdType <S,1*U>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [30] 282 70}]
+Graph.$sfromList =
+  \ (@ a_X2C4) (ds_a2C4 :: [(Int, a_X2C4)]) ->
+    case ds_a2C4 of _ [Occ=Dead] {
+      [] -> containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4;
+      : ds1_a2Cf ds2_a2Cg ->
+        case ds1_a2Cf of _ [Occ=Dead] { (kx_a2Ck, x_a2Cl) ->
+        case ds2_a2Cg of _ [Occ=Dead] {
+          [] ->
+            case x_a2Cl of x1_a2Cq { __DEFAULT ->
+            case kx_a2Ck of dt_a2Cr { ghc-prim-0.5.0.0:GHC.Types.I# ipv_s2TB ->
+            containers-0.5.7.1:Data.Map.Base.Bin
+              @ Int
+              @ a_X2C4
+              1#
+              dt_a2Cr
+              x1_a2Cq
+              (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4)
+              (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4)
+            }
+            };
+          : ipv_a2CE ipv1_a2CF ->
+            case ipv_a2CE of _ [Occ=Dead] { (ky_a2CW, ds3_a2CX) ->
+            case kx_a2Ck
+            of wild4_a2MC { ghc-prim-0.5.0.0:GHC.Types.I# x1_a2ME ->
+            case ky_a2CW
+            of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# y_a2MI ->
+            case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+                   @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# x1_a2ME y_a2MI)
+            of _ [Occ=Dead] {
+              False ->
+                case x_a2Cl of x0_a2D2 { __DEFAULT ->
+                Graph.$sfromList_$s$wpoly_go4
+                  @ a_X2C4
+                  y_a2MI
+                  ds3_a2CX
+                  ipv1_a2CF
+                  (containers-0.5.7.1:Data.Map.Base.Bin
+                     @ Int
+                     @ a_X2C4
+                     1#
+                     wild4_a2MC
+                     x0_a2D2
+                     (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4)
+                     (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4))
+                  1#
+                };
+              True ->
+                case x_a2Cl of x0_a2Km { __DEFAULT ->
+                Graph.$sfromList_$spoly_go4
+                  @ a_X2C4
+                  y_a2MI
+                  ds3_a2CX
+                  ipv1_a2CF
+                  (containers-0.5.7.1:Data.Map.Base.Bin
+                     @ Int
+                     @ a_X2C4
+                     1#
+                     wild4_a2MC
+                     x0_a2Km
+                     (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4)
+                     (containers-0.5.7.1:Data.Map.Base.Tip @ Int @ a_X2C4))
+                }
+            }
+            }
+            }
+            }
+        }
+        }
+    }
+
+-- RHS size: {terms: 2, types: 4, coercions: 0}
+Graph.initGraph2 :: Map Int Int
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 20 0}]
+Graph.initGraph2 =
+  Graph.$sfromList @ Int (ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, Int))
+
+-- RHS size: {terms: 2, types: 4, coercions: 0}
+Graph.initGraph1 :: Map Int Bool
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 20 0}]
+Graph.initGraph1 =
+  Graph.$sfromList
+    @ Bool (ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, Bool))
+
+-- RHS size: {terms: 111, types: 77, coercions: 0}
+Graph.$winitGraph [InlPrag=[0]]
+  :: Int -> (# Map Int Int, Map Int Int, Map Int Bool #)
+[GblId,
+ Arity=1,
+ Str=DmdType <L,U(U)>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [60] 518 40}]
+Graph.$winitGraph =
+  \ (w_s371 :: Int) ->
+    (# case w_s371
+       of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# y_a2O5 ->
+       case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+              @ Bool (ghc-prim-0.5.0.0:GHC.Prim.># 2# y_a2O5)
+       of _ [Occ=Dead] {
+         False ->
+           letrec {
+             go_a2UR [Occ=LoopBreaker]
+               :: ghc-prim-0.5.0.0:GHC.Prim.Int# -> [(Int, Int)]
+             [LclId, Arity=1, Str=DmdType <L,U>]
+             go_a2UR =
+               \ (x_a2US :: ghc-prim-0.5.0.0:GHC.Prim.Int#) ->
+                 ghc-prim-0.5.0.0:GHC.Types.:
+                   @ (Int, Int)
+                   (ghc-prim-0.5.0.0:GHC.Types.I# x_a2US,
+                    ghc-prim-0.5.0.0:GHC.Types.I#
+                      (ghc-prim-0.5.0.0:GHC.Prim.-# x_a2US 1#))
+                   (case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+                           @ Bool (ghc-prim-0.5.0.0:GHC.Prim.==# x_a2US y_a2O5)
+                    of _ [Occ=Dead] {
+                      False -> go_a2UR (ghc-prim-0.5.0.0:GHC.Prim.+# x_a2US 1#);
+                      True -> ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, Int)
+                    }); } in
+           Graph.$sfromList @ Int (go_a2UR 2#);
+         True -> Graph.initGraph2
+       }
+       },
+       case w_s371
+       of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# x_a2NF ->
+       let {
+         y_a2UO [Dmd=<S,U>] :: ghc-prim-0.5.0.0:GHC.Prim.Int#
+         [LclId, Str=DmdType]
+         y_a2UO = ghc-prim-0.5.0.0:GHC.Prim.-# x_a2NF 1# } in
+       case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+              @ Bool (ghc-prim-0.5.0.0:GHC.Prim.># 1# y_a2UO)
+       of _ [Occ=Dead] {
+         False ->
+           letrec {
+             go_a2UR [Occ=LoopBreaker]
+               :: ghc-prim-0.5.0.0:GHC.Prim.Int# -> [(Int, Int)]
+             [LclId, Arity=1, Str=DmdType <L,U>]
+             go_a2UR =
+               \ (x1_a2US :: ghc-prim-0.5.0.0:GHC.Prim.Int#) ->
+                 ghc-prim-0.5.0.0:GHC.Types.:
+                   @ (Int, Int)
+                   (ghc-prim-0.5.0.0:GHC.Types.I# x1_a2US,
+                    ghc-prim-0.5.0.0:GHC.Types.I#
+                      (ghc-prim-0.5.0.0:GHC.Prim.+# x1_a2US 1#))
+                   (case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+                           @ Bool (ghc-prim-0.5.0.0:GHC.Prim.==# x1_a2US y_a2UO)
+                    of _ [Occ=Dead] {
+                      False -> go_a2UR (ghc-prim-0.5.0.0:GHC.Prim.+# x1_a2US 1#);
+                      True -> ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, Int)
+                    }); } in
+           Graph.$sfromList @ Int (go_a2UR 1#);
+         True -> Graph.initGraph2
+       }
+       },
+       case w_s371
+       of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# y_a2O5 ->
+       case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+              @ Bool (ghc-prim-0.5.0.0:GHC.Prim.># 1# y_a2O5)
+       of _ [Occ=Dead] {
+         False ->
+           letrec {
+             go_a2UR [Occ=LoopBreaker]
+               :: ghc-prim-0.5.0.0:GHC.Prim.Int# -> [(Int, Bool)]
+             [LclId, Arity=1, Str=DmdType <L,U>]
+             go_a2UR =
+               \ (x_a2US :: ghc-prim-0.5.0.0:GHC.Prim.Int#) ->
+                 ghc-prim-0.5.0.0:GHC.Types.:
+                   @ (Int, Bool)
+                   (ghc-prim-0.5.0.0:GHC.Types.I# x_a2US,
+                    ghc-prim-0.5.0.0:GHC.Types.False)
+                   (case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+                           @ Bool (ghc-prim-0.5.0.0:GHC.Prim.==# x_a2US y_a2O5)
+                    of _ [Occ=Dead] {
+                      False -> go_a2UR (ghc-prim-0.5.0.0:GHC.Prim.+# x_a2US 1#);
+                      True -> ghc-prim-0.5.0.0:GHC.Types.[] @ (Int, Bool)
+                    }); } in
+           Graph.$sfromList @ Bool (go_a2UR 1#);
+         True -> Graph.initGraph1
+       }
+       } #)
+
+-- RHS size: {terms: 9, types: 24, coercions: 0}
+initGraph [InlPrag=INLINE[0]] :: Int -> Graph Int
+[GblId,
+ Arity=1,
+ Str=DmdType <L,U(U)>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (w_s371 [Occ=Once] :: Int) ->
+                 case Graph.$winitGraph w_s371
+                 of _ [Occ=Dead]
+                 { (# ww1_s37b [Occ=Once], ww2_s37c [Occ=Once],
+                      ww3_s37d [Occ=Once] #) ->
+                 Graph.Graph @ Int ww1_s37b ww2_s37c ww3_s37d
+                 }}]
+initGraph =
+  \ (w_s371 :: Int) ->
+    case Graph.$winitGraph w_s371
+    of _ [Occ=Dead] { (# ww1_s37b, ww2_s37c, ww3_s37d #) ->
+    Graph.Graph @ Int ww1_s37b ww2_s37c ww3_s37d
+    }
+
+
+------ Local rules for imported ids --------
+"SPEC/Graph fromList @ Int _" [ALWAYS]
+    forall (@ a_a2C2) ($dOrd_s2Pv :: Ord Int).
+      M.fromList @ Int @ a_a2C2 $dOrd_s2Pv
+      = Graph.$sfromList @ a_a2C2
+

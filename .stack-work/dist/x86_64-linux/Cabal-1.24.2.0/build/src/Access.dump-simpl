@@ -1,0 +1,509 @@
+
+==================== Tidy Core ====================
+2017-10-12 03:26:10.502707 UTC
+
+Result size of Tidy Core = {terms: 177, types: 431, coercions: 25}
+
+-- RHS size: {terms: 8, types: 31, coercions: 0}
+newRef
+  :: forall (m_a4YZ[sk] :: * -> *) (ref_a4Z0[sk] :: *
+                                                    -> *) a_a4Z1[sk].
+     Ref m_a4YZ[sk] ref_a4Z0[sk] a_a4Z1[sk] =>
+     a_a4Z1[sk] -> m_a4YZ[sk] (ref_a4Z0[sk] a_a4Z1[sk])
+[GblId[ClassOp],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(SLL),U(U,A,A)>,
+ RULES: Built in rule for newRef: "Class op newRef"]
+newRef =
+  \ (@ (m_a4YZ[sk] :: * -> *))
+    (@ (ref_a4Z0[sk] :: * -> *))
+    (@ a_a4Z1[sk])
+    (tpl_B1 :: Ref m_a4YZ[sk] ref_a4Z0[sk] a_a4Z1[sk]) ->
+    case tpl_B1 of tpl_B1 { Access.C:Ref tpl_B2 tpl_B3 tpl_B4 ->
+    tpl_B2
+    }
+
+-- RHS size: {terms: 8, types: 31, coercions: 0}
+readRef
+  :: forall (m_a4YZ[sk] :: * -> *) (ref_a4Z0[sk] :: *
+                                                    -> *) a_a4Z1[sk].
+     Ref m_a4YZ[sk] ref_a4Z0[sk] a_a4Z1[sk] =>
+     ref_a4Z0[sk] a_a4Z1[sk] -> m_a4YZ[sk] a_a4Z1[sk]
+[GblId[ClassOp],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LSL),U(A,U,A)>,
+ RULES: Built in rule for readRef: "Class op readRef"]
+readRef =
+  \ (@ (m_a4YZ[sk] :: * -> *))
+    (@ (ref_a4Z0[sk] :: * -> *))
+    (@ a_a4Z1[sk])
+    (tpl_B1 :: Ref m_a4YZ[sk] ref_a4Z0[sk] a_a4Z1[sk]) ->
+    case tpl_B1 of tpl_B1 { Access.C:Ref tpl_B2 tpl_B3 tpl_B4 ->
+    tpl_B3
+    }
+
+-- RHS size: {terms: 8, types: 31, coercions: 0}
+writeRef
+  :: forall (m_a4YZ[sk] :: * -> *) (ref_a4Z0[sk] :: *
+                                                    -> *) a_a4Z1[sk].
+     Ref m_a4YZ[sk] ref_a4Z0[sk] a_a4Z1[sk] =>
+     ref_a4Z0[sk] a_a4Z1[sk] -> a_a4Z1[sk] -> m_a4YZ[sk] ()
+[GblId[ClassOp],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S(LLS),U(A,A,U)>,
+ RULES: Built in rule for writeRef: "Class op writeRef"]
+writeRef =
+  \ (@ (m_a4YZ[sk] :: * -> *))
+    (@ (ref_a4Z0[sk] :: * -> *))
+    (@ a_a4Z1[sk])
+    (tpl_B1 :: Ref m_a4YZ[sk] ref_a4Z0[sk] a_a4Z1[sk]) ->
+    case tpl_B1 of tpl_B1 { Access.C:Ref tpl_B2 tpl_B3 tpl_B4 ->
+    tpl_B4
+    }
+
+-- RHS size: {terms: 5, types: 10, coercions: 22}
+Access.$fRefIOIORefa [InlPrag=[ALWAYS] CONLIKE]
+  :: forall a_a57N. Ref IO IORef a_a57N
+[GblId[DFunId],
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=DFun: \ (@ a_a5aY[ssk]) ->
+       Access.C:Ref TYPE: IO
+                    TYPE: IORef
+                    TYPE: a_a5aY[ssk]
+                    newIORef @ a_a5aY[ssk]
+                    readIORef @ a_a5aY[ssk]
+                    writeIORef @ a_a5aY[ssk]]
+Access.$fRefIOIORefa =
+  \ (@ a_a5aY) ->
+    Access.C:Ref
+      @ IO
+      @ IORef
+      @ a_a5aY
+      ((GHC.IORef.newIORef1 @ a_a5aY)
+       `cast` (<a_a5aY>_R
+               -> Sym (ghc-prim-0.5.0.0:GHC.Types.N:IO[0] <IORef a_a5aY>_R)
+               :: ((a_a5aY
+                    -> ghc-prim-0.5.0.0:GHC.Prim.State#
+                         ghc-prim-0.5.0.0:GHC.Prim.RealWorld
+                    -> (# ghc-prim-0.5.0.0:GHC.Prim.State#
+                            ghc-prim-0.5.0.0:GHC.Prim.RealWorld,
+                          IORef a_a5aY #)) :: *)
+                  ~R#
+                  ((a_a5aY -> IO (IORef a_a5aY)) :: *)))
+      ((GHC.STRef.readSTRef1
+          @ ghc-prim-0.5.0.0:GHC.Prim.RealWorld @ a_a5aY)
+       `cast` (Sym GHC.IORef.N:IORef[0] <a_a5aY>_N
+               -> Sym (ghc-prim-0.5.0.0:GHC.Types.N:IO[0] <a_a5aY>_R)
+               :: ((GHC.STRef.STRef ghc-prim-0.5.0.0:GHC.Prim.RealWorld a_a5aY
+                    -> ghc-prim-0.5.0.0:GHC.Prim.State#
+                         ghc-prim-0.5.0.0:GHC.Prim.RealWorld
+                    -> (# ghc-prim-0.5.0.0:GHC.Prim.State#
+                            ghc-prim-0.5.0.0:GHC.Prim.RealWorld,
+                          a_a5aY #)) :: *)
+                  ~R#
+                  ((IORef a_a5aY -> IO a_a5aY) :: *)))
+      ((GHC.STRef.writeSTRef1
+          @ ghc-prim-0.5.0.0:GHC.Prim.RealWorld @ a_a5aY)
+       `cast` (Sym GHC.IORef.N:IORef[0] <a_a5aY>_N
+               -> <a_a5aY>_R -> Sym (ghc-prim-0.5.0.0:GHC.Types.N:IO[0] <()>_R)
+               :: ((GHC.STRef.STRef ghc-prim-0.5.0.0:GHC.Prim.RealWorld a_a5aY
+                    -> a_a5aY
+                    -> ghc-prim-0.5.0.0:GHC.Prim.State#
+                         ghc-prim-0.5.0.0:GHC.Prim.RealWorld
+                    -> (# ghc-prim-0.5.0.0:GHC.Prim.State#
+                            ghc-prim-0.5.0.0:GHC.Prim.RealWorld,
+                          () #)) :: *)
+                  ~R#
+                  ((IORef a_a5aY -> a_a5aY -> IO ()) :: *)))
+
+-- RHS size: {terms: 19, types: 46, coercions: 0}
+create
+  :: forall (m_a4Ze :: * -> *) (ref_a4Zf :: * -> *) a_a4Zg c_a4Zh.
+     (Monad m_a4Ze, Ref m_a4Ze ref_a4Zf a_a4Zg) =>
+     a_a4Zg -> m_a4Ze (Access c_a4Zh (ref_a4Zf a_a4Zg))
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,1*U(1*U(1*U(1*C1(U),A),A,A,A,A),A,A,A,A)><L,1*U(1*U,A,A)>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [30 30] 160 60}]
+create =
+  \ (@ (m_a59S :: * -> *))
+    (@ (ref_a59T :: * -> *))
+    (@ a_a59U)
+    (@ c_a59V)
+    ($dMonad_a5af :: Monad m_a59S)
+    ($dRef_a5ag :: Ref m_a59S ref_a59T a_a59U) ->
+    let {
+      f_a2LC [Dmd=<L,C(U)>]
+        :: m_a59S (ref_a59T a_a59U)
+           -> m_a59S (Access c_a59V (ref_a59T a_a59U))
+      [LclId, Str=DmdType]
+      f_a2LC =
+        fmap
+          @ m_a59S
+          (GHC.Base.$p1Applicative
+             @ m_a59S (GHC.Base.$p1Monad @ m_a59S $dMonad_a5af))
+          @ (ref_a59T a_a59U)
+          @ (Access c_a59V (ref_a59T a_a59U))
+          (Access.Access @ c_a59V @ (ref_a59T a_a59U)) } in
+    let {
+      g_a2LD [Dmd=<L,C(U)>] :: a_a59U -> m_a59S (ref_a59T a_a59U)
+      [LclId, Str=DmdType]
+      g_a2LD = newRef @ m_a59S @ ref_a59T @ a_a59U $dRef_a5ag } in
+    \ (x_a2LE :: a_a59U) -> f_a2LC (g_a2LD x_a2LE)
+
+-- RHS size: {terms: 14, types: 30, coercions: 0}
+set
+  :: forall (m_a4Zb :: * -> *) (ref_a4Zc :: * -> *) a_a4Zd.
+     (Monad m_a4Zb, Ref m_a4Zb ref_a4Zc a_a4Zd) =>
+     Access ReadWrite (ref_a4Zc a_a4Zd) -> a_a4Zd -> m_a4Zb ()
+[GblId,
+ Arity=4,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><S(LLC(C(S))),1*U(A,A,1*C1(C1(U)))><S,1*U(U)><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=4,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ (m_a59p :: * -> *))
+                 (@ (ref_a59q :: * -> *))
+                 (@ a_a59r)
+                 _ [Occ=Dead]
+                 ($dRef_a5a8 [Occ=Once] :: Ref m_a59p ref_a59q a_a59r)
+                 (ds_X5cl [Occ=Once!] :: Access ReadWrite (ref_a59q a_a59r))
+                 (x_X500 [Occ=Once] :: a_a59r) ->
+                 case ds_X5cl of _ [Occ=Dead] { Access r_a4Zi [Occ=Once] ->
+                 writeRef @ m_a59p @ ref_a59q @ a_a59r $dRef_a5a8 r_a4Zi x_X500
+                 }}]
+set =
+  \ (@ (m_a59p :: * -> *))
+    (@ (ref_a59q :: * -> *))
+    (@ a_a59r)
+    _ [Occ=Dead]
+    ($dRef_a5a8 :: Ref m_a59p ref_a59q a_a59r)
+    (ds_X5cl :: Access ReadWrite (ref_a59q a_a59r))
+    (x_X500 :: a_a59r) ->
+    case ds_X5cl of _ [Occ=Dead] { Access r_a4Zi ->
+    writeRef @ m_a59p @ ref_a59q @ a_a59r $dRef_a5a8 r_a4Zi x_X500
+    }
+
+-- RHS size: {terms: 13, types: 31, coercions: 0}
+get
+  :: forall (m_a4Z7 :: * -> *) (ref_a4Z8 :: * -> *) a_a4Z9 c_a4Za.
+     (Monad m_a4Z7, Ref m_a4Z7 ref_a4Z8 a_a4Z9) =>
+     Access c_a4Za (ref_a4Z8 a_a4Z9) -> m_a4Z7 a_a4Z9
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><S(LC(S)L),1*U(A,1*C1(U),A)><S,1*U(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ (m_a58W :: * -> *))
+                 (@ (ref_a58X :: * -> *))
+                 (@ a_a58Y)
+                 (@ c_a58Z)
+                 _ [Occ=Dead]
+                 ($dRef_a5a0 [Occ=Once] :: Ref m_a58W ref_a58X a_a58Y)
+                 (ds_d5bz [Occ=Once!] :: Access c_a58Z (ref_a58X a_a58Y)) ->
+                 case ds_d5bz of _ [Occ=Dead] { Access x_a4Zk [Occ=Once] ->
+                 readRef @ m_a58W @ ref_a58X @ a_a58Y $dRef_a5a0 x_a4Zk
+                 }}]
+get =
+  \ (@ (m_a58W :: * -> *))
+    (@ (ref_a58X :: * -> *))
+    (@ a_a58Y)
+    (@ c_a58Z)
+    _ [Occ=Dead]
+    ($dRef_a5a0 :: Ref m_a58W ref_a58X a_a58Y)
+    (ds_d5bz :: Access c_a58Z (ref_a58X a_a58Y)) ->
+    case ds_d5bz of _ [Occ=Dead] { Access x_a4Zk ->
+    readRef @ m_a58W @ ref_a58X @ a_a58Y $dRef_a5a0 x_a4Zk
+    }
+
+-- RHS size: {terms: 9, types: 21, coercions: 0}
+readonly
+  :: forall c_a4Z4 (ref_a4Z5 :: * -> *) a_a4Z6.
+     Access c_a4Z4 (ref_a4Z5 a_a4Z6)
+     -> Access ReadOnly (ref_a4Z5 a_a4Z6)
+[GblId,
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S,1*U(U)>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ c_a588)
+                 (@ (ref_a589 :: * -> *))
+                 (@ a_a58a)
+                 (ds_d5bv [Occ=Once!] :: Access c_a588 (ref_a589 a_a58a)) ->
+                 case ds_d5bv of _ [Occ=Dead] { Access x_a4Zl [Occ=Once] ->
+                 Access.Access @ ReadOnly @ (ref_a589 a_a58a) x_a4Zl
+                 }}]
+readonly =
+  \ (@ c_a588)
+    (@ (ref_a589 :: * -> *))
+    (@ a_a58a)
+    (ds_d5bv :: Access c_a588 (ref_a589 a_a58a)) ->
+    case ds_d5bv of _ [Occ=Dead] { Access x_a4Zl ->
+    Access.Access @ ReadOnly @ (ref_a589 a_a58a) x_a4Zl
+    }
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Access.$trModule2 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 110 20}]
+Access.$trModule2 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS
+    "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Access.$trModule1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+Access.$trModule1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "Access"#
+
+-- RHS size: {terms: 3, types: 0, coercions: 0}
+Access.$trModule :: ghc-prim-0.5.0.0:GHC.Types.Module
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Access.$trModule =
+  ghc-prim-0.5.0.0:GHC.Types.Module
+    Access.$trModule2 Access.$trModule1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Access.$tcReadOnly1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+Access.$tcReadOnly1 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS "ReadOnly"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Access.$tcReadOnly :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Access.$tcReadOnly =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    6755556454546499504##
+    9373744256900159064##
+    Access.$trModule
+    Access.$tcReadOnly1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Access.$tcReadWrite1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 50 20}]
+Access.$tcReadWrite1 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS "ReadWrite"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Access.$tcReadWrite :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Access.$tcReadWrite =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    5268465773407052370##
+    14186744058022330939##
+    Access.$trModule
+    Access.$tcReadWrite1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Access.$tc'Access1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+Access.$tc'Access1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Access"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Access.$tc'Access :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Access.$tc'Access =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    12833264606476629126##
+    14682671520121090593##
+    Access.$trModule
+    Access.$tc'Access1
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Access.$tcAccess :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Access.$tcAccess =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    6623415144939366923##
+    3177012256071526067##
+    Access.$trModule
+    Access.$trModule1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Access.$tc'C:Ref1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+Access.$tc'C:Ref1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "'C:Ref"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Access.$tc'C:Ref :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Access.$tc'C:Ref =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    8275658194617530882##
+    870866445739272838##
+    Access.$trModule
+    Access.$tc'C:Ref1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Access.$tcRef1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 30 20}]
+Access.$tcRef1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "Ref"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Access.$tcRef :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Access.$tcRef =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    18120520849726223250##
+    8642127444752125127##
+    Access.$trModule
+    Access.$tcRef1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl_r5gK :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl_r5gK = ghc-prim-0.5.0.0:GHC.Types.I# 44#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl1_r5gL :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl1_r5gL = ghc-prim-0.5.0.0:GHC.Types.I# 5#
+
+-- RHS size: {terms: 15, types: 26, coercions: 0}
+Access.test1
+  :: ghc-prim-0.5.0.0:GHC.Prim.State#
+       ghc-prim-0.5.0.0:GHC.Prim.RealWorld
+     -> (# ghc-prim-0.5.0.0:GHC.Prim.State#
+             ghc-prim-0.5.0.0:GHC.Prim.RealWorld,
+           () #)
+[GblId,
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (s_a5eN [Occ=Once, OS=OneShot]
+                    :: ghc-prim-0.5.0.0:GHC.Prim.State#
+                         ghc-prim-0.5.0.0:GHC.Prim.RealWorld) ->
+                 case ghc-prim-0.5.0.0:GHC.Prim.newMutVar#
+                        @ Int
+                        @ ghc-prim-0.5.0.0:GHC.Prim.RealWorld
+                        (ghc-prim-0.5.0.0:GHC.Types.I# 5#)
+                        s_a5eN
+                 of _ [Occ=Dead]
+                 { (# ipv_a5dt [Occ=Once], ipv1_a5du [Occ=Once] #) ->
+                 case ghc-prim-0.5.0.0:GHC.Prim.writeMutVar#
+                        @ ghc-prim-0.5.0.0:GHC.Prim.RealWorld
+                        @ Int
+                        ipv1_a5du
+                        (ghc-prim-0.5.0.0:GHC.Types.I# 44#)
+                        ipv_a5dt
+                 of s2#_a5dS [OS=OneShot] { __DEFAULT ->
+                 (# s2#_a5dS, ghc-prim-0.5.0.0:GHC.Tuple.() #)
+                 }
+                 }}]
+Access.test1 =
+  \ (s_a5eN [OS=OneShot]
+       :: ghc-prim-0.5.0.0:GHC.Prim.State#
+            ghc-prim-0.5.0.0:GHC.Prim.RealWorld) ->
+    case ghc-prim-0.5.0.0:GHC.Prim.newMutVar#
+           @ Int @ ghc-prim-0.5.0.0:GHC.Prim.RealWorld lvl1_r5gL s_a5eN
+    of _ [Occ=Dead] { (# ipv_a5dt, ipv1_a5du #) ->
+    case ghc-prim-0.5.0.0:GHC.Prim.writeMutVar#
+           @ ghc-prim-0.5.0.0:GHC.Prim.RealWorld
+           @ Int
+           ipv1_a5du
+           lvl_r5gK
+           ipv_a5dt
+    of s2#_a5dS [OS=OneShot] { __DEFAULT ->
+    (# s2#_a5dS, ghc-prim-0.5.0.0:GHC.Tuple.() #)
+    }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 3}
+test :: IO ()
+[GblId,
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= Access.test1
+               `cast` (Sym (ghc-prim-0.5.0.0:GHC.Types.N:IO[0] <()>_R)
+                       :: ((ghc-prim-0.5.0.0:GHC.Prim.State#
+                              ghc-prim-0.5.0.0:GHC.Prim.RealWorld
+                            -> (# ghc-prim-0.5.0.0:GHC.Prim.State#
+                                    ghc-prim-0.5.0.0:GHC.Prim.RealWorld,
+                                  () #)) :: *)
+                          ~R#
+                          (IO () :: *))}]
+test =
+  Access.test1
+  `cast` (Sym (ghc-prim-0.5.0.0:GHC.Types.N:IO[0] <()>_R)
+          :: ((ghc-prim-0.5.0.0:GHC.Prim.State#
+                 ghc-prim-0.5.0.0:GHC.Prim.RealWorld
+               -> (# ghc-prim-0.5.0.0:GHC.Prim.State#
+                       ghc-prim-0.5.0.0:GHC.Prim.RealWorld,
+                     () #)) :: *)
+             ~R#
+             (IO () :: *))
+
+

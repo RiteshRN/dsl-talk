@@ -1,0 +1,119 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-12 04:25:26.07594 UTC
+
+interface main@main:Main 8002
+  interface hash: ae0b6b87c9c62e5584b226e671d54e8d
+  ABI hash: ee252b20ac2b89b2f2f649b5cfa5e615
+  export-list hash: 1f46fcf6a4940866e92541f955481c70
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7b0c91349c94c4644e3dedad6ba4aff6
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      dsl-0.1.0.0@dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
+import  -/  dsl-0.1.0.0@dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h:Graph 2b6008e8dd59404a9a5114e87ae469dc
+import  -/  dsl-0.1.0.0@dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h:GraphOp ae0bcb309008b65a87d6b87a7f4cba2d
+import  -/  dsl-0.1.0.0@dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h:RGraphOp 398d80bb602b9f03bf623699d4be5b17
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+807d1f1ed578b6013287af5f3e36d63d
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+fdef0a004a9496eb7432a2c383626093
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.True
+                   eta) -}
+e7929aa466d66ba27e699e68e5e0abfc
+  main2 :: GHC.Base.String
+  {- Unfolding: (Main.main3 (GHC.Types.[] @ GHC.Types.Char)) -}
+6c429a8db3c18b047c596dcb76dcaf7e
+  main3 :: GHC.Show.ShowS
+  {- Unfolding: (GraphOp.$fShowOutput_$s$cshowsPrec
+                   @ GHC.Types.Int
+                   Main.main4
+                   0#
+                   GHC.Show.$fShowInt) -}
+240b448623ab6db88dbd26759f545a82
+  main4 :: GraphOp.Output GHC.Types.Int
+  {- Unfolding: (GraphOp.$wrun
+                   @ GHC.Types.Int
+                   @ ()
+                   GHC.Classes.$fOrdInt
+                   Main.main7
+                   Main.main5) -}
+a8d8d1a3df4ac4e8d99f35055fe898b9
+  main5 :: Graph.Graph GHC.Types.Int
+  {- Unfolding: (case Graph.$winitGraph
+                        Main.main6 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Graph.Graph @ GHC.Types.Int ww1 ww2 ww3 }) -}
+aac20547b8ee66c11f4aa9237d622de4
+  main6 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 10000#) -}
+a6fb064453d315b1ed0ca8dbdbb51b14
+  main7 :: GraphOp.GraphOp GHC.Types.Int ()
+  {- Unfolding: (RGraphOp.rdfs1
+                   @ GHC.Types.Int
+                   Main.main8
+                   @ ()
+                   (GraphOp.Return @ GHC.Types.Int @ ())) -}
+f0a498477f514b35fd2231779b894484
+  main8 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1#) -}
+ea1b8f84f673118dba3d6c5edc9c1b42
+  main9 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

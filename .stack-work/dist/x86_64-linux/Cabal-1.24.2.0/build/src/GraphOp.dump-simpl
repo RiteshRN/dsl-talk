@@ -1,0 +1,1276 @@
+
+==================== Tidy Core ====================
+2017-10-12 03:23:46.462925 UTC
+
+Result size of Tidy Core = {terms: 694, types: 872, coercions: 4}
+
+Rec {
+-- RHS size: {terms: 6, types: 10, coercions: 0}
+GraphOp.$fFunctorGraphOp_$s$w$cfmap [Occ=LoopBreaker]
+  :: forall b_s5kl a_s5kk a1_s5kj. a_s5kk -> GraphOp a1_s5kj b_s5kl
+[GblId, Arity=1, Caf=NoCafRefs, Str=DmdType <L,U>]
+GraphOp.$fFunctorGraphOp_$s$w$cfmap =
+  \ (@ b_s5kl) (@ a_s5kk) (@ a1_s5kj) (sc_s5mz :: a_s5kk) ->
+    GraphOp.$fFunctorGraphOp_$s$w$cfmap
+      @ b_s5kl @ a_s5kk @ a1_s5kj sc_s5mz
+end Rec }
+
+Rec {
+-- RHS size: {terms: 26, types: 49, coercions: 0}
+GraphOp.$w$cfmap [InlPrag=[0], Occ=LoopBreaker]
+  :: forall a_s5kj a1_s5kk b_s5kl.
+     GraphOp a_s5kj a1_s5kk -> GraphOp a_s5kj b_s5kl
+[GblId, Arity=1, Caf=NoCafRefs, Str=DmdType <S,1*U>]
+GraphOp.$w$cfmap =
+  \ (@ a_s5kj)
+    (@ a1_s5kk)
+    (@ b_s5kl)
+    (w_s5kn :: GraphOp a_s5kj a1_s5kk) ->
+    case w_s5kn of _ [Occ=Dead] {
+      Get x_a4La g_a4Lb ->
+        GraphOp.Get
+          @ a_s5kj
+          @ b_s5kl
+          x_a4La
+          (\ (n_a4Lc :: Maybe (Colored a_s5kj)) ->
+             GraphOp.$w$cfmap @ a_s5kj @ a1_s5kk @ b_s5kl (g_a4Lb n_a4Lc));
+      Visit x_a4Le op_a4Lf ->
+        GraphOp.Visit
+          @ a_s5kj
+          @ b_s5kl
+          x_a4Le
+          (GraphOp.$w$cfmap @ a_s5kj @ a1_s5kk @ b_s5kl op_a4Lf);
+      Yield x_a4Lh op_a4Li ->
+        GraphOp.Yield
+          @ a_s5kj
+          @ b_s5kl
+          x_a4Lh
+          (GraphOp.$w$cfmap @ a_s5kj @ a1_s5kk @ b_s5kl op_a4Li);
+      Return op_a4Lk ->
+        GraphOp.$fFunctorGraphOp_$s$w$cfmap
+          @ b_s5kl @ a1_s5kk @ a_s5kj op_a4Lk
+    }
+end Rec }
+
+-- RHS size: {terms: 7, types: 14, coercions: 0}
+GraphOp.$fFunctorGraphOp_$cfmap [InlPrag=INLINE[0]]
+  :: forall a_a5dj a1_a5dn b_a5do.
+     (a1_a5dn -> b_a5do)
+     -> GraphOp a_a5dj a1_a5dn -> GraphOp a_a5dj b_a5do
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><S,1*U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=True)
+         Tmpl= \ (@ a_s5kj)
+                 (@ a1_s5kk)
+                 (@ b_s5kl)
+                 _ [Occ=Dead]
+                 (w1_s5kn [Occ=Once] :: GraphOp a_s5kj a1_s5kk) ->
+                 GraphOp.$w$cfmap @ a_s5kj @ a1_s5kk @ b_s5kl w1_s5kn}]
+GraphOp.$fFunctorGraphOp_$cfmap =
+  \ (@ a_s5kj)
+    (@ a1_s5kk)
+    (@ b_s5kl)
+    _ [Occ=Dead]
+    (w1_s5kn :: GraphOp a_s5kj a1_s5kk) ->
+    GraphOp.$w$cfmap @ a_s5kj @ a1_s5kk @ b_s5kl w1_s5kn
+
+-- RHS size: {terms: 7, types: 13, coercions: 0}
+GraphOp.$fFunctorGraphOp_$c<$
+  :: forall a_a5dj a1_a5dY b_a5dZ.
+     a1_a5dY -> GraphOp a_a5dj b_a5dZ -> GraphOp a_a5dj a1_a5dY
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,A><S,1*U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a5dj)
+                 (@ a1_a5e0)
+                 (@ b_a5e1)
+                 (eta_a5fD [Occ=OnceL] :: a1_a5e0)
+                 (eta1_B1 [Occ=Once] :: GraphOp a_a5dj b_a5e1) ->
+                 GraphOp.$fFunctorGraphOp_$cfmap
+                   @ a_a5dj @ b_a5e1 @ a1_a5e0 (\ _ [Occ=Dead] -> eta_a5fD) eta1_B1}]
+GraphOp.$fFunctorGraphOp_$c<$ =
+  \ (@ a_a5dj)
+    (@ a1_a5e0)
+    (@ b_a5e1)
+    _ [Occ=Dead]
+    (eta1_B1 :: GraphOp a_a5dj b_a5e1) ->
+    GraphOp.$w$cfmap @ a_a5dj @ b_a5e1 @ a1_a5e0 eta1_B1
+
+-- RHS size: {terms: 4, types: 6, coercions: 0}
+GraphOp.$fFunctorGraphOp [InlPrag=[ALWAYS] CONLIKE]
+  :: forall a_a4NH. Functor (GraphOp a_a4NH)
+[GblId[DFunId],
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=DFun: \ (@ a_a5dj[ssk]) ->
+       GHC.Base.C:Functor TYPE: GraphOp a_a5dj[ssk]
+                          GraphOp.$fFunctorGraphOp_$cfmap @ a_a5dj[ssk]
+                          GraphOp.$fFunctorGraphOp_$c<$ @ a_a5dj[ssk]]
+GraphOp.$fFunctorGraphOp =
+  \ (@ a_a5dj) ->
+    GHC.Base.C:Functor
+      @ (GraphOp a_a5dj)
+      (GraphOp.$fFunctorGraphOp_$cfmap @ a_a5dj)
+      (GraphOp.$fFunctorGraphOp_$c<$ @ a_a5dj)
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl_r5nK :: [Char]
+[GblId, Str=DmdType]
+lvl_r5nK = ghc-prim-0.5.0.0:GHC.CString.unpackCString# "undefined"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl1_r5nL :: [Char]
+[GblId, Str=DmdType]
+lvl1_r5nL =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString#
+    "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl2_r5nM :: [Char]
+[GblId, Str=DmdType]
+lvl2_r5nM = ghc-prim-0.5.0.0:GHC.CString.unpackCString# "GraphOp"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl3_r5nN :: [Char]
+[GblId, Str=DmdType]
+lvl3_r5nN =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "src/GraphOp.hs"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl4_r5nO :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl4_r5nO = ghc-prim-0.5.0.0:GHC.Types.I# 18#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$fShowOutput7 :: Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+GraphOp.$fShowOutput7 = ghc-prim-0.5.0.0:GHC.Types.I# 11#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl5_r5nP :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl5_r5nP = ghc-prim-0.5.0.0:GHC.Types.I# 20#
+
+-- RHS size: {terms: 8, types: 0, coercions: 0}
+lvl6_r5nQ :: GHC.Stack.Types.SrcLoc
+[GblId, Str=DmdType]
+lvl6_r5nQ =
+  GHC.Stack.Types.SrcLoc
+    lvl1_r5nL
+    lvl2_r5nM
+    lvl3_r5nN
+    lvl4_r5nO
+    GraphOp.$fShowOutput7
+    lvl4_r5nO
+    lvl5_r5nP
+
+-- RHS size: {terms: 4, types: 0, coercions: 0}
+lvl7_r5nR :: GHC.Stack.Types.CallStack
+[GblId, Str=DmdType]
+lvl7_r5nR =
+  GHC.Stack.Types.PushCallStack
+    lvl_r5nK lvl6_r5nQ GHC.Stack.Types.EmptyCallStack
+
+-- RHS size: {terms: 4, types: 0, coercions: 0}
+lvl8_r5nS :: GHC.Stack.Types.CallStack
+[GblId, Str=DmdType]
+lvl8_r5nS =
+  GHC.Stack.Types.PushCallStack
+    GHC.Err.undefined9 GHC.Err.undefined2 lvl7_r5nR
+
+-- RHS size: {terms: 6, types: 17, coercions: 4}
+GraphOp.$fApplicativeGraphOp_$c<*>
+  :: forall a_a5c9 a1_a5cp b_a5cq.
+     GraphOp a_a5c9 (a1_a5cp -> b_a5cq)
+     -> GraphOp a_a5c9 a1_a5cp -> GraphOp a_a5c9 b_a5cq
+[GblId, Str=DmdType x]
+GraphOp.$fApplicativeGraphOp_$c<*> =
+  \ (@ a_a5c9) (@ a1_a5cr) (@ b_a5cs) ->
+    error
+      @ 'ghc-prim-0.5.0.0:GHC.Types.PtrRepLifted
+      @ (GraphOp a_a5c9 (a1_a5cr -> b_a5cs)
+         -> GraphOp a_a5c9 a1_a5cr -> GraphOp a_a5c9 b_a5cs)
+      (lvl8_r5nS
+       `cast` (Sym
+                 (ghc-prim-0.5.0.0:GHC.Classes.N:IP[0]
+                    <"callStack">_N <GHC.Stack.Types.CallStack>_N)
+               :: (GHC.Stack.Types.CallStack :: *)
+                  ~R#
+                  ((?callStack::GHC.Stack.Types.CallStack) :: Constraint)))
+      GHC.Err.undefined1
+
+-- RHS size: {terms: 7, types: 28, coercions: 0}
+GraphOp.$fApplicativeGraphOp_$c*>
+  :: forall a_a5c9 a1_a5cO b_a5cP.
+     GraphOp a_a5c9 a1_a5cO
+     -> GraphOp a_a5c9 b_a5cP -> GraphOp a_a5c9 b_a5cP
+[GblId,
+ Arity=2,
+ Str=DmdType <B,A><B,A>x,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a5c9)
+                 (@ a1_a5cQ)
+                 (@ b_a5cR)
+                 _ [Occ=Dead]
+                 _ [Occ=Dead] ->
+                 case GraphOp.$fApplicativeGraphOp_$c<*> of _ [Occ=Dead] { }}]
+GraphOp.$fApplicativeGraphOp_$c*> =
+  \ (@ a_a5c9) (@ a1_a5cQ) (@ b_a5cR) _ [Occ=Dead] _ [Occ=Dead] ->
+    case GraphOp.$fApplicativeGraphOp_$c<*> of wild_00 { }
+
+-- RHS size: {terms: 7, types: 28, coercions: 0}
+GraphOp.$fApplicativeGraphOp_$c<*
+  :: forall a_a5c9 a1_a5d6 b_a5d7.
+     GraphOp a_a5c9 a1_a5d6
+     -> GraphOp a_a5c9 b_a5d7 -> GraphOp a_a5c9 a1_a5d6
+[GblId,
+ Arity=2,
+ Str=DmdType <B,A><B,A>x,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a5c9)
+                 (@ a1_a5d8)
+                 (@ b_a5d9)
+                 _ [Occ=Dead]
+                 _ [Occ=Dead] ->
+                 case GraphOp.$fApplicativeGraphOp_$c<*> of _ [Occ=Dead] { }}]
+GraphOp.$fApplicativeGraphOp_$c<* =
+  \ (@ a_a5c9) (@ a1_a5d8) (@ b_a5d9) _ [Occ=Dead] _ [Occ=Dead] ->
+    case GraphOp.$fApplicativeGraphOp_$c<*> of wild_00 { }
+
+-- RHS size: {terms: 7, types: 9, coercions: 0}
+GraphOp.$fApplicativeGraphOp [InlPrag=[ALWAYS] CONLIKE]
+  :: forall a_a4Nz. Applicative (GraphOp a_a4Nz)
+[GblId[DFunId],
+ Str=DmdType m,
+ Unf=DFun: \ (@ a_a5c9[ssk]) ->
+       GHC.Base.C:Applicative TYPE: GraphOp a_a5c9[ssk]
+                              GraphOp.$fFunctorGraphOp @ a_a5c9[ssk]
+                              GraphOp.Return @ a_a5c9[ssk]
+                              GraphOp.$fApplicativeGraphOp_$c<*> @ a_a5c9[ssk]
+                              GraphOp.$fApplicativeGraphOp_$c*> @ a_a5c9[ssk]
+                              GraphOp.$fApplicativeGraphOp_$c<* @ a_a5c9[ssk]]
+GraphOp.$fApplicativeGraphOp =
+  \ (@ a_a5c9) ->
+    GHC.Base.C:Applicative
+      @ (GraphOp a_a5c9)
+      (GraphOp.$fFunctorGraphOp @ a_a5c9)
+      (GraphOp.Return @ a_a5c9)
+      (GraphOp.$fApplicativeGraphOp_$c<*> @ a_a5c9)
+      (GraphOp.$fApplicativeGraphOp_$c*> @ a_a5c9)
+      (GraphOp.$fApplicativeGraphOp_$c<* @ a_a5c9)
+
+Rec {
+-- RHS size: {terms: 30, types: 50, coercions: 0}
+GraphOp.$fMonadGraphOp_$c>>= [Occ=LoopBreaker]
+  :: forall a_a5b2 a1_a59N b_a59O.
+     GraphOp a_a5b2 a1_a59N
+     -> (a1_a59N -> GraphOp a_a5b2 b_a59O) -> GraphOp a_a5b2 b_a59O
+[GblId, Arity=2, Caf=NoCafRefs, Str=DmdType <S,1*U><L,C(U)>]
+GraphOp.$fMonadGraphOp_$c>>= =
+  \ (@ a_a5b2)
+    (@ a1_a5ba)
+    (@ b_a5bb)
+    (ds_d5eV :: GraphOp a_a5b2 a1_a5ba)
+    (f_a4Kt :: a1_a5ba -> GraphOp a_a5b2 b_a5bb) ->
+    case ds_d5eV of _ [Occ=Dead] {
+      Get x_a4Kr g_a4Ks ->
+        GraphOp.Get
+          @ a_a5b2
+          @ b_a5bb
+          x_a4Kr
+          (\ (n_a4Ku :: Maybe (Colored a_a5b2)) ->
+             GraphOp.$fMonadGraphOp_$c>>=
+               @ a_a5b2 @ a1_a5ba @ b_a5bb (g_a4Ks n_a4Ku) f_a4Kt);
+      Visit x_a4Kv op_a4Kw ->
+        GraphOp.Visit
+          @ a_a5b2
+          @ b_a5bb
+          x_a4Kv
+          (GraphOp.$fMonadGraphOp_$c>>=
+             @ a_a5b2 @ a1_a5ba @ b_a5bb op_a4Kw f_a4Kt);
+      Yield x_a4Ky op_a4Kz ->
+        GraphOp.Yield
+          @ a_a5b2
+          @ b_a5bb
+          x_a4Ky
+          (GraphOp.$fMonadGraphOp_$c>>=
+             @ a_a5b2 @ a1_a5ba @ b_a5bb op_a4Kz f_a4Kt);
+      Return x_a4KB -> f_a4Kt x_a4KB
+    }
+end Rec }
+
+-- RHS size: {terms: 5, types: 10, coercions: 0}
+GraphOp.$fMonadGraphOp_$cfail
+  :: forall a_a5b2 a1_a5bZ. String -> GraphOp a_a5b2 a1_a5bZ
+[GblId,
+ Arity=1,
+ Str=DmdType <B,U>x,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= \ (@ a_a5b2) (@ a1_a5c0) ->
+                 errorWithoutStackTrace
+                   @ 'ghc-prim-0.5.0.0:GHC.Types.PtrRepLifted
+                   @ (GraphOp a_a5b2 a1_a5c0)}]
+GraphOp.$fMonadGraphOp_$cfail =
+  \ (@ a_a5b2) (@ a1_a5c0) (eta_B1 :: [Char]) ->
+    errorWithoutStackTrace
+      @ 'ghc-prim-0.5.0.0:GHC.Types.PtrRepLifted
+      @ (GraphOp a_a5b2 a1_a5c0)
+      eta_B1
+
+Rec {
+-- RHS size: {terms: 10, types: 18, coercions: 0}
+GraphOp.$fMonadGraphOp_$c>> [InlPrag=INLINE (sat-args=2)]
+  :: forall a_a5b2 a1_a59y b_a59z.
+     GraphOp a_a5b2 a1_a59y
+     -> GraphOp a_a5b2 b_a59z -> GraphOp a_a5b2 b_a59z
+[GblId,
+ Arity=2,
+ Str=DmdType <L,U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=False,boring_ok=False)
+         Tmpl= \ (@ a_a5b2)
+                 (@ a1_a5bD)
+                 (@ b_a5bE)
+                 (m1_a5fu [Occ=Once] :: GraphOp a_a5b2 a1_a5bD)
+                 (k_a5fv [Occ=OnceL] :: GraphOp a_a5b2 b_a5bE) ->
+                 GraphOp.$fMonadGraphOp_$c>>=
+                   @ a_a5b2 @ a1_a5bD @ b_a5bE m1_a5fu (\ _ [Occ=Dead] -> k_a5fv)}]
+GraphOp.$fMonadGraphOp_$c>> =
+  \ (@ a_a5b2)
+    (@ a1_a59y)
+    (@ b_a59z)
+    (eta_B2 :: GraphOp a_a5b2 a1_a59y)
+    (eta1_B1 :: GraphOp a_a5b2 b_a59z) ->
+    >>=
+      @ (GraphOp a_a5b2)
+      (GraphOp.$fMonadGraphOp @ a_a5b2)
+      @ a1_a59y
+      @ b_a59z
+      eta_B2
+      (\ _ [Occ=Dead] -> eta1_B1)
+
+-- RHS size: {terms: 8, types: 14, coercions: 0}
+GraphOp.$fMonadGraphOp [InlPrag=[ALWAYS] CONLIKE, Occ=LoopBreaker!]
+  :: forall a_a4No. Monad (GraphOp a_a4No)
+[GblId[DFunId],
+ Str=DmdType m,
+ Unf=DFun: \ (@ a_a5b2[ssk]) ->
+       GHC.Base.C:Monad TYPE: GraphOp a_a5b2[ssk]
+                        GraphOp.$fApplicativeGraphOp @ a_a5b2[ssk]
+                        GraphOp.$fMonadGraphOp_$c>>= @ a_a5b2[ssk]
+                        GraphOp.$fMonadGraphOp_$c>> @ a_a5b2[ssk]
+                        GraphOp.Return @ a_a5b2[ssk]
+                        GraphOp.$fMonadGraphOp_$cfail @ a_a5b2[ssk]]
+GraphOp.$fMonadGraphOp =
+  \ (@ a_a5b2) ->
+    GHC.Base.C:Monad
+      @ (GraphOp a_a5b2)
+      (GraphOp.$fApplicativeGraphOp @ a_a5b2)
+      (GraphOp.$fMonadGraphOp_$c>>= @ a_a5b2)
+      (GraphOp.$fMonadGraphOp_$c>> @ a_a5b2)
+      (GraphOp.Return @ a_a5b2)
+      (\ (@ a1_a5c0) ->
+         errorWithoutStackTrace
+           @ 'ghc-prim-0.5.0.0:GHC.Types.PtrRepLifted
+           @ (GraphOp a_a5b2 a1_a5c0))
+end Rec }
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$fShowOutput3 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 40 0}]
+GraphOp.$fShowOutput3 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "Done"#
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+GraphOp.$fShowOutput2 :: ShowS
+[GblId,
+ Arity=1,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 20 60}]
+GraphOp.$fShowOutput2 = ++ @ Char GraphOp.$fShowOutput3
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$fShowOutput4 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 60 0}]
+GraphOp.$fShowOutput4 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "Recorded "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$fShowOutput5 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 50 0}]
+GraphOp.$fShowOutput5 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "Visited "#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$fShowOutput6 :: [Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=False, ConLike=False,
+         WorkFree=False, Expandable=False, Guidance=IF_ARGS [] 50 0}]
+GraphOp.$fShowOutput6 =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "Leaving "#
+
+Rec {
+-- RHS size: {terms: 122, types: 66, coercions: 0}
+GraphOp.$fShowOutput_$s$cshowsPrec [Occ=LoopBreaker]
+  :: forall a_a59W.
+     Output a_a59W
+     -> ghc-prim-0.5.0.0:GHC.Prim.Int# -> Show a_a59W => ShowS
+[GblId, Arity=3, Str=DmdType <S,1*U><L,U><L,U(C(C1(U)),A,A)>]
+GraphOp.$fShowOutput_$s$cshowsPrec =
+  \ (@ a_a59W)
+    (sc_s5ma :: Output a_a59W)
+    (sc1_s5m9 :: ghc-prim-0.5.0.0:GHC.Prim.Int#)
+    (sc2_s5m8 :: Show a_a59W) ->
+    case sc_s5ma of _ [Occ=Dead] {
+      Leaving b1_a4O4 b2_a4O5 ->
+        let {
+          f_X2CE [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          f_X2CE =
+            showsPrec @ a_a59W sc2_s5m8 GraphOp.$fShowOutput7 b1_a4O4 } in
+        let {
+          g_X2CJ [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          g_X2CJ =
+            GraphOp.$fShowOutput_$s$cshowsPrec
+              @ a_a59W b2_a4O5 11# sc2_s5m8 } in
+        case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+               @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# sc1_s5m9 11#)
+        of _ [Occ=Dead] {
+          False ->
+            \ (x_X2CO :: String) ->
+              ++
+                @ Char
+                GraphOp.$fShowOutput6
+                (f_X2CE
+                   (ghc-prim-0.5.0.0:GHC.Types.:
+                      @ Char GHC.Show.showSpace1 (g_X2CJ x_X2CO)));
+          True ->
+            \ (x_a2Ai :: String) ->
+              ghc-prim-0.5.0.0:GHC.Types.:
+                @ Char
+                GHC.Show.shows7
+                (++
+                   @ Char
+                   GraphOp.$fShowOutput6
+                   (f_X2CE
+                      (ghc-prim-0.5.0.0:GHC.Types.:
+                         @ Char
+                         GHC.Show.showSpace1
+                         (g_X2CJ
+                            (ghc-prim-0.5.0.0:GHC.Types.: @ Char GHC.Show.shows4 x_a2Ai)))))
+        };
+      Visited b1_a4O7 b2_a4O8 ->
+        let {
+          f_X2CE [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          f_X2CE =
+            showsPrec @ a_a59W sc2_s5m8 GraphOp.$fShowOutput7 b1_a4O7 } in
+        let {
+          g_X2CJ [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          g_X2CJ =
+            GraphOp.$fShowOutput_$s$cshowsPrec
+              @ a_a59W b2_a4O8 11# sc2_s5m8 } in
+        case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+               @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# sc1_s5m9 11#)
+        of _ [Occ=Dead] {
+          False ->
+            \ (x_X2CO :: String) ->
+              ++
+                @ Char
+                GraphOp.$fShowOutput5
+                (f_X2CE
+                   (ghc-prim-0.5.0.0:GHC.Types.:
+                      @ Char GHC.Show.showSpace1 (g_X2CJ x_X2CO)));
+          True ->
+            \ (x_a2Ai :: String) ->
+              ghc-prim-0.5.0.0:GHC.Types.:
+                @ Char
+                GHC.Show.shows7
+                (++
+                   @ Char
+                   GraphOp.$fShowOutput5
+                   (f_X2CE
+                      (ghc-prim-0.5.0.0:GHC.Types.:
+                         @ Char
+                         GHC.Show.showSpace1
+                         (g_X2CJ
+                            (ghc-prim-0.5.0.0:GHC.Types.: @ Char GHC.Show.shows4 x_a2Ai)))))
+        };
+      Recorded b1_a4Oa b2_a4Ob ->
+        let {
+          f_X2CE [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          f_X2CE =
+            showsPrec @ a_a59W sc2_s5m8 GraphOp.$fShowOutput7 b1_a4Oa } in
+        let {
+          g_X2CJ [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          g_X2CJ =
+            GraphOp.$fShowOutput_$s$cshowsPrec
+              @ a_a59W b2_a4Ob 11# sc2_s5m8 } in
+        case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+               @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# sc1_s5m9 11#)
+        of _ [Occ=Dead] {
+          False ->
+            \ (x_X2CO :: String) ->
+              ++
+                @ Char
+                GraphOp.$fShowOutput4
+                (f_X2CE
+                   (ghc-prim-0.5.0.0:GHC.Types.:
+                      @ Char GHC.Show.showSpace1 (g_X2CJ x_X2CO)));
+          True ->
+            \ (x_a2Ai :: String) ->
+              ghc-prim-0.5.0.0:GHC.Types.:
+                @ Char
+                GHC.Show.shows7
+                (++
+                   @ Char
+                   GraphOp.$fShowOutput4
+                   (f_X2CE
+                      (ghc-prim-0.5.0.0:GHC.Types.:
+                         @ Char
+                         GHC.Show.showSpace1
+                         (g_X2CJ
+                            (ghc-prim-0.5.0.0:GHC.Types.: @ Char GHC.Show.shows4 x_a2Ai)))))
+        };
+      Done -> GraphOp.$fShowOutput2
+    }
+end Rec }
+
+-- RHS size: {terms: 131, types: 72, coercions: 0}
+GraphOp.$fShowOutput_$cshowsPrec
+  :: forall a_a59W. Show a_a59W => Int -> Output a_a59W -> ShowS
+[GblId,
+ Arity=3,
+ Str=DmdType <L,U(C(C1(U)),A,A)><L,1*U(U)><S,1*U>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=IF_ARGS [90 60 714] 1036 420}]
+GraphOp.$fShowOutput_$cshowsPrec =
+  \ (@ a_a59W)
+    ($dShow_a59X :: Show a_a59W)
+    (a1_a4O3 :: Int)
+    (ds_d5eU :: Output a_a59W) ->
+    case ds_d5eU of _ [Occ=Dead] {
+      Leaving b1_a4O4 b2_a4O5 ->
+        case a1_a4O3
+        of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# x_a2Br ->
+        let {
+          f_X2CE [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          f_X2CE =
+            showsPrec @ a_a59W $dShow_a59X GraphOp.$fShowOutput7 b1_a4O4 } in
+        let {
+          g_X2CJ [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          g_X2CJ =
+            GraphOp.$fShowOutput_$s$cshowsPrec
+              @ a_a59W b2_a4O5 11# $dShow_a59X } in
+        case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+               @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# x_a2Br 11#)
+        of _ [Occ=Dead] {
+          False ->
+            \ (x1_X2CO :: String) ->
+              ++
+                @ Char
+                GraphOp.$fShowOutput6
+                (f_X2CE
+                   (ghc-prim-0.5.0.0:GHC.Types.:
+                      @ Char GHC.Show.showSpace1 (g_X2CJ x1_X2CO)));
+          True ->
+            \ (x1_a2Ai :: String) ->
+              ghc-prim-0.5.0.0:GHC.Types.:
+                @ Char
+                GHC.Show.shows7
+                (++
+                   @ Char
+                   GraphOp.$fShowOutput6
+                   (f_X2CE
+                      (ghc-prim-0.5.0.0:GHC.Types.:
+                         @ Char
+                         GHC.Show.showSpace1
+                         (g_X2CJ
+                            (ghc-prim-0.5.0.0:GHC.Types.: @ Char GHC.Show.shows4 x1_a2Ai)))))
+        }
+        };
+      Visited b1_a4O7 b2_a4O8 ->
+        case a1_a4O3
+        of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# x_a2Br ->
+        let {
+          f_X2CE [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          f_X2CE =
+            showsPrec @ a_a59W $dShow_a59X GraphOp.$fShowOutput7 b1_a4O7 } in
+        let {
+          g_X2CJ [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          g_X2CJ =
+            GraphOp.$fShowOutput_$s$cshowsPrec
+              @ a_a59W b2_a4O8 11# $dShow_a59X } in
+        case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+               @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# x_a2Br 11#)
+        of _ [Occ=Dead] {
+          False ->
+            \ (x1_X2CO :: String) ->
+              ++
+                @ Char
+                GraphOp.$fShowOutput5
+                (f_X2CE
+                   (ghc-prim-0.5.0.0:GHC.Types.:
+                      @ Char GHC.Show.showSpace1 (g_X2CJ x1_X2CO)));
+          True ->
+            \ (x1_a2Ai :: String) ->
+              ghc-prim-0.5.0.0:GHC.Types.:
+                @ Char
+                GHC.Show.shows7
+                (++
+                   @ Char
+                   GraphOp.$fShowOutput5
+                   (f_X2CE
+                      (ghc-prim-0.5.0.0:GHC.Types.:
+                         @ Char
+                         GHC.Show.showSpace1
+                         (g_X2CJ
+                            (ghc-prim-0.5.0.0:GHC.Types.: @ Char GHC.Show.shows4 x1_a2Ai)))))
+        }
+        };
+      Recorded b1_a4Oa b2_a4Ob ->
+        case a1_a4O3
+        of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.I# x_a2Br ->
+        let {
+          f_X2CE [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          f_X2CE =
+            showsPrec @ a_a59W $dShow_a59X GraphOp.$fShowOutput7 b1_a4Oa } in
+        let {
+          g_X2CJ [Dmd=<L,C(U)>] :: String -> String
+          [LclId, Str=DmdType]
+          g_X2CJ =
+            GraphOp.$fShowOutput_$s$cshowsPrec
+              @ a_a59W b2_a4Ob 11# $dShow_a59X } in
+        case ghc-prim-0.5.0.0:GHC.Prim.tagToEnum#
+               @ Bool (ghc-prim-0.5.0.0:GHC.Prim.>=# x_a2Br 11#)
+        of _ [Occ=Dead] {
+          False ->
+            \ (x1_X2CO :: String) ->
+              ++
+                @ Char
+                GraphOp.$fShowOutput4
+                (f_X2CE
+                   (ghc-prim-0.5.0.0:GHC.Types.:
+                      @ Char GHC.Show.showSpace1 (g_X2CJ x1_X2CO)));
+          True ->
+            \ (x1_a2Ai :: String) ->
+              ghc-prim-0.5.0.0:GHC.Types.:
+                @ Char
+                GHC.Show.shows7
+                (++
+                   @ Char
+                   GraphOp.$fShowOutput4
+                   (f_X2CE
+                      (ghc-prim-0.5.0.0:GHC.Types.:
+                         @ Char
+                         GHC.Show.showSpace1
+                         (g_X2CJ
+                            (ghc-prim-0.5.0.0:GHC.Types.: @ Char GHC.Show.shows4 x1_a2Ai)))))
+        }
+        };
+      Done -> GraphOp.$fShowOutput2
+    }
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$fShowOutput1 :: Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+GraphOp.$fShowOutput1 = ghc-prim-0.5.0.0:GHC.Types.I# 0#
+
+-- RHS size: {terms: 10, types: 11, coercions: 0}
+GraphOp.$fShowOutput_$cshowList
+  :: forall a_a59W. Show a_a59W => [Output a_a59W] -> ShowS
+[GblId,
+ Arity=3,
+ Str=DmdType <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a59W)
+                 ($dShow_a59X [Occ=Once] :: Show a_a59W)
+                 (eta_B2 [Occ=Once] :: [Output a_a59W])
+                 (eta1_B1 [Occ=Once] :: String) ->
+                 GHC.Show.showList__
+                   @ (Output a_a59W)
+                   (GraphOp.$fShowOutput_$cshowsPrec
+                      @ a_a59W $dShow_a59X GraphOp.$fShowOutput1)
+                   eta_B2
+                   eta1_B1}]
+GraphOp.$fShowOutput_$cshowList =
+  \ (@ a_a59W)
+    ($dShow_a59X :: Show a_a59W)
+    (eta_B2 :: [Output a_a59W])
+    (eta1_B1 :: String) ->
+    GHC.Show.showList__
+      @ (Output a_a59W)
+      (GraphOp.$fShowOutput_$cshowsPrec
+         @ a_a59W $dShow_a59X GraphOp.$fShowOutput1)
+      eta_B2
+      eta1_B1
+
+-- RHS size: {terms: 8, types: 8, coercions: 0}
+GraphOp.$fShowOutput_$cshow
+  :: forall a_a59W. Show a_a59W => Output a_a59W -> String
+[GblId,
+ Arity=2,
+ Str=DmdType <L,U(C(C1(U)),A,A)><S,1*U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a59W)
+                 ($dShow_a59X [Occ=Once] :: Show a_a59W)
+                 (x_a2AS [Occ=Once] :: Output a_a59W) ->
+                 GraphOp.$fShowOutput_$s$cshowsPrec
+                   @ a_a59W
+                   x_a2AS
+                   0#
+                   $dShow_a59X
+                   (ghc-prim-0.5.0.0:GHC.Types.[] @ Char)}]
+GraphOp.$fShowOutput_$cshow =
+  \ (@ a_a59W)
+    ($dShow_a59X :: Show a_a59W)
+    (x_a2AS :: Output a_a59W) ->
+    GraphOp.$fShowOutput_$s$cshowsPrec
+      @ a_a59W
+      x_a2AS
+      0#
+      $dShow_a59X
+      (ghc-prim-0.5.0.0:GHC.Types.[] @ Char)
+
+-- RHS size: {terms: 9, types: 9, coercions: 0}
+GraphOp.$fShowOutput [InlPrag=[ALWAYS] CONLIKE]
+  :: forall a_a4O2. Show a_a4O2 => Show (Output a_a4O2)
+[GblId[DFunId],
+ Arity=1,
+ Str=DmdType <L,U(C(C1(U)),A,A)>m,
+ Unf=DFun: \ (@ a_a59W[ssk]) ($dShow_a59X :: Show a_a59W[ssk]) ->
+       GHC.Show.C:Show TYPE: Output a_a59W[ssk]
+                       GraphOp.$fShowOutput_$cshowsPrec @ a_a59W[ssk] $dShow_a59X
+                       GraphOp.$fShowOutput_$cshow @ a_a59W[ssk] $dShow_a59X
+                       GraphOp.$fShowOutput_$cshowList @ a_a59W[ssk] $dShow_a59X]
+GraphOp.$fShowOutput =
+  \ (@ a_a59W) ($dShow_a59X :: Show a_a59W) ->
+    GHC.Show.C:Show
+      @ (Output a_a59W)
+      (GraphOp.$fShowOutput_$cshowsPrec @ a_a59W $dShow_a59X)
+      (GraphOp.$fShowOutput_$cshow @ a_a59W $dShow_a59X)
+      (GraphOp.$fShowOutput_$cshowList @ a_a59W $dShow_a59X)
+
+-- RHS size: {terms: 5, types: 11, coercions: 0}
+get
+  :: forall a_a4K8. a_a4K8 -> GraphOp a_a4K8 (Maybe (Colored a_a4K8))
+[GblId,
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U>m1,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a4VE) (x_a4K9 [Occ=Once] :: a_a4VE) ->
+                 GraphOp.Get
+                   @ a_a4VE
+                   @ (Maybe (Colored a_a4VE))
+                   x_a4K9
+                   (GraphOp.Return @ a_a4VE @ (Maybe (Colored a_a4VE)))}]
+get =
+  \ (@ a_a4VE) (x_a4K9 :: a_a4VE) ->
+    GraphOp.Get
+      @ a_a4VE
+      @ (Maybe (Colored a_a4VE))
+      x_a4K9
+      (GraphOp.Return @ a_a4VE @ (Maybe (Colored a_a4VE)))
+
+-- RHS size: {terms: 3, types: 4, coercions: 0}
+GraphOp.dfs1 :: forall a_a4Vu. GraphOp a_a4Vu ()
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m4,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+GraphOp.dfs1 =
+  \ (@ a_a4Vu) ->
+    GraphOp.Return @ a_a4Vu @ () ghc-prim-0.5.0.0:GHC.Tuple.()
+
+-- RHS size: {terms: 5, types: 6, coercions: 0}
+visit :: forall a_a4K7. a_a4K7 -> GraphOp a_a4K7 ()
+[GblId,
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U>m2,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a4Vu) (x_a4Ka [Occ=Once] :: a_a4Vu) ->
+                 GraphOp.Visit @ a_a4Vu @ () x_a4Ka (GraphOp.dfs1 @ a_a4Vu)}]
+visit =
+  \ (@ a_a4Vu) (x_a4Ka :: a_a4Vu) ->
+    GraphOp.Visit @ a_a4Vu @ () x_a4Ka (GraphOp.dfs1 @ a_a4Vu)
+
+-- RHS size: {terms: 5, types: 6, coercions: 0}
+yield :: forall a_a4K6. a_a4K6 -> GraphOp a_a4K6 ()
+[GblId,
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U>m3,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a4Vk) (x_a4Kb [Occ=Once] :: a_a4Vk) ->
+                 GraphOp.Yield @ a_a4Vk @ () x_a4Kb (GraphOp.dfs1 @ a_a4Vk)}]
+yield =
+  \ (@ a_a4Vk) (x_a4Kb :: a_a4Vk) ->
+    GraphOp.Yield @ a_a4Vk @ () x_a4Kb (GraphOp.dfs1 @ a_a4Vk)
+
+Rec {
+-- RHS size: {terms: 14, types: 27, coercions: 0}
+dfs :: forall a_a4K5. a_a4K5 -> GraphOp a_a4K5 ()
+[GblId,
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [0] 100 0}]
+dfs =
+  \ (@ a_a4Va) (x_a4Kc :: a_a4Va) ->
+    let {
+      k_a5fv :: GraphOp a_a4Va ()
+      [LclId, Str=DmdType]
+      k_a5fv =
+        GraphOp.$fMonadGraphOp_$c>>=
+          @ a_a4Va
+          @ (Maybe (Colored a_a4Va))
+          @ ()
+          (GraphOp.Get
+             @ a_a4Va
+             @ (Maybe (Colored a_a4Va))
+             x_a4Kc
+             (GraphOp.Return @ a_a4Va @ (Maybe (Colored a_a4Va))))
+          (propagate @ a_a4Va) } in
+    GraphOp.$fMonadGraphOp_$c>>=
+      @ a_a4Va
+      @ ()
+      @ ()
+      (GraphOp.Visit @ a_a4Va @ () x_a4Kc (GraphOp.dfs1 @ a_a4Va))
+      (\ _ [Occ=Dead] -> k_a5fv)
+
+-- RHS size: {terms: 24, types: 28, coercions: 0}
+propagate [Occ=LoopBreaker]
+  :: forall a_a4K4. Maybe (Colored a_a4K4) -> GraphOp a_a4K4 ()
+[GblId, Arity=1, Caf=NoCafRefs, Str=DmdType <S,1*U>]
+propagate =
+  \ (@ a_a4V0) (ds_d5eE :: Maybe (Colored a_a4V0)) ->
+    case ds_d5eE of _ [Occ=Dead] {
+      Nothing -> GraphOp.dfs1 @ a_a4V0;
+      Just ds1_d5eP ->
+        case ds1_d5eP of _ [Occ=Dead] { Colored ds2_d5eQ ds3_d5eR ->
+        case ds3_d5eR of _ [Occ=Dead] {
+          False ->
+            let {
+              k_a5fv :: GraphOp a_a4V0 ()
+              [LclId, Str=DmdType]
+              k_a5fv =
+                GraphOp.Yield @ a_a4V0 @ () ds2_d5eQ (GraphOp.dfs1 @ a_a4V0) } in
+            GraphOp.$fMonadGraphOp_$c>>=
+              @ a_a4V0
+              @ ()
+              @ ()
+              (dfs @ a_a4V0 ds2_d5eQ)
+              (\ _ [Occ=Dead] -> k_a5fv);
+          True -> GraphOp.dfs1 @ a_a4V0
+        }
+        }
+    }
+end Rec }
+
+Rec {
+-- RHS size: {terms: 37, types: 42, coercions: 0}
+GraphOp.$wrun [InlPrag=[0], Occ=LoopBreaker]
+  :: forall a_s5kC next_s5kD.
+     Ord a_s5kC =>
+     GraphOp a_s5kC next_s5kD -> Graph a_s5kC -> Output a_s5kC
+[GblId,
+ Arity=3,
+ Str=DmdType <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U><L,U(U,U,U)>]
+GraphOp.$wrun =
+  \ (@ a_s5kC)
+    (@ next_s5kD)
+    (w_s5kE :: Ord a_s5kC)
+    (w1_s5kG :: GraphOp a_s5kC next_s5kD)
+    (w2_s5kH :: Graph a_s5kC) ->
+    case w1_s5kG of _ [Occ=Dead] {
+      Get loc_a4Kf f_a4Kg ->
+        GraphOp.Leaving
+          @ a_s5kC
+          loc_a4Kf
+          (GraphOp.$wrun
+             @ a_s5kC
+             @ next_s5kD
+             w_s5kE
+             (f_a4Kg (descendent @ a_s5kC w_s5kE loc_a4Kf w2_s5kH))
+             w2_s5kH);
+      Visit loc_a4Kj op_a4Kk ->
+        GraphOp.Visited
+          @ a_s5kC
+          loc_a4Kj
+          (GraphOp.$wrun
+             @ a_s5kC
+             @ next_s5kD
+             w_s5kE
+             op_a4Kk
+             (mark @ a_s5kC w_s5kE loc_a4Kj w2_s5kH));
+      Yield loc_a4Kn op_a4Ko ->
+        GraphOp.Recorded
+          @ a_s5kC
+          loc_a4Kn
+          (GraphOp.$wrun @ a_s5kC @ next_s5kD w_s5kE op_a4Ko w2_s5kH);
+      Return ds_d5ew -> GraphOp.Done @ a_s5kC
+    }
+end Rec }
+
+-- RHS size: {terms: 10, types: 15, coercions: 0}
+run [InlPrag=INLINE[0]]
+  :: forall a_a4K2 next_a4K3.
+     (Ord a_a4K2, Show a_a4K2) =>
+     GraphOp a_a4K2 next_a4K3 -> Graph a_a4K2 -> Output a_a4K2
+[GblId,
+ Arity=4,
+ Str=DmdType <L,U(A,C(C1(U)),A,A,A,A,A,A)><L,A><S,1*U><L,U(U,U,U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=4,unsat_ok=True,boring_ok=True)
+         Tmpl= \ (@ a_s5kC)
+                 (@ next_s5kD)
+                 (w_s5kE [Occ=Once] :: Ord a_s5kC)
+                 _ [Occ=Dead]
+                 (w2_s5kG [Occ=Once] :: GraphOp a_s5kC next_s5kD)
+                 (w3_s5kH [Occ=Once] :: Graph a_s5kC) ->
+                 GraphOp.$wrun @ a_s5kC @ next_s5kD w_s5kE w2_s5kG w3_s5kH}]
+run =
+  \ (@ a_s5kC)
+    (@ next_s5kD)
+    (w_s5kE :: Ord a_s5kC)
+    _ [Occ=Dead]
+    (w2_s5kG :: GraphOp a_s5kC next_s5kD)
+    (w3_s5kH :: Graph a_s5kC) ->
+    GraphOp.$wrun @ a_s5kC @ next_s5kD w_s5kE w2_s5kG w3_s5kH
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$trModule2 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 110 20}]
+GraphOp.$trModule2 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS
+    "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$trModule1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+GraphOp.$trModule1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "GraphOp"#
+
+-- RHS size: {terms: 3, types: 0, coercions: 0}
+GraphOp.$trModule :: ghc-prim-0.5.0.0:GHC.Types.Module
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+GraphOp.$trModule =
+  ghc-prim-0.5.0.0:GHC.Types.Module
+    GraphOp.$trModule2 GraphOp.$trModule1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$tc'Return1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+GraphOp.$tc'Return1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Return"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+GraphOp.$tc'Return :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+GraphOp.$tc'Return =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    5371935178201229610##
+    17245810057011215089##
+    GraphOp.$trModule
+    GraphOp.$tc'Return1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$tc'Yield1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+GraphOp.$tc'Yield1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Yield"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+GraphOp.$tc'Yield :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+GraphOp.$tc'Yield =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    15044715871841172501##
+    5818887379031836618##
+    GraphOp.$trModule
+    GraphOp.$tc'Yield1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$tc'Visit1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+GraphOp.$tc'Visit1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Visit"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+GraphOp.$tc'Visit :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+GraphOp.$tc'Visit =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    11571336403036977953##
+    4594902503516990752##
+    GraphOp.$trModule
+    GraphOp.$tc'Visit1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$tc'Get1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 30 20}]
+GraphOp.$tc'Get1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Get"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+GraphOp.$tc'Get :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+GraphOp.$tc'Get =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    5920925268022256900##
+    5893956913337420074##
+    GraphOp.$trModule
+    GraphOp.$tc'Get1
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+GraphOp.$tcGraphOp :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+GraphOp.$tcGraphOp =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    3584760602659823076##
+    9470790652597122505##
+    GraphOp.$trModule
+    GraphOp.$trModule1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$tc'Done1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+GraphOp.$tc'Done1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Done"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+GraphOp.$tc'Done :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+GraphOp.$tc'Done =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    6017264651860215412##
+    11842514142656893676##
+    GraphOp.$trModule
+    GraphOp.$tc'Done1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$tc'Recorded1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 50 20}]
+GraphOp.$tc'Recorded1 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Recorded"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+GraphOp.$tc'Recorded :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+GraphOp.$tc'Recorded =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    18057589618347605487##
+    4069690813978698568##
+    GraphOp.$trModule
+    GraphOp.$tc'Recorded1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$tc'Visited1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+GraphOp.$tc'Visited1 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Visited"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+GraphOp.$tc'Visited :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+GraphOp.$tc'Visited =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    6603063690373836761##
+    6276280469472660508##
+    GraphOp.$trModule
+    GraphOp.$tc'Visited1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$tc'Leaving1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+GraphOp.$tc'Leaving1 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Leaving"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+GraphOp.$tc'Leaving :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+GraphOp.$tc'Leaving =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    11761851026613286580##
+    10032285010501283287##
+    GraphOp.$trModule
+    GraphOp.$tc'Leaving1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+GraphOp.$tcOutput1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+GraphOp.$tcOutput1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "Output"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+GraphOp.$tcOutput :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+GraphOp.$tcOutput =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    3126149137727705143##
+    5362350441384602674##
+    GraphOp.$trModule
+    GraphOp.$tcOutput1
+
+
+------ Local rules for imported ids --------
+"SC:$w$cfmap0" [0]
+    forall (@ b_s5kl) (@ a_s5kk) (@ a1_s5kj) (sc_s5mz :: a_s5kk).
+      GraphOp.$w$cfmap @ a1_s5kj
+                       @ a_s5kk
+                       @ b_s5kl
+                       (GraphOp.Return @ a1_s5kj @ a_s5kk sc_s5mz)
+      = GraphOp.$fFunctorGraphOp_$s$w$cfmap
+          @ b_s5kl @ a_s5kk @ a1_s5kj sc_s5mz
+"SC:$cshowsPrec0" [ALWAYS]
+    forall (@ a_a59W)
+           (sc_s5ma :: Output a_a59W)
+           (sc1_s5m9 :: ghc-prim-0.5.0.0:GHC.Prim.Int#)
+           (sc2_s5m8 :: Show a_a59W).
+      GraphOp.$fShowOutput_$cshowsPrec @ a_a59W
+                                       sc2_s5m8
+                                       (ghc-prim-0.5.0.0:GHC.Types.I# sc1_s5m9)
+                                       sc_s5ma
+      = GraphOp.$fShowOutput_$s$cshowsPrec
+          @ a_a59W sc_s5ma sc1_s5m9 sc2_s5m8
+

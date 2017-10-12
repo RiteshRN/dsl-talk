@@ -1,0 +1,471 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-12 03:23:46.688644 UTC
+
+interface dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h:RGraphOp 8002
+  interface hash: ee0ddb6158d64900876e661776305fba
+  ABI hash: 398d80bb602b9f03bf623699d4be5b17
+  export-list hash: 79b516b7ff3f3e9f99359aa2d2d5bff3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 841b2fd46da69a623354b4605b47a126
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  RGraphOp.down
+  RGraphOp.rdfs
+  RGraphOp.rget
+  RGraphOp.rpropagate
+  RGraphOp.rvisit
+  RGraphOp.ryield
+  RGraphOp.up
+  RGraphOp.RGraphOp{RGraphOp.RGraphOp rGraphOp}
+module dependencies: Graph GraphOp
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  Graph 2b6008e8dd59404a9a5114e87ae469dc
+  exports: 02231a1c976255cc26fe1442f002335f
+  Colored 212aa958da2b6e0566ef0d942c8e3414
+  Colored 06a2efd992b39bc73676c8c7cccfe9cc
+import  -/  GraphOp ae0bcb309008b65a87d6b87a7f4cba2d
+  exports: 493176dd6271ac35576da264138a9641
+  GraphOp 016cc0d92b2db15a0e7aa022c4f42aa5
+  Return 31195daa5ac34d5ab227751a7a4dc557
+  get 68249562445afd79eab2d304a5e6cdb8
+  visit 7c76eb7e4759fbed7e0ae556c67b528c
+  yield 8374db96ed4a2b1981699c33b83b1262
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fApplicativeRGraphOp :: GHC.Base.Applicative (RGraphOp.RGraphOp a)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (RGraphOp.RGraphOp a)
+                  (RGraphOp.$fFunctorRGraphOp @ a)
+                  (RGraphOp.$fApplicativeRGraphOp_$cpure @ a)
+                  (RGraphOp.$fApplicativeRGraphOp_$c<*> @ a)
+                  (RGraphOp.$fApplicativeRGraphOp_$c*> @ a)
+                  (RGraphOp.$fApplicativeRGraphOp_$c<* @ a) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fApplicativeRGraphOp_$c*> ::
+    RGraphOp.RGraphOp a a1
+    -> RGraphOp.RGraphOp a b -> RGraphOp.RGraphOp a b
+  {- Arity: 2, Strictness: <B,A><B,A>x,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ a1
+                   @ b
+                   (eta :: RGraphOp.RGraphOp a a1)
+                   (eta1 :: RGraphOp.RGraphOp a b) ->
+                 case RGraphOp.$fApplicativeRGraphOp_$c<*>
+                 ret_ty (RGraphOp.RGraphOp a b)
+                 of {}) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fApplicativeRGraphOp_$c<* ::
+    RGraphOp.RGraphOp a a1
+    -> RGraphOp.RGraphOp a b -> RGraphOp.RGraphOp a a1
+  {- Arity: 2, Strictness: <B,A><B,A>x, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   @ a1
+                   @ b
+                   (w :: RGraphOp.RGraphOp a a1)
+                   (w1 :: RGraphOp.RGraphOp a b) ->
+                 RGraphOp.$w$c<* @ a @ a1 @ b GHC.Prim.void#) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fApplicativeRGraphOp_$c<*> ::
+    RGraphOp.RGraphOp a (a1 -> b)
+    -> RGraphOp.RGraphOp a a1 -> RGraphOp.RGraphOp a b
+  {- Strictness: x -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fApplicativeRGraphOp_$cpure :: a1 -> RGraphOp.RGraphOp a a1
+  {- Strictness: x -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fFunctorRGraphOp :: GHC.Base.Functor (RGraphOp.RGraphOp a)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (RGraphOp.RGraphOp a)
+                  (RGraphOp.$fFunctorRGraphOp_$cfmap @ a)
+                  (RGraphOp.$fFunctorRGraphOp_$c<$ @ a) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fFunctorRGraphOp1 ::
+    a1
+    -> RGraphOp.RGraphOp a b
+    -> forall b1. (a1 -> GraphOp.GraphOp a b1) -> GraphOp.GraphOp a b1
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ b
+                   @ a
+                   @ a1
+                   (eta :: a1)
+                   (ds :: RGraphOp.RGraphOp a b)
+                   @ b1
+                   (b6 :: a1 -> GraphOp.GraphOp a b1) ->
+                 ds `cast` (RGraphOp.N:RGraphOp[0] <a>_R <b>_R)
+                   @ b1
+                   (\ (b3 :: b) -> b6 eta)) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fFunctorRGraphOp2 ::
+    (a1 -> b)
+    -> RGraphOp.RGraphOp a a1
+    -> forall b1. (b -> GraphOp.GraphOp a b1) -> GraphOp.GraphOp a b1
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(U)><C(S),1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ a1
+                   @ b
+                   (f :: a1 -> b)
+                   (ds :: RGraphOp.RGraphOp a a1)
+                   @ b1
+                   (b6 :: b -> GraphOp.GraphOp a b1) ->
+                 ds `cast` (RGraphOp.N:RGraphOp[0] <a>_R <a1>_R)
+                   @ b1
+                   (\ (b3 :: a1) -> b6 (f b3))) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fFunctorRGraphOp_$c<$ ::
+    a1 -> RGraphOp.RGraphOp a b -> RGraphOp.RGraphOp a a1
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ a @ a1 @ b -> RGraphOp.$fFunctorRGraphOp1 @ b @ a @ a1)
+                  `cast`
+                (forall (a :: <*>_N) (a1 :: <*>_N) (b :: <*>_N).
+                 <a1>_R
+                 ->_R <RGraphOp.RGraphOp a b>_R
+                 ->_R Sym (RGraphOp.N:RGraphOp[0] <a>_R <a1>_R)) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fFunctorRGraphOp_$cfmap ::
+    (a1 -> b) -> RGraphOp.RGraphOp a a1 -> RGraphOp.RGraphOp a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(U)><C(S),1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                RGraphOp.$fFunctorRGraphOp2
+                  `cast`
+                (forall (a :: <*>_N) (a1 :: <*>_N) (b :: <*>_N).
+                 <a1 -> b>_R
+                 ->_R <RGraphOp.RGraphOp a a1>_R
+                 ->_R Sym (RGraphOp.N:RGraphOp[0] <a>_R <b>_R)) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fMonadRGraphOp :: GHC.Base.Monad (RGraphOp.RGraphOp a)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (RGraphOp.RGraphOp a)
+                  (RGraphOp.$fApplicativeRGraphOp @ a)
+                  (RGraphOp.$fMonadRGraphOp_$c>>= @ a)
+                  (RGraphOp.$fMonadRGraphOp_$c>> @ a)
+                  (RGraphOp.$fMonadRGraphOp_$creturn @ a)
+                  (RGraphOp.$fMonadRGraphOp_$cfail @ a) -}
+4f7411a5e09ed11f8b803a3a191565d7
+  $fMonadRGraphOp1 ::
+    a1 -> forall b. (a1 -> GraphOp.GraphOp a b) -> GraphOp.GraphOp a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a @ a1 (x :: a1) @ b (k :: a1 -> GraphOp.GraphOp a b) ->
+                 k x) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fMonadRGraphOp2 ::
+    RGraphOp.RGraphOp a a1
+    -> (a1 -> RGraphOp.RGraphOp a b)
+    -> forall b1. (b -> GraphOp.GraphOp a b1) -> GraphOp.GraphOp a b1
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,C(C1(U))><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ a1
+                   @ b
+                   (ds :: RGraphOp.RGraphOp a a1)
+                   (g :: a1 -> RGraphOp.RGraphOp a b)
+                   @ b1
+                   (h :: b -> GraphOp.GraphOp a b1) ->
+                 ds `cast` (RGraphOp.N:RGraphOp[0] <a>_R <a1>_R)
+                   @ b1
+                   (\ (n :: a1) ->
+                    (g n) `cast` (RGraphOp.N:RGraphOp[0] <a>_R <b>_R) @ b1 h)) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fMonadRGraphOp_$c>> ::
+    RGraphOp.RGraphOp a a1
+    -> RGraphOp.RGraphOp a b -> RGraphOp.RGraphOp a b
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ a1
+                   @ b
+                   (m1 :: RGraphOp.RGraphOp a a1)
+                   (k :: RGraphOp.RGraphOp a b)
+                   @ b1
+                   (eta :: b -> GraphOp.GraphOp a b1) ->
+                 (RGraphOp.$fMonadRGraphOp_$c>>=
+                    @ a
+                    @ a1
+                    @ b
+                    m1
+                    (\ (ds :: a1) -> k))
+                   `cast`
+                 (RGraphOp.N:RGraphOp[0] <a>_R <b>_R)
+                   @ b1
+                   eta)
+                  `cast`
+                (forall (a :: <*>_N) (a1 :: <*>_N) (b :: <*>_N).
+                 <RGraphOp.RGraphOp a a1>_R
+                 ->_R <RGraphOp.RGraphOp a b>_R
+                 ->_R Sym (RGraphOp.N:RGraphOp[0] <a>_R <b>_R)) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fMonadRGraphOp_$c>>= ::
+    RGraphOp.RGraphOp a a1
+    -> (a1 -> RGraphOp.RGraphOp a b) -> RGraphOp.RGraphOp a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,C(C1(U))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                RGraphOp.$fMonadRGraphOp2
+                  `cast`
+                (forall (a :: <*>_N) (a1 :: <*>_N) (b :: <*>_N).
+                 <RGraphOp.RGraphOp a a1>_R
+                 ->_R <a1 -> RGraphOp.RGraphOp a b>_R
+                 ->_R Sym (RGraphOp.N:RGraphOp[0] <a>_R <b>_R)) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fMonadRGraphOp_$cfail :: GHC.Base.String -> RGraphOp.RGraphOp a a1
+  {- Arity: 1, Strictness: <B,U>x,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ a @ a1 ->
+                 GHC.Err.errorWithoutStackTrace
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (RGraphOp.RGraphOp a a1)) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $fMonadRGraphOp_$creturn :: a1 -> RGraphOp.RGraphOp a a1
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                RGraphOp.$fMonadRGraphOp1
+                  `cast`
+                (forall (a :: <*>_N) (a1 :: <*>_N).
+                 <a1>_R ->_R Sym (RGraphOp.N:RGraphOp[0] <a>_R <a1>_R)) -}
+dd251cb5766cde6d9a124cc5ab95e7ac
+  $tc'RGraphOp :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15136513499487885083##
+                   9502463376704335960##
+                   RGraphOp.$trModule
+                   RGraphOp.$tc'RGraphOp1) -}
+efbc09196ed121c5b6289991c6352aba
+  $tc'RGraphOp1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'RGraphOp"#) -}
+965ed55f6d08241c20684b7a163b128b
+  $tcRGraphOp :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12081888275176643514##
+                   1891675372639750039##
+                   RGraphOp.$trModule
+                   RGraphOp.$trModule1) -}
+976e628a45d9c5d1bf279888b53ecb56
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   RGraphOp.$trModule2
+                   RGraphOp.$trModule1) -}
+db9e4e0431eb7152b6bea1520b602836
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "RGraphOp"#) -}
+a95b27ba772f1867700c320df8017243
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#) -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  $w$c<* :: GHC.Prim.Void# -> RGraphOp.RGraphOp a a1
+  {- Arity: 1, Strictness: <L,U>x, Inline: [0] -}
+3d1ce5c1a1c37dd29d992eb5d2891d75
+  newtype RGraphOp a next
+    = RGraphOp {rGraphOp :: forall b.
+                            (next -> GraphOp.GraphOp a b) -> GraphOp.GraphOp a b}
+3776455efcfe128ecf6658f1d3b1a3b6
+  down :: RGraphOp.RGraphOp a next -> GraphOp.GraphOp a next
+  {- Arity: 1, HasNoCafRefs, Strictness: <C(S),1*C1(U)>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a @ next (ds :: RGraphOp.RGraphOp a next) ->
+                 ds `cast` (RGraphOp.N:RGraphOp[0] <a>_R <next>_R)
+                   @ next
+                   (GraphOp.Return @ a @ next)) -}
+49d7e8debf20bab2f1a7629b92c3e256
+  rGraphOp ::
+    RGraphOp.RGraphOp a next
+    -> forall b. (next -> GraphOp.GraphOp a b) -> GraphOp.GraphOp a b
+  RecSel Left RGraphOp.RGraphOp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a @ next (dk :: RGraphOp.RGraphOp a next) @ b ->
+                 dk `cast` (RGraphOp.N:RGraphOp[0] <a>_R <next>_R) @ b) -}
+defa29667658f4e75f38d06c1fa2b808
+  rdfs :: a -> RGraphOp.RGraphOp a ()
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                RGraphOp.rdfs1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <a>_R ->_R Sym (RGraphOp.N:RGraphOp[0] <a>_R <()>_R)) -}
+51ec59e6fed42becd923e6956485efd3
+  rdfs1 ::
+    a -> forall b. (() -> GraphOp.GraphOp a b) -> GraphOp.GraphOp a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,C(U)> -}
+42e820bc2fa016dd3d898073b55e6b42
+  rget :: a -> RGraphOp.RGraphOp a (GHC.Base.Maybe (Graph.Colored a))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                RGraphOp.rget1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <a>_R
+                 ->_R Sym (RGraphOp.N:RGraphOp[0]
+                               <a>_R <GHC.Base.Maybe (Graph.Colored a)>_R)) -}
+5b5de2e2faec0c9c41ce378eb828b10b
+  rget1 ::
+    a
+    -> forall b.
+       (GHC.Base.Maybe (Graph.Colored a) -> GraphOp.GraphOp a b)
+       -> GraphOp.GraphOp a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,C(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (x :: a)
+                   @ b
+                   (eta :: GHC.Base.Maybe (Graph.Colored a) -> GraphOp.GraphOp a b) ->
+                 GraphOp.$fMonadGraphOp_$c>>=
+                   @ a
+                   @ (GHC.Base.Maybe (Graph.Colored a))
+                   @ b
+                   (GraphOp.Get
+                      @ a
+                      @ (GHC.Base.Maybe (Graph.Colored a))
+                      x
+                      (GraphOp.Return @ a @ (GHC.Base.Maybe (Graph.Colored a))))
+                   eta) -}
+ccf59b45bd6141537477ed6800f26a8c
+  rpropagate ::
+    GHC.Base.Maybe (Graph.Colored a) -> RGraphOp.RGraphOp a ()
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                RGraphOp.rpropagate1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Base.Maybe (Graph.Colored a)>_R
+                 ->_R Sym (RGraphOp.N:RGraphOp[0] <a>_R <()>_R)) -}
+72191c81660740b3dd03ae1a239edff4
+  rpropagate1 ::
+    GHC.Base.Maybe (Graph.Colored a)
+    -> forall b. (() -> GraphOp.GraphOp a b) -> GraphOp.GraphOp a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,C(U)>,
+     Unfolding: (\ @ a
+                   (ds :: GHC.Base.Maybe (Graph.Colored a))
+                   @ b
+                   (eta :: () -> GraphOp.GraphOp a b) ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> eta GHC.Tuple.()
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild1 { Graph.Colored ds2 ds3 ->
+                      case ds3 of wild2 {
+                        GHC.Types.False
+                        -> let {
+                             lvl15 :: GraphOp.GraphOp a b
+                             = GraphOp.$fMonadGraphOp_$c>>=
+                                 @ a
+                                 @ ()
+                                 @ b
+                                 (GraphOp.Yield @ a @ () ds2 (GraphOp.dfs1 @ a))
+                                 eta
+                           } in
+                           RGraphOp.rdfs1 @ a ds2 @ b (\ (n :: ()) -> lvl15)
+                        GHC.Types.True -> eta GHC.Tuple.() } } }) -}
+f6e7424d443134300a597bd78158a2d3
+  rvisit :: a -> RGraphOp.RGraphOp a ()
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                RGraphOp.rvisit1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <a>_R ->_R Sym (RGraphOp.N:RGraphOp[0] <a>_R <()>_R)) -}
+e4e01173264ee16c5ac28be75ffb928d
+  rvisit1 ::
+    a -> forall b. (() -> GraphOp.GraphOp a b) -> GraphOp.GraphOp a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,C(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (x :: a) @ b (eta :: () -> GraphOp.GraphOp a b) ->
+                 GraphOp.$fMonadGraphOp_$c>>=
+                   @ a
+                   @ ()
+                   @ b
+                   (GraphOp.Visit @ a @ () x (GraphOp.dfs1 @ a))
+                   eta) -}
+1982a0bf485cef7f6a027d6befa5ae8a
+  ryield :: a -> RGraphOp.RGraphOp a ()
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                RGraphOp.ryield1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <a>_R ->_R Sym (RGraphOp.N:RGraphOp[0] <a>_R <()>_R)) -}
+7c15410268d1800ead50ab1c36448d0e
+  ryield1 ::
+    a -> forall b. (() -> GraphOp.GraphOp a b) -> GraphOp.GraphOp a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,C(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (x :: a) @ b (eta :: () -> GraphOp.GraphOp a b) ->
+                 GraphOp.$fMonadGraphOp_$c>>=
+                   @ a
+                   @ ()
+                   @ b
+                   (GraphOp.Yield @ a @ () x (GraphOp.dfs1 @ a))
+                   eta) -}
+875961f7f0c6896aac0e4e14fc46351c
+  up :: GraphOp.GraphOp a next -> RGraphOp.RGraphOp a next
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                RGraphOp.up1
+                  `cast`
+                (forall (a :: <*>_N) (next :: <*>_N).
+                 <GraphOp.GraphOp a next>_R
+                 ->_R Sym (RGraphOp.N:RGraphOp[0] <a>_R <next>_R)) -}
+5d4e6837321df9b95930393769a3ca2a
+  up1 ::
+    GraphOp.GraphOp a next
+    -> forall b. (next -> GraphOp.GraphOp a b) -> GraphOp.GraphOp a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,C(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   @ next
+                   (gop :: GraphOp.GraphOp a next)
+                   @ b
+                   (k :: next -> GraphOp.GraphOp a b) ->
+                 GraphOp.$fMonadGraphOp_$c>>= @ a @ next @ b gop k) -}
+instance GHC.Base.Applicative [RGraphOp.RGraphOp]
+  = RGraphOp.$fApplicativeRGraphOp
+instance GHC.Base.Functor [RGraphOp.RGraphOp]
+  = RGraphOp.$fFunctorRGraphOp
+instance GHC.Base.Monad [RGraphOp.RGraphOp]
+  = RGraphOp.$fMonadRGraphOp
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

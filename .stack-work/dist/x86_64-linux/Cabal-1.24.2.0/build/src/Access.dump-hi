@@ -1,0 +1,243 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-12 03:26:10.513184 UTC
+
+interface dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h:Access 8002
+  interface hash: 0deacd74797f234be704be8b8692360f
+  ABI hash: a21489bf7f767b94b7cd56f79d7489cb
+  export-list hash: 6135638a8cc9e007ad33bb44fc055af8
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4bc54f380fe44f9b5863786cda581529
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Access.create
+  Access.get
+  Access.readonly
+  Access.set
+  Access.test
+  Access.Access{Access.Access}
+  Access.ReadOnly
+  Access.ReadWrite
+  Access.Ref{Access.newRef Access.readRef Access.writeRef}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.IORef 71c87b0b25a8bca3e3f4497725f5e543
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.IORef 306bd532f2f3b000347cbe6316adc20e
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+3da8d472f6c312d5204861f45b4a51ac
+  $fRefIOIORefa :: Access.Ref GHC.Types.IO GHC.IORef.IORef a
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ GHC.Types.IO
+                  @ GHC.IORef.IORef
+                  @ a
+                  (GHC.IORef.newIORef @ a)
+                  (GHC.IORef.readIORef @ a)
+                  (GHC.IORef.writeIORef @ a) -}
+d71e6ee4900f053c0cd082073e479024
+  $tc'Access :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12833264606476629126##
+                   14682671520121090593##
+                   Access.$trModule
+                   Access.$tc'Access1) -}
+bc6b713de5c75e80204ec66638bd7ebf
+  $tc'Access1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Access"#) -}
+13381a6bc2cfc60f59f40f3b2aa2a96f
+  $tc'C:Ref :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8275658194617530882##
+                   870866445739272838##
+                   Access.$trModule
+                   Access.$tc'C:Ref1) -}
+65b4058257f3571b0dae0bc32618d623
+  $tc'C:Ref1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Ref"#) -}
+f2bea47e0a5c0922cc65c7253750750b
+  $tcAccess :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6623415144939366923##
+                   3177012256071526067##
+                   Access.$trModule
+                   Access.$trModule1) -}
+0297d117c17adfa2396c5bf7d55d1526
+  $tcReadOnly :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6755556454546499504##
+                   9373744256900159064##
+                   Access.$trModule
+                   Access.$tcReadOnly1) -}
+169e41358ca5e6151a207a04ebaefe7d
+  $tcReadOnly1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ReadOnly"#) -}
+2677729990b77c461210b79560a8c35a
+  $tcReadWrite :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5268465773407052370##
+                   14186744058022330939##
+                   Access.$trModule
+                   Access.$tcReadWrite1) -}
+8d27088afa9ba0ac7b64e4e18648d8af
+  $tcReadWrite1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ReadWrite"#) -}
+98076c03031e8f12055c22614e1bbd02
+  $tcRef :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18120520849726223250##
+                   8642127444752125127##
+                   Access.$trModule
+                   Access.$tcRef1) -}
+f0eb8a59c59a5d1cf1f848ee06df9963
+  $tcRef1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Ref"#) -}
+fbde021f6d3ec55d50f235cccf38889e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Access.$trModule2
+                   Access.$trModule1) -}
+8b0ade7c996e363e2d942b2596b5217e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Access"#) -}
+22c5fca191eda79f49146d78c9e2f35d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#) -}
+f54b3ec65bfc40bca5c0826a9bb7e341
+  type role Access phantom representational
+  data Access a b = Access b
+cd5971a7b56f4ac60c5b0611668fe010
+  data ReadOnly
+fd43855556acb0bfcfa497f31e795f58
+  data ReadWrite
+3da8d472f6c312d5204861f45b4a51ac
+  class Ref (m :: * -> *) (ref :: * -> *) a where
+    newRef :: a -> m (ref a)
+    readRef :: ref a -> m a
+    writeRef :: ref a -> a -> m ()
+    {-# MINIMAL newRef, readRef, writeRef #-}
+c994007afe559c45b4a634d9c210c6d0
+  create ::
+    (GHC.Base.Monad m, Access.Ref m ref a) =>
+    a -> m (Access.Access c (ref a))
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(1*U(1*U(1*C1(U),A),A,A,A,A),A,A,A,A)><L,1*U(1*U,A,A)>,
+     Unfolding: (\ @ (m :: * -> *)
+                   @ (ref :: * -> *)
+                   @ a
+                   @ c
+                   ($dMonad :: GHC.Base.Monad m)
+                   ($dRef :: Access.Ref m ref a) ->
+                 let {
+                   f :: m (ref a) -> m (Access.Access c (ref a))
+                   = GHC.Base.fmap
+                       @ m
+                       (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))
+                       @ (ref a)
+                       @ (Access.Access c (ref a))
+                       (Access.Access @ c @ (ref a))
+                 } in
+                 let {
+                   g :: a -> m (ref a) = Access.newRef @ m @ ref @ a $dRef
+                 } in
+                 \ (x :: a) -> f (g x)) -}
+e2c5475bc2799ff90adf33047356535e
+  get ::
+    (GHC.Base.Monad m, Access.Ref m ref a) =>
+    Access.Access c (ref a) -> m a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S(LC(S)L),1*U(A,1*C1(U),A)><S,1*U(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (m :: * -> *)
+                   @ (ref :: * -> *)
+                   @ a
+                   @ c
+                   ($dMonad :: GHC.Base.Monad m)
+                   ($dRef :: Access.Ref m ref a)
+                   (ds :: Access.Access c (ref a)) ->
+                 case ds of wild { Access.Access x ->
+                 Access.readRef @ m @ ref @ a $dRef x }) -}
+55902b181cfac499f1b3f6df5d7c0b11
+  readonly ::
+    Access.Access c (ref a) -> Access.Access Access.ReadOnly (ref a)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ c @ (ref :: * -> *) @ a (ds :: Access.Access c (ref a)) ->
+                 case ds of wild { Access.Access x ->
+                 Access.Access @ Access.ReadOnly @ (ref a) x }) -}
+c60914b4359f31aecccd9990e615b14b
+  set ::
+    (GHC.Base.Monad m, Access.Ref m ref a) =>
+    Access.Access Access.ReadWrite (ref a) -> a -> m ()
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><S(LLC(C(S))),1*U(A,A,1*C1(C1(U)))><S,1*U(U)><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ (m :: * -> *)
+                   @ (ref :: * -> *)
+                   @ a
+                   ($dMonad :: GHC.Base.Monad m)
+                   ($dRef :: Access.Ref m ref a)
+                   (ds :: Access.Access Access.ReadWrite (ref a))
+                   (x :: a) ->
+                 case ds of wild { Access.Access r ->
+                 Access.writeRef @ m @ ref @ a $dRef r x }) -}
+b156c601c49cb640d7807fcd5f0b811f
+  test :: GHC.Types.IO ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Access.test1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+8378ded4d71183f5e1cff6cb1f9238ca
+  test1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.Types.Int
+                        @ GHC.Prim.RealWorld
+                        (GHC.Types.I# 5#)
+                        s of ds { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Int
+                        ipv1
+                        (GHC.Types.I# 44#)
+                        ipv of s2# { DEFAULT ->
+                 (# s2#, GHC.Tuple.() #) } }) -}
+instance [safe] Access.Ref [GHC.Types.IO, GHC.IORef.IORef, .]
+  = Access.$fRefIOIORefa
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

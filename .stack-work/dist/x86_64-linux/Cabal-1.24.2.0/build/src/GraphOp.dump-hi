@@ -1,0 +1,573 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-12 03:23:46.482193 UTC
+
+interface dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h:GraphOp 8002
+  interface hash: 2b51caf3010608660ae1ffdd0ce3b0b0
+  ABI hash: ae0bcb309008b65a87d6b87a7f4cba2d
+  export-list hash: 493176dd6271ac35576da264138a9641
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  GraphOp.dfs
+  GraphOp.get
+  GraphOp.propagate
+  GraphOp.run
+  GraphOp.visit
+  GraphOp.yield
+  GraphOp.GraphOp{GraphOp.Get GraphOp.Return GraphOp.Visit GraphOp.Yield}
+  GraphOp.Output{GraphOp.Done GraphOp.Leaving GraphOp.Recorded GraphOp.Visited}
+module dependencies: Graph
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  Graph 2b6008e8dd59404a9a5114e87ae469dc
+  exports: 02231a1c976255cc26fe1442f002335f
+  Colored 212aa958da2b6e0566ef0d942c8e3414
+  Colored 06a2efd992b39bc73676c8c7cccfe9cc
+  Graph 3e5d3e39dbbb9686615867b1e9ed9a05
+  descendent 0dab816a346bdcabe78a7e981081c1fc
+  mark b39e2d0fafb67bb1a9c6b56e9ce83970
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fApplicativeGraphOp :: GHC.Base.Applicative (GraphOp.GraphOp a)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (GraphOp.GraphOp a)
+                  (GraphOp.$fFunctorGraphOp @ a)
+                  (GraphOp.Return @ a)
+                  (GraphOp.$fApplicativeGraphOp_$c<*> @ a)
+                  (GraphOp.$fApplicativeGraphOp_$c*> @ a)
+                  (GraphOp.$fApplicativeGraphOp_$c<* @ a) -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fApplicativeGraphOp_$c*> ::
+    GraphOp.GraphOp a a1 -> GraphOp.GraphOp a b -> GraphOp.GraphOp a b
+  {- Arity: 2, Strictness: <B,A><B,A>x,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ a1
+                   @ b
+                   (eta :: GraphOp.GraphOp a a1)
+                   (eta1 :: GraphOp.GraphOp a b) ->
+                 case GraphOp.$fApplicativeGraphOp_$c<*>
+                 ret_ty (GraphOp.GraphOp a b)
+                 of {}) -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fApplicativeGraphOp_$c<* ::
+    GraphOp.GraphOp a a1 -> GraphOp.GraphOp a b -> GraphOp.GraphOp a a1
+  {- Arity: 2, Strictness: <B,A><B,A>x,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ a1
+                   @ b
+                   (eta :: GraphOp.GraphOp a a1)
+                   (eta1 :: GraphOp.GraphOp a b) ->
+                 case GraphOp.$fApplicativeGraphOp_$c<*>
+                 ret_ty (GraphOp.GraphOp a a1)
+                 of {}) -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fApplicativeGraphOp_$c<*> ::
+    GraphOp.GraphOp a (a1 -> b)
+    -> GraphOp.GraphOp a a1 -> GraphOp.GraphOp a b
+  {- Strictness: x -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fFunctorGraphOp :: GHC.Base.Functor (GraphOp.GraphOp a)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (GraphOp.GraphOp a)
+                  (GraphOp.$fFunctorGraphOp_$cfmap @ a)
+                  (GraphOp.$fFunctorGraphOp_$c<$ @ a) -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fFunctorGraphOp_$c<$ ::
+    a1 -> GraphOp.GraphOp a b -> GraphOp.GraphOp a a1
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ a1 @ b (eta :: a1) (eta1 :: GraphOp.GraphOp a b) ->
+                 GraphOp.$fFunctorGraphOp_$cfmap
+                   @ a
+                   @ b
+                   @ a1
+                   (\ (ds :: b) -> eta)
+                   eta1) -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fFunctorGraphOp_$cfmap ::
+    (a1 -> b) -> GraphOp.GraphOp a a1 -> GraphOp.GraphOp a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a @ a1 @ b (w :: a1 -> b) (w1 :: GraphOp.GraphOp a a1) ->
+                 GraphOp.$w$cfmap @ a @ a1 @ b w1) -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fFunctorGraphOp_$s$w$cfmap :: a -> GraphOp.GraphOp a1 b
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fMonadGraphOp :: GHC.Base.Monad (GraphOp.GraphOp a)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (GraphOp.GraphOp a)
+                  (GraphOp.$fApplicativeGraphOp @ a)
+                  (GraphOp.$fMonadGraphOp_$c>>= @ a)
+                  (GraphOp.$fMonadGraphOp_$c>> @ a)
+                  (GraphOp.Return @ a)
+                  (GraphOp.$fMonadGraphOp_$cfail @ a) -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fMonadGraphOp_$c>> ::
+    GraphOp.GraphOp a a1 -> GraphOp.GraphOp a b -> GraphOp.GraphOp a b
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ a1
+                   @ b
+                   (m1 :: GraphOp.GraphOp a a1)
+                   (k :: GraphOp.GraphOp a b) ->
+                 GraphOp.$fMonadGraphOp_$c>>=
+                   @ a
+                   @ a1
+                   @ b
+                   m1
+                   (\ (ds :: a1) -> k)) -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fMonadGraphOp_$c>>= ::
+    GraphOp.GraphOp a a1
+    -> (a1 -> GraphOp.GraphOp a b) -> GraphOp.GraphOp a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,C(U)> -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $fMonadGraphOp_$cfail :: GHC.Base.String -> GraphOp.GraphOp a a1
+  {- Arity: 1, Strictness: <B,U>x,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ a @ a1 ->
+                 GHC.Err.errorWithoutStackTrace
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (GraphOp.GraphOp a a1)) -}
+6a977d53dbc98f52c737fbc0ad45e901
+  $fShowOutput :: GHC.Show.Show a => GHC.Show.Show (GraphOp.Output a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (GraphOp.Output a)
+                  (GraphOp.$fShowOutput_$cshowsPrec @ a $dShow)
+                  (GraphOp.$fShowOutput_$cshow @ a $dShow)
+                  (GraphOp.$fShowOutput_$cshowList @ a $dShow) -}
+a6b900bf6512815493fc59cd66a469d0
+  $fShowOutput1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+b12589fdb143ea1845f953ff6c04b426
+  $fShowOutput2 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++ @ GHC.Types.Char GraphOp.$fShowOutput3) -}
+2e740f5eb102e37b67243de3ccfdb085
+  $fShowOutput3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Done"#) -}
+583eb19ce8d1b8f33cc164eae4b3c4dc
+  $fShowOutput4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Recorded "#) -}
+e28683e34ee0a4957e095bc5d63a5579
+  $fShowOutput5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Visited "#) -}
+4b72b05556d251499e6988296be99456
+  $fShowOutput6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Leaving "#) -}
+d886f06e257c9db3c095609bcdd14e8d
+  $fShowOutput7 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 11#) -}
+6a977d53dbc98f52c737fbc0ad45e901
+  $fShowOutput_$cshow ::
+    GHC.Show.Show a => GraphOp.Output a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: GraphOp.Output a) ->
+                 GraphOp.$fShowOutput_$s$cshowsPrec
+                   @ a
+                   x
+                   0#
+                   $dShow
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+6a977d53dbc98f52c737fbc0ad45e901
+  $fShowOutput_$cshowList ::
+    GHC.Show.Show a => [GraphOp.Output a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: [GraphOp.Output a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GraphOp.Output a)
+                   (GraphOp.$fShowOutput_$cshowsPrec @ a $dShow GraphOp.$fShowOutput1)
+                   eta
+                   eta1) -}
+6a977d53dbc98f52c737fbc0ad45e901
+  $fShowOutput_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> GraphOp.Output a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><L,1*U(U)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (a1 :: GHC.Types.Int)
+                   (ds :: GraphOp.Output a) ->
+                 case ds of wild {
+                   GraphOp.Leaving b1 b2
+                   -> case a1 of wild1 { GHC.Types.I# x ->
+                      let {
+                        f :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ a $dShow GraphOp.$fShowOutput7 b1
+                      } in
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GraphOp.$fShowOutput_$s$cshowsPrec @ a b2 11# $dShow
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Base.++
+                             @ GHC.Types.Char
+                             GraphOp.$fShowOutput6
+                             (f (GHC.Types.: @ GHC.Types.Char GHC.Show.showSpace1 (g x1)))
+                        GHC.Types.True
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                GraphOp.$fShowOutput6
+                                (f (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.showSpace1
+                                      (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x1))))) } }
+                   GraphOp.Visited b1 b2
+                   -> case a1 of wild1 { GHC.Types.I# x ->
+                      let {
+                        f :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ a $dShow GraphOp.$fShowOutput7 b1
+                      } in
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GraphOp.$fShowOutput_$s$cshowsPrec @ a b2 11# $dShow
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Base.++
+                             @ GHC.Types.Char
+                             GraphOp.$fShowOutput5
+                             (f (GHC.Types.: @ GHC.Types.Char GHC.Show.showSpace1 (g x1)))
+                        GHC.Types.True
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                GraphOp.$fShowOutput5
+                                (f (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.showSpace1
+                                      (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x1))))) } }
+                   GraphOp.Recorded b1 b2
+                   -> case a1 of wild1 { GHC.Types.I# x ->
+                      let {
+                        f :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ a $dShow GraphOp.$fShowOutput7 b1
+                      } in
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GraphOp.$fShowOutput_$s$cshowsPrec @ a b2 11# $dShow
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Base.++
+                             @ GHC.Types.Char
+                             GraphOp.$fShowOutput4
+                             (f (GHC.Types.: @ GHC.Types.Char GHC.Show.showSpace1 (g x1)))
+                        GHC.Types.True
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                GraphOp.$fShowOutput4
+                                (f (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.showSpace1
+                                      (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x1))))) } }
+                   GraphOp.Done -> GraphOp.$fShowOutput2 }) -}
+6a977d53dbc98f52c737fbc0ad45e901
+  $fShowOutput_$s$cshowsPrec ::
+    GraphOp.Output a
+    -> GHC.Prim.Int# -> GHC.Show.Show a => GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U(C(C1(U)),A,A)> -}
+4db0b5ad314fb52e753357aef1e08150
+  $tc'Done :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6017264651860215412##
+                   11842514142656893676##
+                   GraphOp.$trModule
+                   GraphOp.$tc'Done1) -}
+e09a78b872a12a925894d723965b0524
+  $tc'Done1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Done"#) -}
+0a973f81ee8994e34f6b04f3363a3682
+  $tc'Get :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5920925268022256900##
+                   5893956913337420074##
+                   GraphOp.$trModule
+                   GraphOp.$tc'Get1) -}
+73e1b3a9eb47f8b0a29db8436f27a3d3
+  $tc'Get1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Get"#) -}
+663765776052aeb6278210821c3a95fa
+  $tc'Leaving :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11761851026613286580##
+                   10032285010501283287##
+                   GraphOp.$trModule
+                   GraphOp.$tc'Leaving1) -}
+11562c02bbd919842e0d6d4784fa72d2
+  $tc'Leaving1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Leaving"#) -}
+e90acf161789698cd106d71aff6d4d00
+  $tc'Recorded :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18057589618347605487##
+                   4069690813978698568##
+                   GraphOp.$trModule
+                   GraphOp.$tc'Recorded1) -}
+0378907c95d165b61faa27bef736ab49
+  $tc'Recorded1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Recorded"#) -}
+d769d56c17f2bcb948f7df5578dfc9a5
+  $tc'Return :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5371935178201229610##
+                   17245810057011215089##
+                   GraphOp.$trModule
+                   GraphOp.$tc'Return1) -}
+fa89e04de2c5c7243248eee97246cb3a
+  $tc'Return1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Return"#) -}
+0516173b392e6899b51c999cfcefa176
+  $tc'Visit :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11571336403036977953##
+                   4594902503516990752##
+                   GraphOp.$trModule
+                   GraphOp.$tc'Visit1) -}
+41f021e1e8c6c7ff63caa919a023c43c
+  $tc'Visit1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Visit"#) -}
+a70bac5b35365e34f2b71e355b1195c6
+  $tc'Visited :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6603063690373836761##
+                   6276280469472660508##
+                   GraphOp.$trModule
+                   GraphOp.$tc'Visited1) -}
+fb2192c911ce759af543bdad41c6481b
+  $tc'Visited1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Visited"#) -}
+5f83b875174d0a7795dca4c15917c0bf
+  $tc'Yield :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15044715871841172501##
+                   5818887379031836618##
+                   GraphOp.$trModule
+                   GraphOp.$tc'Yield1) -}
+8228c0475565895ef65e2fde2c9c0c7c
+  $tc'Yield1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Yield"#) -}
+1088f8826291f983e8edba1a833e6e4d
+  $tcGraphOp :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3584760602659823076##
+                   9470790652597122505##
+                   GraphOp.$trModule
+                   GraphOp.$trModule1) -}
+9315cae084835721c8290ffbc1b37d45
+  $tcOutput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3126149137727705143##
+                   5362350441384602674##
+                   GraphOp.$trModule
+                   GraphOp.$tcOutput1) -}
+13291a85c6e92f0ab03050eb85ebdca5
+  $tcOutput1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Output"#) -}
+ad9894a59bd75b7e71885c76c83dbf42
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   GraphOp.$trModule2
+                   GraphOp.$trModule1) -}
+1e2ad9dae8b0196ea057b1ad7dec1f98
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "GraphOp"#) -}
+884f3adb7bbbfadc159eb7ab639fb236
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#) -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  $w$cfmap :: GraphOp.GraphOp a a1 -> GraphOp.GraphOp a b
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+d3f4fb4ba5143c2d1f2bcb3248b99d45
+  $wrun ::
+    GHC.Classes.Ord a =>
+    GraphOp.GraphOp a next -> Graph.Graph a -> GraphOp.Output a
+  {- Arity: 3,
+     Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U><L,U(U,U,U)>,
+     Inline: [0] -}
+016cc0d92b2db15a0e7aa022c4f42aa5
+  data GraphOp a next
+    = Get a
+          (GHC.Base.Maybe (Graph.Colored a) -> GraphOp.GraphOp a next)
+    | Visit a (GraphOp.GraphOp a next)
+    | Yield a (GraphOp.GraphOp a next)
+    | Return next
+6a977d53dbc98f52c737fbc0ad45e901
+  data Output a
+    = Leaving a (GraphOp.Output a)
+    | Visited a (GraphOp.Output a)
+    | Recorded a (GraphOp.Output a)
+    | Done
+ace8c38f75cdf5a86f191506aa8af476
+  dfs :: a -> GraphOp.GraphOp a ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>,
+     Unfolding: (\ @ a (x :: a) ->
+                 let {
+                   k :: GraphOp.GraphOp a ()
+                   = GraphOp.$fMonadGraphOp_$c>>=
+                       @ a
+                       @ (GHC.Base.Maybe (Graph.Colored a))
+                       @ ()
+                       (GraphOp.Get
+                          @ a
+                          @ (GHC.Base.Maybe (Graph.Colored a))
+                          x
+                          (GraphOp.Return @ a @ (GHC.Base.Maybe (Graph.Colored a))))
+                       (GraphOp.propagate @ a)
+                 } in
+                 GraphOp.$fMonadGraphOp_$c>>=
+                   @ a
+                   @ ()
+                   @ ()
+                   (GraphOp.Visit @ a @ () x (GraphOp.dfs1 @ a))
+                   (\ (ds :: ()) -> k)) -}
+04ec5b7062043e42606d135af65598a5
+  dfs1 :: GraphOp.GraphOp a ()
+  {- HasNoCafRefs, Strictness: m4,
+     Unfolding: (\ @ a -> GraphOp.Return @ a @ () GHC.Tuple.()) -}
+68249562445afd79eab2d304a5e6cdb8
+  get :: a -> GraphOp.GraphOp a (GHC.Base.Maybe (Graph.Colored a))
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m1,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: a) ->
+                 GraphOp.Get
+                   @ a
+                   @ (GHC.Base.Maybe (Graph.Colored a))
+                   x
+                   (GraphOp.Return @ a @ (GHC.Base.Maybe (Graph.Colored a)))) -}
+cbf7200fe77fcceda07834cc88217d9c
+  propagate ::
+    GHC.Base.Maybe (Graph.Colored a) -> GraphOp.GraphOp a ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+0c5a9daf0247e8e1352fb2eed844ebf7
+  run ::
+    (GHC.Classes.Ord a, GHC.Show.Show a) =>
+    GraphOp.GraphOp a next -> Graph.Graph a -> GraphOp.Output a
+  {- Arity: 4,
+     Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><L,A><S,1*U><L,U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a
+                   @ next
+                   (w :: GHC.Classes.Ord a)
+                   (w1 :: GHC.Show.Show a)
+                   (w2 :: GraphOp.GraphOp a next)
+                   (w3 :: Graph.Graph a) ->
+                 GraphOp.$wrun @ a @ next w w2 w3) -}
+7c76eb7e4759fbed7e0ae556c67b528c
+  visit :: a -> GraphOp.GraphOp a ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: a) -> GraphOp.Visit @ a @ () x (GraphOp.dfs1 @ a)) -}
+8374db96ed4a2b1981699c33b83b1262
+  yield :: a -> GraphOp.GraphOp a ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m3,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: a) -> GraphOp.Yield @ a @ () x (GraphOp.dfs1 @ a)) -}
+instance GHC.Base.Applicative [GraphOp.GraphOp]
+  = GraphOp.$fApplicativeGraphOp
+instance GHC.Base.Functor [GraphOp.GraphOp]
+  = GraphOp.$fFunctorGraphOp
+instance GHC.Base.Monad [GraphOp.GraphOp] = GraphOp.$fMonadGraphOp
+instance GHC.Show.Show [GraphOp.Output] = GraphOp.$fShowOutput
+"SC:$cshowsPrec0" [ALWAYS] forall @ a
+                                  (sc :: GraphOp.Output a)
+                                  (sc1 :: GHC.Prim.Int#)
+                                  (sc2 :: GHC.Show.Show a)
+  GraphOp.$fShowOutput_$cshowsPrec @ a sc2 (GHC.Types.I# sc1) sc
+  = GraphOp.$fShowOutput_$s$cshowsPrec @ a sc sc1 sc2
+"SC:$w$cfmap0" [0] forall @ b @ a @ a1 (sc :: a)
+  GraphOp.$w$cfmap @ a1 @ a @ b (GraphOp.Return @ a1 @ a sc)
+  = GraphOp.$fFunctorGraphOp_$s$w$cfmap @ b @ a @ a1 sc
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,277 @@
+
+==================== Tidy Core ====================
+2017-10-12 03:23:46.762889 UTC
+
+Result size of Tidy Core = {terms: 112, types: 52, coercions: 4}
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Airplane.initFuel1 :: Double
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+Airplane.initFuel1 = ghc-prim-0.5.0.0:GHC.Types.D# 55.0##
+
+-- RHS size: {terms: 2, types: 1, coercions: 0}
+initFuel :: Fuel Pounds
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 20}]
+initFuel = Airplane.Fuel @ Pounds Airplane.initFuel1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Airplane.$trModule2 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 110 20}]
+Airplane.$trModule2 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS
+    "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Airplane.$trModule1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+Airplane.$trModule1 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS "Airplane"#
+
+-- RHS size: {terms: 3, types: 0, coercions: 0}
+Airplane.$trModule :: ghc-prim-0.5.0.0:GHC.Types.Module
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+Airplane.$trModule =
+  ghc-prim-0.5.0.0:GHC.Types.Module
+    Airplane.$trModule2 Airplane.$trModule1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Airplane.$tcKilograms1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 50 20}]
+Airplane.$tcKilograms1 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS "Kilograms"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Airplane.$tcKilograms :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Airplane.$tcKilograms =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    13124048987451258350##
+    16616850634874200764##
+    Airplane.$trModule
+    Airplane.$tcKilograms1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Airplane.$tcPounds1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+Airplane.$tcPounds1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "Pounds"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Airplane.$tcPounds :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Airplane.$tcPounds =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    961590851281057686##
+    17523745610258414547##
+    Airplane.$trModule
+    Airplane.$tcPounds1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Airplane.$tc'Fuel1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+Airplane.$tc'Fuel1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "'Fuel"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Airplane.$tc'Fuel :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Airplane.$tc'Fuel =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    1693296365833130519##
+    11772005328425333988##
+    Airplane.$trModule
+    Airplane.$tc'Fuel1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+Airplane.$tcFuel1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 30 20}]
+Airplane.$tcFuel1 = ghc-prim-0.5.0.0:GHC.Types.TrNameS "Fuel"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+Airplane.$tcFuel :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+Airplane.$tcFuel =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    12955060299395276146##
+    17171020268372429256##
+    Airplane.$trModule
+    Airplane.$tcFuel1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl_r7p9 :: [Char]
+[GblId, Str=DmdType]
+lvl_r7p9 = ghc-prim-0.5.0.0:GHC.CString.unpackCString# "undefined"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl1_r7pa :: [Char]
+[GblId, Str=DmdType]
+lvl1_r7pa =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString#
+    "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl2_r7pb :: [Char]
+[GblId, Str=DmdType]
+lvl2_r7pb = ghc-prim-0.5.0.0:GHC.CString.unpackCString# "Airplane"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl3_r7pc :: [Char]
+[GblId, Str=DmdType]
+lvl3_r7pc =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "src/Airplane.hs"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl4_r7pd :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl4_r7pd = ghc-prim-0.5.0.0:GHC.Types.I# 8#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl5_r7pe :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl5_r7pe = ghc-prim-0.5.0.0:GHC.Types.I# 25#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl6_r7pf :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl6_r7pf = ghc-prim-0.5.0.0:GHC.Types.I# 34#
+
+-- RHS size: {terms: 8, types: 0, coercions: 0}
+lvl7_r7pg :: GHC.Stack.Types.SrcLoc
+[GblId, Str=DmdType]
+lvl7_r7pg =
+  GHC.Stack.Types.SrcLoc
+    lvl1_r7pa
+    lvl2_r7pb
+    lvl3_r7pc
+    lvl4_r7pd
+    lvl5_r7pe
+    lvl4_r7pd
+    lvl6_r7pf
+
+-- RHS size: {terms: 4, types: 0, coercions: 0}
+lvl8_r7ph :: GHC.Stack.Types.CallStack
+[GblId, Str=DmdType]
+lvl8_r7ph =
+  GHC.Stack.Types.PushCallStack
+    lvl_r7p9 lvl7_r7pg GHC.Stack.Types.EmptyCallStack
+
+-- RHS size: {terms: 4, types: 0, coercions: 0}
+lvl9_r7pi :: GHC.Stack.Types.CallStack
+[GblId, Str=DmdType]
+lvl9_r7pi =
+  GHC.Stack.Types.PushCallStack
+    GHC.Err.undefined9 GHC.Err.undefined2 lvl8_r7ph
+
+-- RHS size: {terms: 3, types: 3, coercions: 4}
+Airplane.loadFuel1 :: IO ()
+[GblId, Str=DmdType x]
+Airplane.loadFuel1 =
+  error
+    @ 'ghc-prim-0.5.0.0:GHC.Types.PtrRepLifted
+    @ (IO ())
+    (lvl9_r7pi
+     `cast` (Sym
+               (ghc-prim-0.5.0.0:GHC.Classes.N:IP[0]
+                  <"callStack">_N <GHC.Stack.Types.CallStack>_N)
+             :: (GHC.Stack.Types.CallStack :: *)
+                ~R#
+                ((?callStack::GHC.Stack.Types.CallStack) :: Constraint)))
+    GHC.Err.undefined1
+
+-- RHS size: {terms: 2, types: 2, coercions: 0}
+loadFuel :: Fuel Kilograms -> IO ()
+[GblId,
+ Arity=1,
+ Str=DmdType <B,1*H>x,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (ds_d7mM [Occ=Once!] :: Fuel Kilograms) ->
+                 case ds_d7mM of _ [Occ=Dead] { Fuel _ [Occ=Dead] ->
+                 Airplane.loadFuel1
+                 }}]
+loadFuel = \ _ [Occ=Dead] -> Airplane.loadFuel1
+
+-- RHS size: {terms: 12, types: 8, coercions: 0}
+conv :: Fuel Pounds -> Fuel Kilograms
+[GblId,
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S,1*U(1*U(U))>m,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (ds_d7mI [Occ=Once!] :: Fuel Pounds) ->
+                 case ds_d7mI of _ [Occ=Dead] { Fuel p_a7c8 [Occ=Once!] ->
+                 Airplane.Fuel
+                   @ Kilograms
+                   (case p_a7c8
+                    of _ [Occ=Dead]
+                    { ghc-prim-0.5.0.0:GHC.Types.D# x_a7nJ [Occ=Once] ->
+                    ghc-prim-0.5.0.0:GHC.Types.D#
+                      (ghc-prim-0.5.0.0:GHC.Prim./## x_a7nJ 2.2##)
+                    })
+                 }}]
+conv =
+  \ (ds_d7mI :: Fuel Pounds) ->
+    case ds_d7mI of _ [Occ=Dead] { Fuel p_a7c8 ->
+    Airplane.Fuel
+      @ Kilograms
+      (case p_a7c8
+       of _ [Occ=Dead] { ghc-prim-0.5.0.0:GHC.Types.D# x_a7nJ ->
+       ghc-prim-0.5.0.0:GHC.Types.D#
+         (ghc-prim-0.5.0.0:GHC.Prim./## x_a7nJ 2.2##)
+       })
+    }
+
+

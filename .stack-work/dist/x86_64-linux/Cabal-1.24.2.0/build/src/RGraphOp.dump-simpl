@@ -1,0 +1,1343 @@
+
+==================== Tidy Core ====================
+2017-10-12 03:23:46.663834 UTC
+
+Result size of Tidy Core = {terms: 364, types: 840, coercions: 223}
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl_r6KM :: [Char]
+[GblId, Str=DmdType]
+lvl_r6KM = ghc-prim-0.5.0.0:GHC.CString.unpackCString# "undefined"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl1_r6KN :: [Char]
+[GblId, Str=DmdType]
+lvl1_r6KN =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString#
+    "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl2_r6KO :: [Char]
+[GblId, Str=DmdType]
+lvl2_r6KO = ghc-prim-0.5.0.0:GHC.CString.unpackCString# "RGraphOp"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl3_r6KP :: [Char]
+[GblId, Str=DmdType]
+lvl3_r6KP =
+  ghc-prim-0.5.0.0:GHC.CString.unpackCString# "src/RGraphOp.hs"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl4_r6KQ :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl4_r6KQ = ghc-prim-0.5.0.0:GHC.Types.I# 13#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl5_r6KR :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl5_r6KR = ghc-prim-0.5.0.0:GHC.Types.I# 11#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl6_r6KS :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl6_r6KS = ghc-prim-0.5.0.0:GHC.Types.I# 20#
+
+-- RHS size: {terms: 8, types: 0, coercions: 0}
+lvl7_r6KT :: GHC.Stack.Types.SrcLoc
+[GblId, Str=DmdType]
+lvl7_r6KT =
+  GHC.Stack.Types.SrcLoc
+    lvl1_r6KN
+    lvl2_r6KO
+    lvl3_r6KP
+    lvl4_r6KQ
+    lvl5_r6KR
+    lvl4_r6KQ
+    lvl6_r6KS
+
+-- RHS size: {terms: 4, types: 0, coercions: 0}
+lvl8_r6KU :: GHC.Stack.Types.CallStack
+[GblId, Str=DmdType]
+lvl8_r6KU =
+  GHC.Stack.Types.PushCallStack
+    lvl_r6KM lvl7_r6KT GHC.Stack.Types.EmptyCallStack
+
+-- RHS size: {terms: 4, types: 0, coercions: 0}
+lvl9_r6KV :: GHC.Stack.Types.CallStack
+[GblId, Str=DmdType]
+lvl9_r6KV =
+  GHC.Stack.Types.PushCallStack
+    GHC.Err.undefined9 GHC.Err.undefined2 lvl8_r6KU
+
+-- RHS size: {terms: 6, types: 17, coercions: 4}
+RGraphOp.$fApplicativeRGraphOp_$c<*>
+  :: forall a_a6EQ a1_a5cp b_a5cq.
+     RGraphOp a_a6EQ (a1_a5cp -> b_a5cq)
+     -> RGraphOp a_a6EQ a1_a5cp -> RGraphOp a_a6EQ b_a5cq
+[GblId, Str=DmdType x]
+RGraphOp.$fApplicativeRGraphOp_$c<*> =
+  \ (@ a_a6EQ) (@ a1_a6F7) (@ b_a6F8) ->
+    error
+      @ 'ghc-prim-0.5.0.0:GHC.Types.PtrRepLifted
+      @ (RGraphOp a_a6EQ (a1_a6F7 -> b_a6F8)
+         -> RGraphOp a_a6EQ a1_a6F7 -> RGraphOp a_a6EQ b_a6F8)
+      (lvl9_r6KV
+       `cast` (Sym
+                 (ghc-prim-0.5.0.0:GHC.Classes.N:IP[0]
+                    <"callStack">_N <GHC.Stack.Types.CallStack>_N)
+               :: (GHC.Stack.Types.CallStack :: *)
+                  ~R#
+                  ((?callStack::GHC.Stack.Types.CallStack) :: Constraint)))
+      GHC.Err.undefined1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+lvl10_r6KW :: Int
+[GblId, Caf=NoCafRefs, Str=DmdType]
+lvl10_r6KW = ghc-prim-0.5.0.0:GHC.Types.I# 12#
+
+-- RHS size: {terms: 8, types: 0, coercions: 0}
+lvl11_r6KX :: GHC.Stack.Types.SrcLoc
+[GblId, Str=DmdType]
+lvl11_r6KX =
+  GHC.Stack.Types.SrcLoc
+    lvl1_r6KN
+    lvl2_r6KO
+    lvl3_r6KP
+    lvl10_r6KW
+    lvl5_r6KR
+    lvl10_r6KW
+    lvl6_r6KS
+
+-- RHS size: {terms: 4, types: 0, coercions: 0}
+lvl12_r6KY :: GHC.Stack.Types.CallStack
+[GblId, Str=DmdType]
+lvl12_r6KY =
+  GHC.Stack.Types.PushCallStack
+    lvl_r6KM lvl11_r6KX GHC.Stack.Types.EmptyCallStack
+
+-- RHS size: {terms: 4, types: 0, coercions: 0}
+lvl13_r6KZ :: GHC.Stack.Types.CallStack
+[GblId, Str=DmdType]
+lvl13_r6KZ =
+  GHC.Stack.Types.PushCallStack
+    GHC.Err.undefined9 GHC.Err.undefined2 lvl12_r6KY
+
+-- RHS size: {terms: 5, types: 9, coercions: 4}
+RGraphOp.$fApplicativeRGraphOp_$cpure
+  :: forall a_a6EQ a1_a5ch. a1_a5ch -> RGraphOp a_a6EQ a1_a5ch
+[GblId, Str=DmdType x]
+RGraphOp.$fApplicativeRGraphOp_$cpure =
+  \ (@ a_a6EQ) (@ a1_a6EY) ->
+    error
+      @ 'ghc-prim-0.5.0.0:GHC.Types.PtrRepLifted
+      @ (a1_a6EY -> RGraphOp a_a6EQ a1_a6EY)
+      (lvl13_r6KZ
+       `cast` (Sym
+                 (ghc-prim-0.5.0.0:GHC.Classes.N:IP[0]
+                    <"callStack">_N <GHC.Stack.Types.CallStack>_N)
+               :: (GHC.Stack.Types.CallStack :: *)
+                  ~R#
+                  ((?callStack::GHC.Stack.Types.CallStack) :: Constraint)))
+      GHC.Err.undefined1
+
+-- RHS size: {terms: 7, types: 11, coercions: 0}
+RGraphOp.$fMonadRGraphOp1
+  :: forall a_a6DS a1_a6Ev.
+     a1_a6Ev
+     -> forall b_a6EA.
+        (a1_a6Ev -> GraphOp a_a6DS b_a6EA) -> GraphOp a_a6DS b_a6EA
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U><C(S),1*C1(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=True)
+         Tmpl= \ (@ a_a6DS)
+                 (@ a1_a6Ev)
+                 (x_a6zo [Occ=Once] :: a1_a6Ev)
+                 (@ b_a6EA)
+                 (k_a6zp [Occ=Once!] :: a1_a6Ev -> GraphOp a_a6DS b_a6EA) ->
+                 k_a6zp x_a6zo}]
+RGraphOp.$fMonadRGraphOp1 =
+  \ (@ a_a6DS)
+    (@ a1_a6Ev)
+    (x_a6zo :: a1_a6Ev)
+    (@ b_a6EA)
+    (k_a6zp :: a1_a6Ev -> GraphOp a_a6DS b_a6EA) ->
+    k_a6zp x_a6zo
+
+-- RHS size: {terms: 1, types: 0, coercions: 12}
+RGraphOp.$fMonadRGraphOp_$creturn
+  :: forall a_a6DS a1_a59r. a1_a59r -> RGraphOp a_a6DS a1_a59r
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U><C(S),1*C1(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= RGraphOp.$fMonadRGraphOp1
+               `cast` (forall (a_a6DS :: <*>_N).
+                       forall (a1_a6Ev :: <*>_N).
+                       <a1_a6Ev>_R -> Sym (RGraphOp.N:RGraphOp[0] <a_a6DS>_R <a1_a6Ev>_R)
+                       :: ((forall a_a6DS a1_a6Ev.
+                            a1_a6Ev
+                            -> forall b_a6z4.
+                               (a1_a6Ev -> GraphOp a_a6DS b_a6z4) -> GraphOp a_a6DS b_a6z4) :: *)
+                          ~R#
+                          ((forall a_a6DS a1_a6Ev.
+                            a1_a6Ev -> RGraphOp a_a6DS a1_a6Ev) :: *))}]
+RGraphOp.$fMonadRGraphOp_$creturn =
+  RGraphOp.$fMonadRGraphOp1
+  `cast` (forall (a_a6DS :: <*>_N).
+          forall (a1_a6Ev :: <*>_N).
+          <a1_a6Ev>_R -> Sym (RGraphOp.N:RGraphOp[0] <a_a6DS>_R <a1_a6Ev>_R)
+          :: ((forall a_a6DS a1_a6Ev.
+               a1_a6Ev
+               -> forall b_a6z4.
+                  (a1_a6Ev -> GraphOp a_a6DS b_a6z4) -> GraphOp a_a6DS b_a6z4) :: *)
+             ~R#
+             ((forall a_a6DS a1_a6Ev. a1_a6Ev -> RGraphOp a_a6DS a1_a6Ev) :: *))
+
+-- RHS size: {terms: 12, types: 19, coercions: 3}
+RGraphOp.$fFunctorRGraphOp2
+  :: forall a_a6CH a1_a6CL b_a6CM.
+     (a1_a6CL -> b_a6CM)
+     -> RGraphOp a_a6CH a1_a6CL
+     -> forall b1_a6CR.
+        (b_a6CM -> GraphOp a_a6CH b1_a6CR) -> GraphOp a_a6CH b1_a6CR
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,C(U)><C(S),1*C1(U)><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a6CH)
+                 (@ a1_a6CL)
+                 (@ b_a6CM)
+                 (f_a6Ai [Occ=OnceL!] :: a1_a6CL -> b_a6CM)
+                 (ds_d6Gg [Occ=Once] :: RGraphOp a_a6CH a1_a6CL)
+                 (@ b1_a6CR)
+                 (b6_a6Al [Occ=OnceL!] :: b_a6CM -> GraphOp a_a6CH b1_a6CR) ->
+                 (ds_d6Gg
+                  `cast` (RGraphOp.N:RGraphOp[0] <a_a6CH>_R <a1_a6CL>_R
+                          :: (RGraphOp a_a6CH a1_a6CL :: *)
+                             ~R#
+                             ((forall b_a6z4.
+                               (a1_a6CL -> GraphOp a_a6CH b_a6z4)
+                               -> GraphOp a_a6CH b_a6z4) :: *)))
+                   @ b1_a6CR
+                   (\ (b3_a6Ao [Occ=Once] :: a1_a6CL) -> b6_a6Al (f_a6Ai b3_a6Ao))}]
+RGraphOp.$fFunctorRGraphOp2 =
+  \ (@ a_a6CH)
+    (@ a1_a6CL)
+    (@ b_a6CM)
+    (f_a6Ai :: a1_a6CL -> b_a6CM)
+    (ds_d6Gg :: RGraphOp a_a6CH a1_a6CL)
+    (@ b1_a6CR)
+    (b6_a6Al :: b_a6CM -> GraphOp a_a6CH b1_a6CR) ->
+    (ds_d6Gg
+     `cast` (RGraphOp.N:RGraphOp[0] <a_a6CH>_R <a1_a6CL>_R
+             :: (RGraphOp a_a6CH a1_a6CL :: *)
+                ~R#
+                ((forall b_a6z4.
+                  (a1_a6CL -> GraphOp a_a6CH b_a6z4)
+                  -> GraphOp a_a6CH b_a6z4) :: *)))
+      @ b1_a6CR (\ (b3_a6Ao :: a1_a6CL) -> b6_a6Al (f_a6Ai b3_a6Ao))
+
+-- RHS size: {terms: 1, types: 0, coercions: 20}
+RGraphOp.$fFunctorRGraphOp_$cfmap
+  :: forall a_a6CH a1_a5dn b_a5do.
+     (a1_a5dn -> b_a5do)
+     -> RGraphOp a_a6CH a1_a5dn -> RGraphOp a_a6CH b_a5do
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,C(U)><C(S),1*C1(U)><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= RGraphOp.$fFunctorRGraphOp2
+               `cast` (forall (a_a6CH :: <*>_N).
+                       forall (a1_a6CL :: <*>_N).
+                       forall (b_a6CM :: <*>_N).
+                       <a1_a6CL -> b_a6CM>_R
+                       -> <RGraphOp a_a6CH a1_a6CL>_R
+                       -> Sym (RGraphOp.N:RGraphOp[0] <a_a6CH>_R <b_a6CM>_R)
+                       :: ((forall a_a6CH a1_a6CL b_a6CM.
+                            (a1_a6CL -> b_a6CM)
+                            -> RGraphOp a_a6CH a1_a6CL
+                            -> forall b_a6z4.
+                               (b_a6CM -> GraphOp a_a6CH b_a6z4) -> GraphOp a_a6CH b_a6z4) :: *)
+                          ~R#
+                          ((forall a_a6CH a1_a6CL b_a6CM.
+                            (a1_a6CL -> b_a6CM)
+                            -> RGraphOp a_a6CH a1_a6CL -> RGraphOp a_a6CH b_a6CM) :: *))}]
+RGraphOp.$fFunctorRGraphOp_$cfmap =
+  RGraphOp.$fFunctorRGraphOp2
+  `cast` (forall (a_a6CH :: <*>_N).
+          forall (a1_a6CL :: <*>_N).
+          forall (b_a6CM :: <*>_N).
+          <a1_a6CL -> b_a6CM>_R
+          -> <RGraphOp a_a6CH a1_a6CL>_R
+          -> Sym (RGraphOp.N:RGraphOp[0] <a_a6CH>_R <b_a6CM>_R)
+          :: ((forall a_a6CH a1_a6CL b_a6CM.
+               (a1_a6CL -> b_a6CM)
+               -> RGraphOp a_a6CH a1_a6CL
+               -> forall b_a6z4.
+                  (b_a6CM -> GraphOp a_a6CH b_a6z4) -> GraphOp a_a6CH b_a6z4) :: *)
+             ~R#
+             ((forall a_a6CH a1_a6CL b_a6CM.
+               (a1_a6CL -> b_a6CM)
+               -> RGraphOp a_a6CH a1_a6CL -> RGraphOp a_a6CH b_a6CM) :: *))
+
+-- RHS size: {terms: 13, types: 21, coercions: 3}
+RGraphOp.$fFunctorRGraphOp1
+  :: forall b_a6DI a_X6Dn a1_a6DH.
+     a1_a6DH
+     -> RGraphOp a_X6Dn b_a6DI
+     -> forall b1_a6CR.
+        (a1_a6DH -> GraphOp a_X6Dn b1_a6CR) -> GraphOp a_X6Dn b1_a6CR
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U><C(S),1*C1(U)><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ b_a6DI)
+                 (@ a_X6Dn)
+                 (@ a1_a6DH)
+                 (eta_X5hj [Occ=OnceL] :: a1_a6DH)
+                 (ds_d6Gg [Occ=Once] :: RGraphOp a_X6Dn b_a6DI)
+                 (@ b1_a6CR)
+                 (b6_a6Al [Occ=OnceL!] :: a1_a6DH -> GraphOp a_X6Dn b1_a6CR) ->
+                 (ds_d6Gg
+                  `cast` (RGraphOp.N:RGraphOp[0] <a_X6Dn>_R <b_a6DI>_R
+                          :: (RGraphOp a_X6Dn b_a6DI :: *)
+                             ~R#
+                             ((forall b_a6z4.
+                               (b_a6DI -> GraphOp a_X6Dn b_a6z4) -> GraphOp a_X6Dn b_a6z4) :: *)))
+                   @ b1_a6CR (\ _ [Occ=Dead] -> b6_a6Al eta_X5hj)}]
+RGraphOp.$fFunctorRGraphOp1 =
+  \ (@ b_a6DI)
+    (@ a_X6Dn)
+    (@ a1_a6DH)
+    (eta_X5hj :: a1_a6DH)
+    (ds_d6Gg :: RGraphOp a_X6Dn b_a6DI)
+    (@ b1_a6CR)
+    (b6_a6Al :: a1_a6DH -> GraphOp a_X6Dn b1_a6CR) ->
+    let {
+      lvl15_s6JM :: GraphOp a_X6Dn b1_a6CR
+      [LclId, Str=DmdType]
+      lvl15_s6JM = b6_a6Al eta_X5hj } in
+    (ds_d6Gg
+     `cast` (RGraphOp.N:RGraphOp[0] <a_X6Dn>_R <b_a6DI>_R
+             :: (RGraphOp a_X6Dn b_a6DI :: *)
+                ~R#
+                ((forall b_a6z4.
+                  (b_a6DI -> GraphOp a_X6Dn b_a6z4) -> GraphOp a_X6Dn b_a6z4) :: *)))
+      @ b1_a6CR (\ _ [Occ=Dead] -> lvl15_s6JM)
+
+-- RHS size: {terms: 4, types: 9, coercions: 19}
+RGraphOp.$fFunctorRGraphOp_$c<$
+  :: forall a_a6CH a1_a5dY b_a5dZ.
+     a1_a5dY -> RGraphOp a_a6CH b_a5dZ -> RGraphOp a_a6CH a1_a5dY
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U><C(S),1*C1(U)><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= (\ (@ a_X6Dn) (@ a1_a6DH) (@ b_a6DI) ->
+                  RGraphOp.$fFunctorRGraphOp1 @ b_a6DI @ a_X6Dn @ a1_a6DH)
+               `cast` (forall (a_X6Dn :: <*>_N).
+                       forall (a1_a6DH :: <*>_N).
+                       forall (b_a6DI :: <*>_N).
+                       <a1_a6DH>_R
+                       -> <RGraphOp a_X6Dn b_a6DI>_R
+                       -> Sym (RGraphOp.N:RGraphOp[0] <a_X6Dn>_R <a1_a6DH>_R)
+                       :: ((forall a_X6Dn a1_a6DH b_a6DI.
+                            a1_a6DH
+                            -> RGraphOp a_X6Dn b_a6DI
+                            -> forall b_a6z4.
+                               (a1_a6DH -> GraphOp a_X6Dn b_a6z4) -> GraphOp a_X6Dn b_a6z4) :: *)
+                          ~R#
+                          ((forall a_X6Dn a1_a6DH b_a6DI.
+                            a1_a6DH
+                            -> RGraphOp a_X6Dn b_a6DI -> RGraphOp a_X6Dn a1_a6DH) :: *))}]
+RGraphOp.$fFunctorRGraphOp_$c<$ =
+  (\ (@ a_X6Dn) (@ a1_a6DH) (@ b_a6DI) ->
+     RGraphOp.$fFunctorRGraphOp1 @ b_a6DI @ a_X6Dn @ a1_a6DH)
+  `cast` (forall (a_X6Dn :: <*>_N).
+          forall (a1_a6DH :: <*>_N).
+          forall (b_a6DI :: <*>_N).
+          <a1_a6DH>_R
+          -> <RGraphOp a_X6Dn b_a6DI>_R
+          -> Sym (RGraphOp.N:RGraphOp[0] <a_X6Dn>_R <a1_a6DH>_R)
+          :: ((forall a_X6Dn a1_a6DH b_a6DI.
+               a1_a6DH
+               -> RGraphOp a_X6Dn b_a6DI
+               -> forall b_a6z4.
+                  (a1_a6DH -> GraphOp a_X6Dn b_a6z4) -> GraphOp a_X6Dn b_a6z4) :: *)
+             ~R#
+             ((forall a_X6Dn a1_a6DH b_a6DI.
+               a1_a6DH
+               -> RGraphOp a_X6Dn b_a6DI -> RGraphOp a_X6Dn a1_a6DH) :: *))
+
+-- RHS size: {terms: 6, types: 12, coercions: 33}
+RGraphOp.$fFunctorRGraphOp [InlPrag=[ALWAYS] CONLIKE]
+  :: forall a_a6Ah. Functor (RGraphOp a_a6Ah)
+[GblId[DFunId],
+ Str=DmdType m,
+ Unf=DFun: \ (@ a_X6Dm[ssk]) ->
+       GHC.Base.C:Functor TYPE: RGraphOp a_X6Dm[ssk]
+                          RGraphOp.$fFunctorRGraphOp_$cfmap @ a_X6Dm[ssk]
+                          RGraphOp.$fFunctorRGraphOp_$c<$ @ a_X6Dm[ssk]]
+RGraphOp.$fFunctorRGraphOp =
+  \ (@ a_X6Dm) ->
+    GHC.Base.C:Functor
+      @ (RGraphOp a_X6Dm)
+      ((RGraphOp.$fFunctorRGraphOp2 @ a_X6Dm)
+       `cast` (forall (a1_a6CL :: <*>_N).
+               forall (b_a6CM :: <*>_N).
+               <a1_a6CL -> b_a6CM>_R
+               -> <RGraphOp a_X6Dm a1_a6CL>_R
+               -> Sym (RGraphOp.N:RGraphOp[0] <a_X6Dm>_R <b_a6CM>_R)
+               :: ((forall a1_a6CL b_a6CM.
+                    (a1_a6CL -> b_a6CM)
+                    -> RGraphOp a_X6Dm a1_a6CL
+                    -> forall b_a6z4.
+                       (b_a6CM -> GraphOp a_X6Dm b_a6z4) -> GraphOp a_X6Dm b_a6z4) :: *)
+                  ~R#
+                  ((forall a1_a6CL b_a6CM.
+                    (a1_a6CL -> b_a6CM)
+                    -> RGraphOp a_X6Dm a1_a6CL -> RGraphOp a_X6Dm b_a6CM) :: *)))
+      ((\ (@ a1_a6DH) (@ b_a6DI) ->
+          RGraphOp.$fFunctorRGraphOp1 @ b_a6DI @ a_X6Dm @ a1_a6DH)
+       `cast` (forall (a1_a6DH :: <*>_N).
+               forall (b_a6DI :: <*>_N).
+               <a1_a6DH>_R
+               -> <RGraphOp a_X6Dm b_a6DI>_R
+               -> Sym (RGraphOp.N:RGraphOp[0] <a_X6Dm>_R <a1_a6DH>_R)
+               :: ((forall a1_a6DH b_a6DI.
+                    a1_a6DH
+                    -> RGraphOp a_X6Dm b_a6DI
+                    -> forall b_a6z4.
+                       (a1_a6DH -> GraphOp a_X6Dm b_a6z4) -> GraphOp a_X6Dm b_a6z4) :: *)
+                  ~R#
+                  ((forall a1_a6DH b_a6DI.
+                    a1_a6DH
+                    -> RGraphOp a_X6Dm b_a6DI -> RGraphOp a_X6Dm a1_a6DH) :: *)))
+
+-- RHS size: {terms: 6, types: 23, coercions: 0}
+RGraphOp.$w$c<* [InlPrag=[0]]
+  :: forall a_s6IW a1_s6IX b_s6IY.
+     ghc-prim-0.5.0.0:GHC.Prim.Void# -> RGraphOp a_s6IW a1_s6IX
+[GblId, Arity=1, Str=DmdType <L,U>x]
+RGraphOp.$w$c<* =
+  \ (@ a_s6IW) (@ a1_s6IX) (@ b_s6IY) _ [Occ=Dead] ->
+    case RGraphOp.$fApplicativeRGraphOp_$c<*> of wild_00 { }
+
+-- RHS size: {terms: 5, types: 9, coercions: 0}
+lvl14_r6L0 :: forall a_s6IW a1_s6IX b_s6IY. RGraphOp a_s6IW a1_s6IX
+[GblId, Str=DmdType x]
+lvl14_r6L0 =
+  \ (@ a_s6IW) (@ a1_s6IX) (@ b_s6IY) ->
+    RGraphOp.$w$c<*
+      @ a_s6IW @ a1_s6IX @ b_s6IY ghc-prim-0.5.0.0:GHC.Prim.void#
+
+-- RHS size: {terms: 6, types: 15, coercions: 0}
+RGraphOp.$fApplicativeRGraphOp_$c<* [InlPrag=INLINE[0]]
+  :: forall a_a6EQ a1_a5d6 b_a5d7.
+     RGraphOp a_a6EQ a1_a5d6
+     -> RGraphOp a_a6EQ b_a5d7 -> RGraphOp a_a6EQ a1_a5d6
+[GblId,
+ Arity=2,
+ Str=DmdType <B,A><B,A>x,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=True)
+         Tmpl= \ (@ a_s6IW)
+                 (@ a1_s6IX)
+                 (@ b_s6IY)
+                 _ [Occ=Dead]
+                 _ [Occ=Dead] ->
+                 RGraphOp.$w$c<*
+                   @ a_s6IW @ a1_s6IX @ b_s6IY ghc-prim-0.5.0.0:GHC.Prim.void#}]
+RGraphOp.$fApplicativeRGraphOp_$c<* =
+  \ (@ a_s6IW) (@ a1_s6IX) (@ b_s6IY) _ [Occ=Dead] _ [Occ=Dead] ->
+    lvl14_r6L0 @ a_s6IW @ a1_s6IX @ b_s6IY
+
+-- RHS size: {terms: 7, types: 28, coercions: 0}
+RGraphOp.$fApplicativeRGraphOp_$c*>
+  :: forall a_a6EQ a1_a5cO b_a5cP.
+     RGraphOp a_a6EQ a1_a5cO
+     -> RGraphOp a_a6EQ b_a5cP -> RGraphOp a_a6EQ b_a5cP
+[GblId,
+ Arity=2,
+ Str=DmdType <B,A><B,A>x,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a6EQ)
+                 (@ a1_a6Fh)
+                 (@ b_a6Fi)
+                 _ [Occ=Dead]
+                 _ [Occ=Dead] ->
+                 case RGraphOp.$fApplicativeRGraphOp_$c<*> of _ [Occ=Dead] { }}]
+RGraphOp.$fApplicativeRGraphOp_$c*> =
+  \ (@ a_a6EQ) (@ a1_a6Fh) (@ b_a6Fi) _ [Occ=Dead] _ [Occ=Dead] ->
+    case RGraphOp.$fApplicativeRGraphOp_$c<*> of wild_00 { }
+
+-- RHS size: {terms: 7, types: 9, coercions: 0}
+RGraphOp.$fApplicativeRGraphOp [InlPrag=[ALWAYS] CONLIKE]
+  :: forall a_a6Ab. Applicative (RGraphOp a_a6Ab)
+[GblId[DFunId],
+ Str=DmdType m,
+ Unf=DFun: \ (@ a_a6EQ[ssk]) ->
+       GHC.Base.C:Applicative TYPE: RGraphOp a_a6EQ[ssk]
+                              RGraphOp.$fFunctorRGraphOp @ a_a6EQ[ssk]
+                              RGraphOp.$fApplicativeRGraphOp_$cpure @ a_a6EQ[ssk]
+                              RGraphOp.$fApplicativeRGraphOp_$c<*> @ a_a6EQ[ssk]
+                              RGraphOp.$fApplicativeRGraphOp_$c*> @ a_a6EQ[ssk]
+                              RGraphOp.$fApplicativeRGraphOp_$c<* @ a_a6EQ[ssk]]
+RGraphOp.$fApplicativeRGraphOp =
+  \ (@ a_a6EQ) ->
+    GHC.Base.C:Applicative
+      @ (RGraphOp a_a6EQ)
+      (RGraphOp.$fFunctorRGraphOp @ a_a6EQ)
+      (RGraphOp.$fApplicativeRGraphOp_$cpure @ a_a6EQ)
+      (RGraphOp.$fApplicativeRGraphOp_$c<*> @ a_a6EQ)
+      (RGraphOp.$fApplicativeRGraphOp_$c*> @ a_a6EQ)
+      (RGraphOp.$fApplicativeRGraphOp_$c<* @ a_a6EQ)
+
+-- RHS size: {terms: 5, types: 10, coercions: 3}
+rGraphOp
+  :: forall a_a6z2 next_a6z3.
+     RGraphOp a_a6z2 next_a6z3
+     -> forall b_a6z4.
+        (next_a6z3 -> GraphOp a_a6z2 b_a6z4) -> GraphOp a_a6z2 b_a6z4
+[GblId[[RecSel]],
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <S,1*U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=True)
+         Tmpl= \ (@ a_a6A0)
+                 (@ next_a6A1)
+                 (dk_a6FK [Occ=Once] :: RGraphOp a_a6A0 next_a6A1)
+                 (@ b_a6A4) ->
+                 (dk_a6FK
+                  `cast` (RGraphOp.N:RGraphOp[0] <a_a6A0>_R <next_a6A1>_R
+                          :: (RGraphOp a_a6A0 next_a6A1 :: *)
+                             ~R#
+                             ((forall b_a6z4.
+                               (next_a6A1 -> GraphOp a_a6A0 b_a6z4)
+                               -> GraphOp a_a6A0 b_a6z4) :: *)))
+                   @ b_a6A4}]
+rGraphOp =
+  \ (@ a_a6A0)
+    (@ next_a6A1)
+    (dk_a6FK :: RGraphOp a_a6A0 next_a6A1)
+    (@ b_a6A4) ->
+    (dk_a6FK
+     `cast` (RGraphOp.N:RGraphOp[0] <a_a6A0>_R <next_a6A1>_R
+             :: (RGraphOp a_a6A0 next_a6A1 :: *)
+                ~R#
+                ((forall b_a6z4.
+                  (next_a6A1 -> GraphOp a_a6A0 b_a6z4)
+                  -> GraphOp a_a6A0 b_a6z4) :: *)))
+      @ b_a6A4
+
+-- RHS size: {terms: 12, types: 22, coercions: 6}
+RGraphOp.$fMonadRGraphOp2
+  :: forall a_X6ED a1_a6E0 b_a6E1.
+     RGraphOp a_X6ED a1_a6E0
+     -> (a1_a6E0 -> RGraphOp a_X6ED b_a6E1)
+     -> forall b1_a6E6.
+        (b_a6E1 -> GraphOp a_X6ED b1_a6E6) -> GraphOp a_X6ED b1_a6E6
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <C(S),1*C1(U)><L,C(C1(U))><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=3,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_X6ED)
+                 (@ a1_a6E0)
+                 (@ b_a6E1)
+                 (ds_d6Gh [Occ=Once] :: RGraphOp a_X6ED a1_a6E0)
+                 (g_a6zr [Occ=OnceL!] :: a1_a6E0 -> RGraphOp a_X6ED b_a6E1)
+                 (@ b1_a6E6)
+                 (h_a6zs [Occ=OnceL] :: b_a6E1 -> GraphOp a_X6ED b1_a6E6) ->
+                 (ds_d6Gh
+                  `cast` (RGraphOp.N:RGraphOp[0] <a_X6ED>_R <a1_a6E0>_R
+                          :: (RGraphOp a_X6ED a1_a6E0 :: *)
+                             ~R#
+                             ((forall b_a6z4.
+                               (a1_a6E0 -> GraphOp a_X6ED b_a6z4)
+                               -> GraphOp a_X6ED b_a6z4) :: *)))
+                   @ b1_a6E6
+                   (\ (n_a6zt [Occ=Once] :: a1_a6E0) ->
+                      ((g_a6zr n_a6zt)
+                       `cast` (RGraphOp.N:RGraphOp[0] <a_X6ED>_R <b_a6E1>_R
+                               :: (RGraphOp a_X6ED b_a6E1 :: *)
+                                  ~R#
+                                  ((forall b_a6z4.
+                                    (b_a6E1 -> GraphOp a_X6ED b_a6z4)
+                                    -> GraphOp a_X6ED b_a6z4) :: *)))
+                        @ b1_a6E6 h_a6zs)}]
+RGraphOp.$fMonadRGraphOp2 =
+  \ (@ a_X6ED)
+    (@ a1_a6E0)
+    (@ b_a6E1)
+    (ds_d6Gh :: RGraphOp a_X6ED a1_a6E0)
+    (g_a6zr :: a1_a6E0 -> RGraphOp a_X6ED b_a6E1)
+    (@ b1_a6E6)
+    (h_a6zs :: b_a6E1 -> GraphOp a_X6ED b1_a6E6) ->
+    (ds_d6Gh
+     `cast` (RGraphOp.N:RGraphOp[0] <a_X6ED>_R <a1_a6E0>_R
+             :: (RGraphOp a_X6ED a1_a6E0 :: *)
+                ~R#
+                ((forall b_a6z4.
+                  (a1_a6E0 -> GraphOp a_X6ED b_a6z4)
+                  -> GraphOp a_X6ED b_a6z4) :: *)))
+      @ b1_a6E6
+      (\ (n_a6zt :: a1_a6E0) ->
+         ((g_a6zr n_a6zt)
+          `cast` (RGraphOp.N:RGraphOp[0] <a_X6ED>_R <b_a6E1>_R
+                  :: (RGraphOp a_X6ED b_a6E1 :: *)
+                     ~R#
+                     ((forall b_a6z4.
+                       (b_a6E1 -> GraphOp a_X6ED b_a6z4) -> GraphOp a_X6ED b_a6z4) :: *)))
+           @ b1_a6E6 h_a6zs)
+
+-- RHS size: {terms: 1, types: 0, coercions: 22}
+RGraphOp.$fMonadRGraphOp_$c>>=
+  :: forall a_a6DS a1_a59N b_a59O.
+     RGraphOp a_a6DS a1_a59N
+     -> (a1_a59N -> RGraphOp a_a6DS b_a59O) -> RGraphOp a_a6DS b_a59O
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType <C(S),1*C1(U)><L,C(C1(U))><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= RGraphOp.$fMonadRGraphOp2
+               `cast` (forall (a_X6ED :: <*>_N).
+                       forall (a1_a6E0 :: <*>_N).
+                       forall (b_a6E1 :: <*>_N).
+                       <RGraphOp a_X6ED a1_a6E0>_R
+                       -> <a1_a6E0 -> RGraphOp a_X6ED b_a6E1>_R
+                       -> Sym (RGraphOp.N:RGraphOp[0] <a_X6ED>_R <b_a6E1>_R)
+                       :: ((forall a_X6ED a1_a6E0 b_a6E1.
+                            RGraphOp a_X6ED a1_a6E0
+                            -> (a1_a6E0 -> RGraphOp a_X6ED b_a6E1)
+                            -> forall b_a6z4.
+                               (b_a6E1 -> GraphOp a_X6ED b_a6z4) -> GraphOp a_X6ED b_a6z4) :: *)
+                          ~R#
+                          ((forall a_X6ED a1_a6E0 b_a6E1.
+                            RGraphOp a_X6ED a1_a6E0
+                            -> (a1_a6E0 -> RGraphOp a_X6ED b_a6E1)
+                            -> RGraphOp a_X6ED b_a6E1) :: *))}]
+RGraphOp.$fMonadRGraphOp_$c>>= =
+  RGraphOp.$fMonadRGraphOp2
+  `cast` (forall (a_X6ED :: <*>_N).
+          forall (a1_a6E0 :: <*>_N).
+          forall (b_a6E1 :: <*>_N).
+          <RGraphOp a_X6ED a1_a6E0>_R
+          -> <a1_a6E0 -> RGraphOp a_X6ED b_a6E1>_R
+          -> Sym (RGraphOp.N:RGraphOp[0] <a_X6ED>_R <b_a6E1>_R)
+          :: ((forall a_X6ED a1_a6E0 b_a6E1.
+               RGraphOp a_X6ED a1_a6E0
+               -> (a1_a6E0 -> RGraphOp a_X6ED b_a6E1)
+               -> forall b_a6z4.
+                  (b_a6E1 -> GraphOp a_X6ED b_a6z4) -> GraphOp a_X6ED b_a6z4) :: *)
+             ~R#
+             ((forall a_X6ED a1_a6E0 b_a6E1.
+               RGraphOp a_X6ED a1_a6E0
+               -> (a1_a6E0 -> RGraphOp a_X6ED b_a6E1)
+               -> RGraphOp a_X6ED b_a6E1) :: *))
+
+-- RHS size: {terms: 5, types: 10, coercions: 0}
+RGraphOp.$fMonadRGraphOp_$cfail
+  :: forall a_a6DS a1_a5bZ. String -> RGraphOp a_a6DS a1_a5bZ
+[GblId,
+ Arity=1,
+ Str=DmdType <B,U>x,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= \ (@ a_X6EM) (@ a1_a6EH) ->
+                 errorWithoutStackTrace
+                   @ 'ghc-prim-0.5.0.0:GHC.Types.PtrRepLifted
+                   @ (RGraphOp a_X6EM a1_a6EH)}]
+RGraphOp.$fMonadRGraphOp_$cfail =
+  \ (@ a_X6EM) (@ a1_a6EH) (eta_B1 :: [Char]) ->
+    errorWithoutStackTrace
+      @ 'ghc-prim-0.5.0.0:GHC.Types.PtrRepLifted
+      @ (RGraphOp a_X6EM a1_a6EH)
+      eta_B1
+
+Rec {
+-- RHS size: {terms: 10, types: 18, coercions: 0}
+RGraphOp.$fMonadRGraphOp_$c>> [InlPrag=INLINE (sat-args=2)]
+  :: forall a_a6DS a1_a59y b_a59z.
+     RGraphOp a_a6DS a1_a59y
+     -> RGraphOp a_a6DS b_a59z -> RGraphOp a_a6DS b_a59z
+[GblId,
+ Arity=2,
+ Str=DmdType <L,U><L,U>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=False,boring_ok=False)
+         Tmpl= (\ (@ a_X6EL)
+                  (@ a1_a6Ej)
+                  (@ b_a6Ek)
+                  (m1_a5fu [Occ=Once] :: RGraphOp a_X6EL a1_a6Ej)
+                  (k_a5fv [Occ=OnceL] :: RGraphOp a_X6EL b_a6Ek)
+                  (@ b1_a6z4)
+                  (eta_B1 [Occ=Once] :: b_a6Ek -> GraphOp a_X6EL b1_a6z4) ->
+                  ((RGraphOp.$fMonadRGraphOp_$c>>=
+                      @ a_X6EL @ a1_a6Ej @ b_a6Ek m1_a5fu (\ _ [Occ=Dead] -> k_a5fv))
+                   `cast` (RGraphOp.N:RGraphOp[0] <a_X6EL>_R <b_a6Ek>_R
+                           :: (RGraphOp a_X6EL b_a6Ek :: *)
+                              ~R#
+                              ((forall b_a6z4.
+                                (b_a6Ek -> GraphOp a_X6EL b_a6z4) -> GraphOp a_X6EL b_a6z4) :: *)))
+                    @ b1_a6z4 eta_B1)
+               `cast` (forall (a_X6EL :: <*>_N).
+                       forall (a1_a6Ej :: <*>_N).
+                       forall (b_a6Ek :: <*>_N).
+                       <RGraphOp a_X6EL a1_a6Ej>_R
+                       -> <RGraphOp a_X6EL b_a6Ek>_R
+                       -> Sym (RGraphOp.N:RGraphOp[0] <a_X6EL>_R <b_a6Ek>_R)
+                       :: ((forall a_X6EL a1_a6Ej b_a6Ek.
+                            RGraphOp a_X6EL a1_a6Ej
+                            -> RGraphOp a_X6EL b_a6Ek
+                            -> forall b_a6z4.
+                               (b_a6Ek -> GraphOp a_X6EL b_a6z4) -> GraphOp a_X6EL b_a6z4) :: *)
+                          ~R#
+                          ((forall a_X6EL a1_a6Ej b_a6Ek.
+                            RGraphOp a_X6EL a1_a6Ej
+                            -> RGraphOp a_X6EL b_a6Ek -> RGraphOp a_X6EL b_a6Ek) :: *))}]
+RGraphOp.$fMonadRGraphOp_$c>> =
+  \ (@ a_X6EL)
+    (@ a1_a59y)
+    (@ b_a59z)
+    (eta_B2 :: RGraphOp a_X6EL a1_a59y)
+    (eta1_B1 :: RGraphOp a_X6EL b_a59z) ->
+    >>=
+      @ (RGraphOp a_X6EL)
+      (RGraphOp.$fMonadRGraphOp @ a_X6EL)
+      @ a1_a59y
+      @ b_a59z
+      eta_B2
+      (\ _ [Occ=Dead] -> eta1_B1)
+
+-- RHS size: {terms: 8, types: 14, coercions: 28}
+RGraphOp.$fMonadRGraphOp [InlPrag=[ALWAYS] CONLIKE,
+                          Occ=LoopBreaker!]
+  :: forall a_a6A8. Monad (RGraphOp a_a6A8)
+[GblId[DFunId],
+ Str=DmdType m,
+ Unf=DFun: \ (@ a_X6EK[ssk]) ->
+       GHC.Base.C:Monad TYPE: RGraphOp a_X6EK[ssk]
+                        RGraphOp.$fApplicativeRGraphOp @ a_X6EK[ssk]
+                        RGraphOp.$fMonadRGraphOp_$c>>= @ a_X6EK[ssk]
+                        RGraphOp.$fMonadRGraphOp_$c>> @ a_X6EK[ssk]
+                        RGraphOp.$fMonadRGraphOp_$creturn @ a_X6EK[ssk]
+                        RGraphOp.$fMonadRGraphOp_$cfail @ a_X6EK[ssk]]
+RGraphOp.$fMonadRGraphOp =
+  \ (@ a_X6EK) ->
+    GHC.Base.C:Monad
+      @ (RGraphOp a_X6EK)
+      (RGraphOp.$fApplicativeRGraphOp @ a_X6EK)
+      ((RGraphOp.$fMonadRGraphOp2 @ a_X6EK)
+       `cast` (forall (a1_a6E0 :: <*>_N).
+               forall (b_a6E1 :: <*>_N).
+               <RGraphOp a_X6EK a1_a6E0>_R
+               -> <a1_a6E0 -> RGraphOp a_X6EK b_a6E1>_R
+               -> Sym (RGraphOp.N:RGraphOp[0] <a_X6EK>_R <b_a6E1>_R)
+               :: ((forall a1_a6E0 b_a6E1.
+                    RGraphOp a_X6EK a1_a6E0
+                    -> (a1_a6E0 -> RGraphOp a_X6EK b_a6E1)
+                    -> forall b_a6z4.
+                       (b_a6E1 -> GraphOp a_X6EK b_a6z4) -> GraphOp a_X6EK b_a6z4) :: *)
+                  ~R#
+                  ((forall a1_a6E0 b_a6E1.
+                    RGraphOp a_X6EK a1_a6E0
+                    -> (a1_a6E0 -> RGraphOp a_X6EK b_a6E1)
+                    -> RGraphOp a_X6EK b_a6E1) :: *)))
+      (RGraphOp.$fMonadRGraphOp_$c>> @ a_X6EK)
+      ((RGraphOp.$fMonadRGraphOp1 @ a_X6EK)
+       `cast` (forall (a1_a6Ev :: <*>_N).
+               <a1_a6Ev>_R -> Sym (RGraphOp.N:RGraphOp[0] <a_X6EK>_R <a1_a6Ev>_R)
+               :: ((forall a1_a6Ev.
+                    a1_a6Ev
+                    -> forall b_a6z4.
+                       (a1_a6Ev -> GraphOp a_X6EK b_a6z4) -> GraphOp a_X6EK b_a6z4) :: *)
+                  ~R#
+                  ((forall a1_a6Ev. a1_a6Ev -> RGraphOp a_X6EK a1_a6Ev) :: *)))
+      (\ (@ a1_a6EH) ->
+         errorWithoutStackTrace
+           @ 'ghc-prim-0.5.0.0:GHC.Types.PtrRepLifted
+           @ (RGraphOp a_X6EK a1_a6EH))
+end Rec }
+
+-- RHS size: {terms: 8, types: 16, coercions: 0}
+RGraphOp.up1
+  :: forall a_a6BE next_a6BF.
+     GraphOp a_a6BE next_a6BF
+     -> forall b_a6BO.
+        (next_a6BF -> GraphOp a_a6BE b_a6BO) -> GraphOp a_a6BE b_a6BO
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <S,1*U><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=True)
+         Tmpl= \ (@ a_a6BE)
+                 (@ next_a6BF)
+                 (gop_a6ze [Occ=Once] :: GraphOp a_a6BE next_a6BF)
+                 (@ b_a6BO)
+                 (k_a6zf [Occ=Once] :: next_a6BF -> GraphOp a_a6BE b_a6BO) ->
+                 GraphOp.$fMonadGraphOp_$c>>=
+                   @ a_a6BE @ next_a6BF @ b_a6BO gop_a6ze k_a6zf}]
+RGraphOp.up1 =
+  \ (@ a_a6BE)
+    (@ next_a6BF)
+    (gop_a6ze :: GraphOp a_a6BE next_a6BF)
+    (@ b_a6BO)
+    (k_a6zf :: next_a6BF -> GraphOp a_a6BE b_a6BO) ->
+    GraphOp.$fMonadGraphOp_$c>>=
+      @ a_a6BE @ next_a6BF @ b_a6BO gop_a6ze k_a6zf
+
+-- RHS size: {terms: 1, types: 0, coercions: 14}
+up
+  :: forall a_a6zc next_a6zd.
+     GraphOp a_a6zc next_a6zd -> RGraphOp a_a6zc next_a6zd
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <S,1*U><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= RGraphOp.up1
+               `cast` (forall (a_a6BE :: <*>_N).
+                       forall (next_a6BF :: <*>_N).
+                       <GraphOp a_a6BE next_a6BF>_R
+                       -> Sym (RGraphOp.N:RGraphOp[0] <a_a6BE>_R <next_a6BF>_R)
+                       :: ((forall a_a6BE next_a6BF.
+                            GraphOp a_a6BE next_a6BF
+                            -> forall b_a6z4.
+                               (next_a6BF -> GraphOp a_a6BE b_a6z4)
+                               -> GraphOp a_a6BE b_a6z4) :: *)
+                          ~R#
+                          ((forall a_a6BE next_a6BF.
+                            GraphOp a_a6BE next_a6BF -> RGraphOp a_a6BE next_a6BF) :: *))}]
+up =
+  RGraphOp.up1
+  `cast` (forall (a_a6BE :: <*>_N).
+          forall (next_a6BF :: <*>_N).
+          <GraphOp a_a6BE next_a6BF>_R
+          -> Sym (RGraphOp.N:RGraphOp[0] <a_a6BE>_R <next_a6BF>_R)
+          :: ((forall a_a6BE next_a6BF.
+               GraphOp a_a6BE next_a6BF
+               -> forall b_a6z4.
+                  (next_a6BF -> GraphOp a_a6BE b_a6z4)
+                  -> GraphOp a_a6BE b_a6z4) :: *)
+             ~R#
+             ((forall a_a6BE next_a6BF.
+               GraphOp a_a6BE next_a6BF -> RGraphOp a_a6BE next_a6BF) :: *))
+
+-- RHS size: {terms: 9, types: 24, coercions: 0}
+RGraphOp.rget1
+  :: forall a_a6Bd.
+     a_a6Bd
+     -> forall b_a6z4.
+        (Maybe (Colored a_a6Bd) -> GraphOp a_a6Bd b_a6z4)
+        -> GraphOp a_a6Bd b_a6z4
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a6Bd)
+                 (x_a6zh [Occ=Once] :: a_a6Bd)
+                 (@ b_a6z4)
+                 (eta_B1 [Occ=Once]
+                    :: Maybe (Colored a_a6Bd) -> GraphOp a_a6Bd b_a6z4) ->
+                 GraphOp.$fMonadGraphOp_$c>>=
+                   @ a_a6Bd
+                   @ (Maybe (Colored a_a6Bd))
+                   @ b_a6z4
+                   (GraphOp.Get
+                      @ a_a6Bd
+                      @ (Maybe (Colored a_a6Bd))
+                      x_a6zh
+                      (GraphOp.Return @ a_a6Bd @ (Maybe (Colored a_a6Bd))))
+                   eta_B1}]
+RGraphOp.rget1 =
+  \ (@ a_a6Bd)
+    (x_a6zh :: a_a6Bd)
+    (@ b_a6z4)
+    (eta_B1 :: Maybe (Colored a_a6Bd) -> GraphOp a_a6Bd b_a6z4) ->
+    GraphOp.$fMonadGraphOp_$c>>=
+      @ a_a6Bd
+      @ (Maybe (Colored a_a6Bd))
+      @ b_a6z4
+      (GraphOp.Get
+         @ a_a6Bd
+         @ (Maybe (Colored a_a6Bd))
+         x_a6zh
+         (GraphOp.Return @ a_a6Bd @ (Maybe (Colored a_a6Bd))))
+      eta_B1
+
+-- RHS size: {terms: 1, types: 0, coercions: 11}
+rget
+  :: forall a_a6z9.
+     a_a6z9 -> RGraphOp a_a6z9 (Maybe (Colored a_a6z9))
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= RGraphOp.rget1
+               `cast` (forall (a_a6Bd :: <*>_N).
+                       <a_a6Bd>_R
+                       -> Sym
+                            (RGraphOp.N:RGraphOp[0] <a_a6Bd>_R <Maybe (Colored a_a6Bd)>_R)
+                       :: ((forall a_a6Bd.
+                            a_a6Bd
+                            -> forall b_a6z4.
+                               (Maybe (Colored a_a6Bd) -> GraphOp a_a6Bd b_a6z4)
+                               -> GraphOp a_a6Bd b_a6z4) :: *)
+                          ~R#
+                          ((forall a_a6Bd.
+                            a_a6Bd -> RGraphOp a_a6Bd (Maybe (Colored a_a6Bd))) :: *))}]
+rget =
+  RGraphOp.rget1
+  `cast` (forall (a_a6Bd :: <*>_N).
+          <a_a6Bd>_R
+          -> Sym
+               (RGraphOp.N:RGraphOp[0] <a_a6Bd>_R <Maybe (Colored a_a6Bd)>_R)
+          :: ((forall a_a6Bd.
+               a_a6Bd
+               -> forall b_a6z4.
+                  (Maybe (Colored a_a6Bd) -> GraphOp a_a6Bd b_a6z4)
+                  -> GraphOp a_a6Bd b_a6z4) :: *)
+             ~R#
+             ((forall a_a6Bd.
+               a_a6Bd -> RGraphOp a_a6Bd (Maybe (Colored a_a6Bd))) :: *))
+
+-- RHS size: {terms: 9, types: 15, coercions: 0}
+RGraphOp.rvisit1
+  :: forall a_a6B3.
+     a_a6B3
+     -> forall b_a6z4.
+        (() -> GraphOp a_a6B3 b_a6z4) -> GraphOp a_a6B3 b_a6z4
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a6B3)
+                 (x_a6zi [Occ=Once] :: a_a6B3)
+                 (@ b_a6z4)
+                 (eta_B1 [Occ=Once] :: () -> GraphOp a_a6B3 b_a6z4) ->
+                 GraphOp.$fMonadGraphOp_$c>>=
+                   @ a_a6B3
+                   @ ()
+                   @ b_a6z4
+                   (GraphOp.Visit @ a_a6B3 @ () x_a6zi (GraphOp.dfs1 @ a_a6B3))
+                   eta_B1}]
+RGraphOp.rvisit1 =
+  \ (@ a_a6B3)
+    (x_a6zi :: a_a6B3)
+    (@ b_a6z4)
+    (eta_B1 :: () -> GraphOp a_a6B3 b_a6z4) ->
+    GraphOp.$fMonadGraphOp_$c>>=
+      @ a_a6B3
+      @ ()
+      @ b_a6z4
+      (GraphOp.Visit @ a_a6B3 @ () x_a6zi (GraphOp.dfs1 @ a_a6B3))
+      eta_B1
+
+-- RHS size: {terms: 1, types: 0, coercions: 9}
+rvisit :: forall a_a6z8. a_a6z8 -> RGraphOp a_a6z8 ()
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= RGraphOp.rvisit1
+               `cast` (forall (a_a6B3 :: <*>_N).
+                       <a_a6B3>_R -> Sym (RGraphOp.N:RGraphOp[0] <a_a6B3>_R <()>_R)
+                       :: ((forall a_a6B3.
+                            a_a6B3
+                            -> forall b_a6z4.
+                               (() -> GraphOp a_a6B3 b_a6z4) -> GraphOp a_a6B3 b_a6z4) :: *)
+                          ~R#
+                          ((forall a_a6B3. a_a6B3 -> RGraphOp a_a6B3 ()) :: *))}]
+rvisit =
+  RGraphOp.rvisit1
+  `cast` (forall (a_a6B3 :: <*>_N).
+          <a_a6B3>_R -> Sym (RGraphOp.N:RGraphOp[0] <a_a6B3>_R <()>_R)
+          :: ((forall a_a6B3.
+               a_a6B3
+               -> forall b_a6z4.
+                  (() -> GraphOp a_a6B3 b_a6z4) -> GraphOp a_a6B3 b_a6z4) :: *)
+             ~R#
+             ((forall a_a6B3. a_a6B3 -> RGraphOp a_a6B3 ()) :: *))
+
+-- RHS size: {terms: 9, types: 15, coercions: 0}
+RGraphOp.ryield1
+  :: forall a_a6AT.
+     a_a6AT
+     -> forall b_a6z4.
+        (() -> GraphOp a_a6AT b_a6z4) -> GraphOp a_a6AT b_a6z4
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=2,unsat_ok=True,boring_ok=False)
+         Tmpl= \ (@ a_a6AT)
+                 (x_a6zj [Occ=Once] :: a_a6AT)
+                 (@ b_a6z4)
+                 (eta_B1 [Occ=Once] :: () -> GraphOp a_a6AT b_a6z4) ->
+                 GraphOp.$fMonadGraphOp_$c>>=
+                   @ a_a6AT
+                   @ ()
+                   @ b_a6z4
+                   (GraphOp.Yield @ a_a6AT @ () x_a6zj (GraphOp.dfs1 @ a_a6AT))
+                   eta_B1}]
+RGraphOp.ryield1 =
+  \ (@ a_a6AT)
+    (x_a6zj :: a_a6AT)
+    (@ b_a6z4)
+    (eta_B1 :: () -> GraphOp a_a6AT b_a6z4) ->
+    GraphOp.$fMonadGraphOp_$c>>=
+      @ a_a6AT
+      @ ()
+      @ b_a6z4
+      (GraphOp.Yield @ a_a6AT @ () x_a6zj (GraphOp.dfs1 @ a_a6AT))
+      eta_B1
+
+-- RHS size: {terms: 1, types: 0, coercions: 9}
+ryield :: forall a_a6z7. a_a6z7 -> RGraphOp a_a6z7 ()
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= RGraphOp.ryield1
+               `cast` (forall (a_a6AT :: <*>_N).
+                       <a_a6AT>_R -> Sym (RGraphOp.N:RGraphOp[0] <a_a6AT>_R <()>_R)
+                       :: ((forall a_a6AT.
+                            a_a6AT
+                            -> forall b_a6z4.
+                               (() -> GraphOp a_a6AT b_a6z4) -> GraphOp a_a6AT b_a6z4) :: *)
+                          ~R#
+                          ((forall a_a6AT. a_a6AT -> RGraphOp a_a6AT ()) :: *))}]
+ryield =
+  RGraphOp.ryield1
+  `cast` (forall (a_a6AT :: <*>_N).
+          <a_a6AT>_R -> Sym (RGraphOp.N:RGraphOp[0] <a_a6AT>_R <()>_R)
+          :: ((forall a_a6AT.
+               a_a6AT
+               -> forall b_a6z4.
+                  (() -> GraphOp a_a6AT b_a6z4) -> GraphOp a_a6AT b_a6z4) :: *)
+             ~R#
+             ((forall a_a6AT. a_a6AT -> RGraphOp a_a6AT ()) :: *))
+
+Rec {
+-- RHS size: {terms: 42, types: 60, coercions: 0}
+RGraphOp.rdfs1 [Occ=LoopBreaker]
+  :: forall a_a6AJ.
+     a_a6AJ
+     -> forall b_a6z4.
+        (() -> GraphOp a_a6AJ b_a6z4) -> GraphOp a_a6AJ b_a6z4
+[GblId, Arity=2, Caf=NoCafRefs, Str=DmdType <L,U><L,C(U)>]
+RGraphOp.rdfs1 =
+  \ (@ a_a6AJ)
+    (x_a6zk :: a_a6AJ)
+    (@ b_a6z4)
+    (eta_B1 :: () -> GraphOp a_a6AJ b_a6z4) ->
+    let {
+      lvl15_s6JQ :: GraphOp a_a6AJ b_a6z4
+      [LclId, Str=DmdType]
+      lvl15_s6JQ = eta_B1 ghc-prim-0.5.0.0:GHC.Tuple.() } in
+    let {
+      lvl16_s6JT :: GraphOp a_a6AJ b_a6z4
+      [LclId, Str=DmdType]
+      lvl16_s6JT =
+        GraphOp.$fMonadGraphOp_$c>>=
+          @ a_a6AJ
+          @ (Maybe (Colored a_a6AJ))
+          @ b_a6z4
+          (GraphOp.Get
+             @ a_a6AJ
+             @ (Maybe (Colored a_a6AJ))
+             x_a6zk
+             (GraphOp.Return @ a_a6AJ @ (Maybe (Colored a_a6AJ))))
+          (\ (n_X6B2 :: Maybe (Colored a_a6AJ)) ->
+             case n_X6B2 of _ [Occ=Dead] {
+               Nothing -> lvl15_s6JQ;
+               Just ds_d6Gb ->
+                 case ds_d6Gb of _ [Occ=Dead] { Colored ds1_d6Gc ds2_d6Gd ->
+                 case ds2_d6Gd of _ [Occ=Dead] {
+                   False ->
+                     let {
+                       lvl17_s6JR :: GraphOp a_a6AJ b_a6z4
+                       [LclId, Str=DmdType]
+                       lvl17_s6JR =
+                         GraphOp.$fMonadGraphOp_$c>>=
+                           @ a_a6AJ
+                           @ ()
+                           @ b_a6z4
+                           (GraphOp.Yield @ a_a6AJ @ () ds1_d6Gc (GraphOp.dfs1 @ a_a6AJ))
+                           eta_B1 } in
+                     RGraphOp.rdfs1
+                       @ a_a6AJ ds1_d6Gc @ b_a6z4 (\ _ [Occ=Dead] -> lvl17_s6JR);
+                   True -> lvl15_s6JQ
+                 }
+                 }
+             }) } in
+    GraphOp.$fMonadGraphOp_$c>>=
+      @ a_a6AJ
+      @ ()
+      @ b_a6z4
+      (GraphOp.Visit @ a_a6AJ @ () x_a6zk (GraphOp.dfs1 @ a_a6AJ))
+      (\ _ [Occ=Dead] -> lvl16_s6JT)
+end Rec }
+
+-- RHS size: {terms: 1, types: 0, coercions: 9}
+rdfs :: forall a_a6z6. a_a6z6 -> RGraphOp a_a6z6 ()
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <L,U><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= RGraphOp.rdfs1
+               `cast` (forall (a_a6AJ :: <*>_N).
+                       <a_a6AJ>_R -> Sym (RGraphOp.N:RGraphOp[0] <a_a6AJ>_R <()>_R)
+                       :: ((forall a_a6AJ.
+                            a_a6AJ
+                            -> forall b_a6z4.
+                               (() -> GraphOp a_a6AJ b_a6z4) -> GraphOp a_a6AJ b_a6z4) :: *)
+                          ~R#
+                          ((forall a_a6AJ. a_a6AJ -> RGraphOp a_a6AJ ()) :: *))}]
+rdfs =
+  RGraphOp.rdfs1
+  `cast` (forall (a_a6AJ :: <*>_N).
+          <a_a6AJ>_R -> Sym (RGraphOp.N:RGraphOp[0] <a_a6AJ>_R <()>_R)
+          :: ((forall a_a6AJ.
+               a_a6AJ
+               -> forall b_a6z4.
+                  (() -> GraphOp a_a6AJ b_a6z4) -> GraphOp a_a6AJ b_a6z4) :: *)
+             ~R#
+             ((forall a_a6AJ. a_a6AJ -> RGraphOp a_a6AJ ()) :: *))
+
+-- RHS size: {terms: 29, types: 33, coercions: 0}
+RGraphOp.rpropagate1
+  :: forall a_a6Az.
+     Maybe (Colored a_a6Az)
+     -> forall b_a6z4.
+        (() -> GraphOp a_a6Az b_a6z4) -> GraphOp a_a6Az b_a6z4
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <S,1*U><L,C(U)>,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [50 60] 180 0}]
+RGraphOp.rpropagate1 =
+  \ (@ a_a6Az)
+    (ds_d6G0 :: Maybe (Colored a_a6Az))
+    (@ b_a6z4)
+    (eta_B1 :: () -> GraphOp a_a6Az b_a6z4) ->
+    case ds_d6G0 of _ [Occ=Dead] {
+      Nothing -> eta_B1 ghc-prim-0.5.0.0:GHC.Tuple.();
+      Just ds1_d6Gb ->
+        case ds1_d6Gb of _ [Occ=Dead] { Colored ds2_d6Gc ds3_d6Gd ->
+        case ds3_d6Gd of _ [Occ=Dead] {
+          False ->
+            let {
+              lvl15_s6JU :: GraphOp a_a6Az b_a6z4
+              [LclId, Str=DmdType]
+              lvl15_s6JU =
+                GraphOp.$fMonadGraphOp_$c>>=
+                  @ a_a6Az
+                  @ ()
+                  @ b_a6z4
+                  (GraphOp.Yield @ a_a6Az @ () ds2_d6Gc (GraphOp.dfs1 @ a_a6Az))
+                  eta_B1 } in
+            RGraphOp.rdfs1
+              @ a_a6Az ds2_d6Gc @ b_a6z4 (\ _ [Occ=Dead] -> lvl15_s6JU);
+          True -> eta_B1 ghc-prim-0.5.0.0:GHC.Tuple.()
+        }
+        }
+    }
+
+-- RHS size: {terms: 1, types: 0, coercions: 11}
+rpropagate
+  :: forall a_a6z5. Maybe (Colored a_a6z5) -> RGraphOp a_a6z5 ()
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType <S,1*U><L,C(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=0,unsat_ok=True,boring_ok=True)
+         Tmpl= RGraphOp.rpropagate1
+               `cast` (forall (a_a6Az :: <*>_N).
+                       <Maybe (Colored a_a6Az)>_R
+                       -> Sym (RGraphOp.N:RGraphOp[0] <a_a6Az>_R <()>_R)
+                       :: ((forall a_a6Az.
+                            Maybe (Colored a_a6Az)
+                            -> forall b_a6z4.
+                               (() -> GraphOp a_a6Az b_a6z4) -> GraphOp a_a6Az b_a6z4) :: *)
+                          ~R#
+                          ((forall a_a6Az.
+                            Maybe (Colored a_a6Az) -> RGraphOp a_a6Az ()) :: *))}]
+rpropagate =
+  RGraphOp.rpropagate1
+  `cast` (forall (a_a6Az :: <*>_N).
+          <Maybe (Colored a_a6Az)>_R
+          -> Sym (RGraphOp.N:RGraphOp[0] <a_a6Az>_R <()>_R)
+          :: ((forall a_a6Az.
+               Maybe (Colored a_a6Az)
+               -> forall b_a6z4.
+                  (() -> GraphOp a_a6Az b_a6z4) -> GraphOp a_a6Az b_a6z4) :: *)
+             ~R#
+             ((forall a_a6Az.
+               Maybe (Colored a_a6Az) -> RGraphOp a_a6Az ()) :: *))
+
+-- RHS size: {terms: 5, types: 10, coercions: 3}
+down
+  :: forall a_a6za next_a6zb.
+     RGraphOp a_a6za next_a6zb -> GraphOp a_a6za next_a6zb
+[GblId,
+ Arity=1,
+ Caf=NoCafRefs,
+ Str=DmdType <C(S),1*C1(U)>,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(arity=1,unsat_ok=True,boring_ok=True)
+         Tmpl= \ (@ a_a6Bq)
+                 (@ next_a6Br)
+                 (ds_d6FP [Occ=Once] :: RGraphOp a_a6Bq next_a6Br) ->
+                 (ds_d6FP
+                  `cast` (RGraphOp.N:RGraphOp[0] <a_a6Bq>_R <next_a6Br>_R
+                          :: (RGraphOp a_a6Bq next_a6Br :: *)
+                             ~R#
+                             ((forall b_a6z4.
+                               (next_a6Br -> GraphOp a_a6Bq b_a6z4)
+                               -> GraphOp a_a6Bq b_a6z4) :: *)))
+                   @ next_a6Br (GraphOp.Return @ a_a6Bq @ next_a6Br)}]
+down =
+  \ (@ a_a6Bq)
+    (@ next_a6Br)
+    (ds_d6FP :: RGraphOp a_a6Bq next_a6Br) ->
+    (ds_d6FP
+     `cast` (RGraphOp.N:RGraphOp[0] <a_a6Bq>_R <next_a6Br>_R
+             :: (RGraphOp a_a6Bq next_a6Br :: *)
+                ~R#
+                ((forall b_a6z4.
+                  (next_a6Br -> GraphOp a_a6Bq b_a6z4)
+                  -> GraphOp a_a6Bq b_a6z4) :: *)))
+      @ next_a6Br (GraphOp.Return @ a_a6Bq @ next_a6Br)
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+RGraphOp.$trModule2 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 110 20}]
+RGraphOp.$trModule2 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS
+    "dsl-0.1.0.0-HHwIOiy1Cqn9VRUNpv0S0h"#
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+RGraphOp.$trModule1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 40 20}]
+RGraphOp.$trModule1 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS "RGraphOp"#
+
+-- RHS size: {terms: 3, types: 0, coercions: 0}
+RGraphOp.$trModule :: ghc-prim-0.5.0.0:GHC.Types.Module
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 30}]
+RGraphOp.$trModule =
+  ghc-prim-0.5.0.0:GHC.Types.Module
+    RGraphOp.$trModule2 RGraphOp.$trModule1
+
+-- RHS size: {terms: 2, types: 0, coercions: 0}
+RGraphOp.$tc'RGraphOp1 :: ghc-prim-0.5.0.0:GHC.Types.TrName
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m1,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 50 20}]
+RGraphOp.$tc'RGraphOp1 =
+  ghc-prim-0.5.0.0:GHC.Types.TrNameS "'RGraphOp"#
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+RGraphOp.$tc'RGraphOp :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+RGraphOp.$tc'RGraphOp =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    15136513499487885083##
+    9502463376704335960##
+    RGraphOp.$trModule
+    RGraphOp.$tc'RGraphOp1
+
+-- RHS size: {terms: 5, types: 0, coercions: 0}
+RGraphOp.$tcRGraphOp :: ghc-prim-0.5.0.0:GHC.Types.TyCon
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Value=True, ConLike=True,
+         WorkFree=True, Expandable=True, Guidance=IF_ARGS [] 10 50}]
+RGraphOp.$tcRGraphOp =
+  ghc-prim-0.5.0.0:GHC.Types.TyCon
+    12081888275176643514##
+    1891675372639750039##
+    RGraphOp.$trModule
+    RGraphOp.$trModule1
+
+
